@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators", "src\GCore.Source.Generators\GCore.Source.Generators.csproj", "{1E889CA9-8606-46B3-AB78-95CFC3F5A1FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.CSharp", "src\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj", "{6DAC2673-C5A2-4C90-BB3B-65934A835C54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E889CA9-8606-46B3-AB78-95CFC3F5A1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E889CA9-8606-46B3-AB78-95CFC3F5A1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E889CA9-8606-46B3-AB78-95CFC3F5A1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E889CA9-8606-46B3-AB78-95CFC3F5A1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E444A06-9F82-459C-A065-44639330FC46}
+	EndGlobalSection
+EndGlobal
