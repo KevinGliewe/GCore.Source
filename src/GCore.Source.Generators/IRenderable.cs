@@ -4,6 +4,6 @@ namespace GCore.Source.Generators
 {
     public interface IRenderable
     {
-        void Render(IndentedTextWriter writer);
+        void Render(CodeWriter writer);
     }
 }

@@ -1,21 +1,28 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
+using System.CodeDom.Compiler;
 using GCore.Data.Structure.InheritedTree;
 
 namespace GCore.Source.Generators
 {
-    public abstract class ASourceTree<TImpl, TProps> :
-        Tree<TImpl, string, TProps>, ISourceTree<TImpl, TProps>
-        where TImpl : INode<TImpl, string, TProps>
-        where TProps : ISourceElementProperty
+    public abstract class ASourceTree<TTree, TNode, TProps> :
+        Tree<TTree, TNode, string, TProps>, ISourceTree<TTree, TNode, TProps>
+        where TTree : ASourceTree<TTree, TNode, TProps>
+        where TNode : class, ISourceElement<TTree, TNode, TProps>
+        where TProps : class, ISourceElementProperty
     {
+        protected ASourceTree(TNode rootNode, string rootName = "root", string separator = ":")
+            : base(rootNode, rootName, separator)
+        {
+        }
+
         protected ASourceTree(string root, string separator = ":") : base(root, separator)
         {
         }
 
-        protected ASourceTree(RawNode<TImpl, string, TProps> rawNode, string separator = ":") : base(rawNode, separator)
+        protected ASourceTree(RawNode<TNode, string, TProps> rawNode, string separator = ":") : base(rawNode, separator)
         {
         }
 
-        public abstract void Render(IndentedTextWriter writer);
+        public abstract void Render(CodeWriter writer);
     }
 }

@@ -8,8 +8,8 @@ namespace GCore.Source.Generators.ElementProperties.PropertyComponents
     public abstract class AInitialisation :
         IInitialisation
     {
-        public abstract void Render(IndentedTextWriter writer);
+        public abstract void Render(CodeWriter writer);
 
-        public object InitValue { get; set; }
+        public object? InitValue { get; set; }
     }
 }

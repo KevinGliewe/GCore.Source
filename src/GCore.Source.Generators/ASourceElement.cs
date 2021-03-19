@@ -3,14 +3,15 @@ using GCore.Data.Structure.InheritedTree;
 
 namespace GCore.Source.Generators
 {
-    public abstract class ASourceElement<TImpl, TProps> :
-        Node<TImpl, string, TProps>, ISourceElement<TImpl, TProps>
-        where TImpl : Node<TImpl, string, TProps>
-        where TProps : ISourceElementProperty
+    public abstract class ASourceElement<TTree, TNode, TProps> :
+        Node<TTree, TNode, string, TProps>, ISourceElement<TTree, TNode, TProps>
+        where TTree : class, ISourceTree<TTree, TNode, TProps>
+        where TNode : ASourceElement<TTree, TNode, TProps>
+        where TProps : class, ISourceElementProperty
     {
-        public abstract void Render(IndentedTextWriter writer);
+        public abstract void Render(CodeWriter writer);
         public abstract void InitElement();
 
-        public object OModel { get; set; }
+        public object? OModel { get; set; }
     }
 }

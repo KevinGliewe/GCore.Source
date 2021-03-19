@@ -6,12 +6,13 @@ using GCore.Data.Structure.InheritedTree;
 
 namespace GCore.Source.Generators
 {
-    public interface ISourceElement<TImpl, TProps> : 
-        INode<TImpl, string, TProps>, IRenderable
-        where TImpl : INode<TImpl, string, TProps>
+    public interface ISourceElement<TTree, TNode, TProps> : 
+        INode<TTree, TNode, string, TProps>, IRenderable
+        where TTree : ISourceTree<TTree, TNode, TProps>
+        where TNode : ISourceElement<TTree, TNode, TProps>
         where TProps : ISourceElementProperty
     {
-        object OModel { get; set; }
+        object? OModel { get; set; }
 
         void InitElement();
     }

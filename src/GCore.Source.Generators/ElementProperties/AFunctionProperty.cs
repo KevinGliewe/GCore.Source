@@ -8,20 +8,23 @@ namespace GCore.Source.Generators.ElementProperties
 {
     public abstract class AFunctionProperty<TVarProp, TNamespace, TInitialisation, TDataType> :
         IFunctionProperty<TVarProp, TNamespace, TInitialisation, TDataType>
-        where TVarProp : IVariableProperty<TNamespace, TInitialisation>
-        where TNamespace : INamespace
-        where TInitialisation : IInitialisation
-        where TDataType : IDataType<TNamespace>
+        where TVarProp : class, IVariableProperty<TDataType, TNamespace, TInitialisation>
+        where TNamespace : class, INamespace
+        where TInitialisation : class, IInitialisation
+        where TDataType : class, IDataType<TNamespace>
     {
         protected TVarProp[] _arguments = new TVarProp[0];
 
-        public AFunctionProperty() { }
+        public AFunctionProperty()
+        {
+            Name = "<null>";
+        }
 
         public AFunctionProperty(
             string name,
-            TDataType membership = default(TDataType),
-            TNamespace namespace_ = default(TNamespace),
-            TVarProp return_ = default(TVarProp),
+            TDataType? membership = null,
+            TNamespace? namespace_ = null,
+            TVarProp? return_ = null,
             params TVarProp[] args)
         {
             Name = name;
@@ -31,12 +34,12 @@ namespace GCore.Source.Generators.ElementProperties
             _arguments = args;
         }
 
-        public abstract void Render(IndentedTextWriter writer);
+        public abstract void Render(CodeWriter writer);
 
         public string Name { get; protected set; }
-        public IEnumerable<TVarProp> Arguments { get; }
-        public TNamespace Namespace { get; protected set; }
-        public TVarProp Return { get; protected set; }
-        public TDataType Membership { get; protected set; }
+        public IEnumerable<TVarProp> Arguments { get => _arguments; }
+        public TNamespace? Namespace { get; protected set; }
+        public TVarProp? Return { get; protected set; }
+        public TDataType? Membership { get; protected set; }
     }
 }

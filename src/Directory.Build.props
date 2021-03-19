@@ -1,0 +1,39 @@
+<Project>
+
+  <Import Project="..\Version.props" />
+
+  <PropertyGroup>
+    <Version>$(SolutionVersion)</Version>
+    <Company>Gliewe.NET</Company>
+    <Copyright>Copyright (C) Kevin Gliewe</Copyright>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <Authors>$(Company)</Authors>
+    <Description>Code generation</Description>
+    <PackageTags> codegen code generation source generators</PackageTags>
+    <PackageProjectUrl>https://github.com/KevinGliewe/GCore.Source.Generators</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/KevinGliewe/GCore.Source.Generators/blob/master/Changelog.md</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- Disable nullability warnings on older frameworks because there is no nullability info for BCL -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <Nullable>annotations</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../doc/icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>

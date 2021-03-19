@@ -5,7 +5,21 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators", "src\GCore.Source.Generators\GCore.Source.Generators.csproj", "{1E889CA9-8606-46B3-AB78-95CFC3F5A1FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.CSharp", "src\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj", "{6DAC2673-C5A2-4C90-BB3B-65934A835C54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.CSharp", "src\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj", "{6DAC2673-C5A2-4C90-BB3B-65934A835C54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source", "src\GCore.Source\GCore.Source.csproj", "{3757948B-5EC6-4FCB-9D03-9E6ACBA71DC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Tests", "src\GCore.Source.Tests\GCore.Source.Tests.csproj", "{2586E9CF-24F7-4621-99C2-088123C05D72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{7D1F9479-6DDD-45E1-B453-1F24FDA5E366}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		Version.props = Version.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.CSharp.Tests", "src\GCore.Source.Generators.CSharp.Tests\GCore.Source.Generators.CSharp.Tests.csproj", "{D69FED69-6B61-48A9-B7D3-CA393225C76E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Data.Structure.InheritedTree", "..\GCore.Data.Structure.InheritedTree\src\GCore.Data.Structure.InheritedTree\GCore.Data.Structure.InheritedTree.csproj", "{B9085C3E-40D5-40D1-9C3B-B46AC82F3ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +35,22 @@ Global
 		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DAC2673-C5A2-4C90-BB3B-65934A835C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3757948B-5EC6-4FCB-9D03-9E6ACBA71DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3757948B-5EC6-4FCB-9D03-9E6ACBA71DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3757948B-5EC6-4FCB-9D03-9E6ACBA71DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3757948B-5EC6-4FCB-9D03-9E6ACBA71DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2586E9CF-24F7-4621-99C2-088123C05D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2586E9CF-24F7-4621-99C2-088123C05D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2586E9CF-24F7-4621-99C2-088123C05D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2586E9CF-24F7-4621-99C2-088123C05D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9085C3E-40D5-40D1-9C3B-B46AC82F3ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9085C3E-40D5-40D1-9C3B-B46AC82F3ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9085C3E-40D5-40D1-9C3B-B46AC82F3ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9085C3E-40D5-40D1-9C3B-B46AC82F3ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
