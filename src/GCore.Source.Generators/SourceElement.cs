@@ -42,8 +42,6 @@ namespace GCore.Source.Generators
 
             SourceElement? current = this;
 
-            var names = new List<string>();
-
             while (!(current is null)) {
                 foreach (SourceElement child in current.ElementChildren)
                     if (child.Name == name && child is T element)
@@ -112,7 +110,42 @@ namespace GCore.Source.Generators
             return false;
         }
 
-#endregion
+        public bool IsElementDefined<T>() where T : SourceElement
+        {
+            SourceElement? current = this;
+
+            var names = new List<string>();
+
+            while (!(current is null)) {
+                foreach (var child in current.ElementChildren)
+                {
+
+                    if (!(child is T))
+                        continue;
+
+                    if (names.Contains(child.Name))
+                        continue;
+
+                    names.Add(child.Name);
+
+                    return true;
+                }
+
+                current = current.Parent;
+            }
+
+            return false;
+        }
+
+        public bool IsElementDefinedLocally<T>() where T : SourceElement 
+        {
+            foreach (var child in this.ElementChildren)
+                if (child is T)
+                    return true;
+
+            return false;
+        }
+        #endregion
 
         public SourceElement(SourceElement? parent, string name)
         {
