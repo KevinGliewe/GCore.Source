@@ -19,7 +19,7 @@ namespace GCore.Source.Generators.CSharp.Tests
         public void Minimal()
         {
             Assert.AreEqual(
-                $"var {VarName};{Environment.NewLine}", 
+                $"dynamic {VarName};{Environment.NewLine}", 
                 new CSharpVariable(null, VarName).Render());
         }
 
