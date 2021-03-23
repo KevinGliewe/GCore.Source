@@ -1,7 +1,7 @@
 ﻿using System;
 using GCore.Source.Generators.CSharp.Elements;
-using GCore.Source.Generators.CSharp.Extensions;
 using GCore.Source.Generators.CSharp.Properties;
+using GCore.Source.Generators.Extensions;
 using NUnit.Framework;
 
 namespace GCore.Source.Generators.CSharp.Tests

@@ -1,16 +1,20 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace GCore.Source.Generators
 {
-    public abstract class SourceElement : IRenderable
+    public class SourceElement : IRenderable, IConfigurable
     {
-
+        public IReadOnlyDictionary<string, string> Config { get; protected set; } = new Dictionary<string, string>();
         public SourceElement? Parent { get; }
+
+        public SourceElement Root => Parent?.Root ?? this;
         
-        public string Name { get; }
+        public string Name { get; protected set; }
 
 #region Elements
         public IList<SourceElement> ElementChildren { get; } = new List<SourceElement>();
@@ -82,6 +86,11 @@ namespace GCore.Source.Generators
                 yield return current;
                 current = current.Parent;
             }
+        }
+
+        public IEnumerable<string> GetPath()
+        {
+            return GetParents().Reverse().Select(e => e.Name);
         }
 
         public bool IsElementDefined(string name)
@@ -158,13 +167,46 @@ namespace GCore.Source.Generators
             return Name;
         }
 
-        public virtual void Render(CodeWriter writer)
+        public SourceElement? GetElement(IEnumerable<string> path)
         {
-            foreach (var child in ElementChildren)
+            var p = path.ToArray();
+
+            SourceElement e = this;
+
+            for (int i = 0; i < p.Length; i++)
             {
-                child.Render(writer);
+                try
+                {
+                    e = e.ElementChildren.Where(ee => ee.Name == p[i]).First();
+                }
+                catch (ArgumentNullException ex)
+                {
+                    return null;
+                }
             }
+
+            return e;
         }
 
+        public SourceElement? GetElement(params string[] path)
+        {
+            return GetElement(path);
+        }
+
+        public virtual void Configure(IReadOnlyDictionary<string, string> config) {
+            Config = config;
+
+            if (Config.ContainsKey("Name"))
+                Name = Config["Name"].ToString();
+        }
+
+        public virtual void Render(CodeWriter writer)
+        {
+            for (int i = 0; i < ElementChildren.Count; i++) {
+                ElementChildren[i].Render(writer);
+                if (i < ElementChildren.Count - 1)
+                    writer.WriteLine();
+            }
+        }
     }
 }

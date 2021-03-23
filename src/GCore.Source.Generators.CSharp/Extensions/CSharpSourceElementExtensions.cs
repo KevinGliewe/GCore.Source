@@ -1,19 +1,13 @@
 ﻿using System;
 using GCore.Source.Generators.CSharp.Elements;
 using GCore.Source.Generators.CSharp.Properties;
+
 using GCore.Source.Generators.Extensions;
 
 namespace GCore.Source.Generators.CSharp.Extensions
 {
-    public static class SourceElementExtensions
+    public static class CSharpSourceElementExtensions
     {
-        public static string Render(this SourceElement @this)
-        {
-            var cw = new CodeWriter();
-            @this.Render(cw);
-            return cw.GenerateCode();
-        }
-
         public static SourceElement AddVar(this SourceElement @this, string name, Byte value, CSharpModifier modifier = CSharpModifier.None, bool isArgument = false)
             => @this.Add(new CSharpVariable(@this, name, value, modifier, isArgument));
 
