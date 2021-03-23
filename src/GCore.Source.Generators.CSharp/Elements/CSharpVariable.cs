@@ -73,7 +73,12 @@ namespace GCore.Source.Generators.CSharp.Elements
             Modifier.Render(writer);
 
             if (DataType is null)
-                writer.Write("var");
+            {
+                if (Parent is FunctionElement)
+                    writer.Write("var");
+                else
+                    writer.Write("dynamic");
+            }
             else
                 DataType.Render(writer);
 
