@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{7D1F9479-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.CSharp.Tests", "src\GCore.Source.Generators.CSharp.Tests\GCore.Source.Generators.CSharp.Tests.csproj", "{D69FED69-6B61-48A9-B7D3-CA393225C76E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Sections", "src\GCore.Source.Sections\GCore.Source.Sections.csproj", "{7E7830E4-9C04-4FA9-9D39-5D7D0761D240}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D69FED69-6B61-48A9-B7D3-CA393225C76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7830E4-9C04-4FA9-9D39-5D7D0761D240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7830E4-9C04-4FA9-9D39-5D7D0761D240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7830E4-9C04-4FA9-9D39-5D7D0761D240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7830E4-9C04-4FA9-9D39-5D7D0761D240}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
