@@ -1,31 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using GCore.Source.CodeContexts;
-using GCore.Source.Generators.CSharp.Properties;
-using GCore.Source.Generators.CSharp.Properties.Variables.Components;
+﻿using GCore.Source.CodeContexts;
+using GCore.Source.Generators.Elements;
+using GCore.Source.Generators.Elements.Components;
 
 namespace GCore.Source.Generators.CSharp.Elements
 {
-    public class CSharpClass : CSharpElement
+    public class CSharpClass : TypeElement, ICSharpModifiable
     {
-        public IList<CSharpNamespace> Usings { get; } = new List<CSharpNamespace>()
-        {
-            new CSharpGenericNamespace("System"),
-            new CSharpGenericNamespace("System", "Linq"),
-        };
 
-        public override void Render(CodeWriter writer)
-        {
-            foreach (var @using in Usings)
-            {
-                writer.Write("using ");
-                @using.Render(writer);
-                writer.WriteLine(";");
-            }
+        public CSharpModifier Modifier { get; }
 
-            if (Namespace != null)
-            {
+        public bool IsStruct = false;
+
+        public CSharpClass(SourceElement? parent, string name, INamespace? ns) : base(parent, name)
+        {
+            Namespace = ns;
+        }
+
+        public override void Render(CodeWriter writer) {
+
+
+            if (Namespace != null) {
                 writer.Write("namespace ");
                 Namespace.Render(writer);
                 writer.WriteLine(" {");
@@ -40,17 +34,11 @@ namespace GCore.Source.Generators.CSharp.Elements
                 writer.Write(Name);
 
                 // Class body
-                using (new BracketIndentCodeContext(writer))
-                {
-                    // Render variables
-                    foreach (var variable in this.SelfPropertys.Select(p => p.Value).OfType<CSharpVariable>()) {
-                        variable.Render(writer);
-                        writer.WriteLine(";");
-                    }
+                using (new BracketIndentCodeContext(writer)) {
 
-                    foreach (var child in this.Children)
-                    {
+                    foreach (var child in this.ElementChildren) {
                         child.Render(writer);
+                        writer.WriteLine();
                     }
                 }
 
@@ -65,12 +53,6 @@ namespace GCore.Source.Generators.CSharp.Elements
             }
         }
 
-        public override void InitElement()
-        {
-        }
-
-        public CSharpNamespace? Namespace { get; set; }
-
-        public bool IsStruct = false;
+        public override INamespace? Namespace { get; }
     }
 }

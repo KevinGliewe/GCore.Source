@@ -1,6 +1,6 @@
 ﻿using System.CodeDom.Compiler;
 
-namespace GCore.Source.Generators
+namespace GCore.Source
 {
     public interface IRenderable
     {

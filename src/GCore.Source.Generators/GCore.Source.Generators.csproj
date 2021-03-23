@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\GCore.Data.Structure.InheritedTree\src\GCore.Data.Structure.InheritedTree\GCore.Data.Structure.InheritedTree.csproj" />
+    <PackageReference Include="Fody" Version="6.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Virtuosity.Fody" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
 

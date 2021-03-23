@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\GCore.Data.Structure.InheritedTree\src\GCore.Data.Structure.InheritedTree\GCore.Data.Structure.InheritedTree.csproj" />
     <ProjectReference Include="..\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>

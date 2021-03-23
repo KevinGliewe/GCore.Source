@@ -1,36 +1,37 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using GCore.Source.CodeContexts;
-using GCore.Source.Generators.CSharp.Properties;
-using GCore.Source.Generators.CSharp.Properties.Variables;
+using GCore.Source.Generators.Elements;
+using GCore.Source.Generators.Elements.Components;
 
 namespace GCore.Source.Generators.CSharp.Elements
 {
-    public class CSharpFunction : CSharpElement
+    public class CSharpFunction : FunctionElement, ICSharpModifiable
     {
+        public CSharpModifier Modifier { get; }
 
-        public static readonly string KEY_RETURNTYPE = "return";
+        public override DataType? ReturnType { get; }
 
-        public override void Render(CodeWriter writer)
+
+        public CSharpFunction(SourceElement? parent, string name, DataType? returnType = null, CSharpModifier modifier = CSharpModifier.None) : base(parent, name)
         {
+            ReturnType = returnType;
+            Modifier = modifier;
+        }
+
+        public override void Render(CodeWriter writer) {
             Modifier.Render(writer);
             if (Modifier != CSharpModifier.None)
                 writer.Write(' ');
 
-            if(Defines(KEY_RETURNTYPE))
-                this.Get(KEY_RETURNTYPE).Render(writer);
-            else
-                writer.Write("void");
+            ReturnType?.Render(writer);
 
             writer.Write(' ');
             writer.Write(Name);
 
             // Arguments
-            using (new BracketCodeContext(writer, BracketType.Round))
-            {
-                var arguments = this.SelfPropertys.OfType<CSharpFunctionArgument>().ToArray();
-                for (int i = 0; i < arguments.Length; i++)
-                {
+            using (new BracketCodeContext(writer, BracketType.Round)) {
+                var arguments = this.GetElementsLocally<VariableElement>().Where(v => v.IsArgument).ToArray();
+                for (int i = 0; i < arguments.Length; i++) {
                     arguments[i].Render(writer);
                     if (i < arguments.Length - 1)
                         writer.Write(", ");
@@ -41,19 +42,14 @@ namespace GCore.Source.Generators.CSharp.Elements
             if (Modifier.HasFlag(CSharpModifier.Abstract))
                 writer.WriteLine(';');
             else
-                using (new BracketIndentCodeContext(writer))
-                {
+                using (new BracketIndentCodeContext(writer)) {
                     RenderBody(writer);
                 }
         }
-
-        public override void InitElement()
-        {
-        }
-
         protected virtual void RenderBody(CodeWriter writer)
         {
             writer.WriteLine("// Body not defined!");
         }
+
     }
 }

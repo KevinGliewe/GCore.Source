@@ -1,6 +1,7 @@
 ﻿using GCore.Source.Generators.CSharp.Elements;
-using GCore.Source.Generators.CSharp.Properties.Variables;
-using GCore.Source.Generators.CSharp.Properties.Variables.Components;
+using GCore.Source.Generators.CSharp.Extensions;
+using GCore.Source.Generators.CSharp.Properties;
+using GCore.Source.Generators.Extensions;
 using NUnit.Framework;
 
 namespace GCore.Source.Generators.CSharp.Tests
@@ -15,22 +16,15 @@ namespace GCore.Source.Generators.CSharp.Tests
         [Test]
         public void Test1()
         {
-            var tree = new CSharpTree();
+            var doc = new CSharpDocument(null, "TestDoc");
 
-            var @class = tree.CreateNode<CSharpClass>("TestClass");
-            tree.Root.AddChild(@class);
+            var @class = doc.Add(new CSharpClass(doc, "TestClass", new CSharpNamespace("TestNamespace")));
 
-            @class.Modifier = CSharpModifier.Public;
-            @class["varString"] = new CSharpBuiltinVariable("varString", "Hallo Welt");
+            @class.AddVarBoolean("m_boolVar");
 
-            var @func = tree.CreateNode<CSharpFunction>("TestFunc");
-            @class.AddChild(@func);
+            var @func = @class.Add(new CSharpFunction(@class, "TestFunc", CSharpType.Void, CSharpModifier.Abstract));
 
-            @func.Modifier = CSharpModifier.Abstract | CSharpModifier.Public;
-
-            var writer = new CodeWriter();
-            @class.Render(writer);
-            var code = writer.GenerateCode();
+            var code = doc.Render();
         }
     }
 }

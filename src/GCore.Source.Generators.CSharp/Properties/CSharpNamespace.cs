@@ -1,13 +1,29 @@
-﻿using System.Collections.Generic;
-using GCore.Source.Generators.ElementProperties.PropertyComponents;
+﻿using System;
+using System.Collections.Generic;
+using GCore.Source.Generators.Elements.Components;
 
 namespace GCore.Source.Generators.CSharp.Properties
 {
-    public abstract class CSharpNamespace : INamespace
+    public class CSharpNamespace : INamespace
     {
-        public abstract void Render(CodeWriter writer);
+        private string[] _ns;
 
-        public abstract string Separator { get; }
-        public abstract IEnumerable<string> Namespaces { get; }
+        public CSharpNamespace(params string[] ns) {
+            _ns = ns;
+        }
+
+        public CSharpNamespace(Type type)
+        {
+            _ns = type.Namespace.Split(Separator);
+        }
+        public void Render(CodeWriter writer) {
+            writer.Write(String.Join(Separator, Namespaces));
+        }
+
+        public IEnumerable<string> Namespaces {
+            get => _ns;
+        }
+
+        public string Separator => ".";
     }
 }

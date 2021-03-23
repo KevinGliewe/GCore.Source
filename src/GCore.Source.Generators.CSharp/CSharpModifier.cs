@@ -30,4 +30,9 @@ namespace GCore.Source.Generators.CSharp
             if (val.HasFlag(CSharpModifier.Partial)) writer.Write("partial ");
         }
     }
+
+    public interface ICSharpModifiable
+    {
+        CSharpModifier Modifier { get; }
+    }
 }
