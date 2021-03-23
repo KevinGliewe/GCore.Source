@@ -19,7 +19,9 @@ namespace GCore.Source.CodeContexts
         {
             OnEndContext();
 
-            Debug.Assert(CodeWriter.PopContext() == this);
+            var @this = CodeWriter.PopContext();
+
+            Debug.Assert(@this == this);
         }
     }
 }
