@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using GCore.Source.Attributes;
 using GCore.Source.CodeContexts;
 using GCore.Source.Generators.Elements;
 using GCore.Source.Generators.Elements.Components;
@@ -7,7 +8,8 @@ namespace GCore.Source.Generators.CSharp.Elements
 {
     public class CSharpFunction : FunctionElement, ICSharpModifiable
     {
-        public CSharpModifier Modifier { get; }
+        [Config("Modifier")]
+        public CSharpModifier Modifier { get; set; }
 
         public override DataType? ReturnType { get; }
 

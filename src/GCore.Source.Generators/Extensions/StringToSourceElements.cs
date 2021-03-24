@@ -9,8 +9,8 @@ namespace GCore.Source.Generators.Extensions
 {
     public static class StringToSourceElements
     {
-        public readonly static string STARTTAG_PATTERN = @"^.*<\[(?<tag>[^\/\s]+)\s*(?<parameters>.*)\]>\s*$";
-        public readonly static string ENDTAG_PATTERN = @"^.*<\[\/(?<tag>\S+)\]>\s*$";
+        public readonly static string STARTTAG_PATTERN = @"^.*<\[(?<tag>[^\/\s]+)\s*(?<parameters>.*)\]>.*$";
+        public readonly static string ENDTAG_PATTERN = @"^.*<\[\/(?<tag>\S+)\]>.*$";
 
         public readonly static Regex StartTagRegex = new Regex(STARTTAG_PATTERN);
         public readonly static Regex EndTagRegex = new Regex(ENDTAG_PATTERN);

@@ -1,4 +1,5 @@
-﻿using GCore.Source.CodeContexts;
+﻿using GCore.Source.Attributes;
+using GCore.Source.CodeContexts;
 using GCore.Source.Generators.Elements;
 using GCore.Source.Generators.Elements.Components;
 
@@ -6,10 +7,11 @@ namespace GCore.Source.Generators.CSharp.Elements
 {
     public class CSharpClass : TypeElement, ICSharpModifiable
     {
+        [Config("Modifier")]
+        public CSharpModifier Modifier { get; set; }
 
-        public CSharpModifier Modifier { get; }
-
-        public bool IsStruct = false;
+        [Config("IsStruct")]
+        public bool IsStruct { get; set; } = false;
 
         public CSharpClass(SourceElement? parent, string name, INamespace? ns) : base(parent, name)
         {

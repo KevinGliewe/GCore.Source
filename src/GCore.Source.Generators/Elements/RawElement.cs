@@ -6,7 +6,26 @@ namespace GCore.Source.Generators.Elements
 {
     public class RawElement : SourceElement, IRawElement
     {
-        public string[] Lines { get; private set; } = new string[0];
+        private string[]? lines = null;
+
+        public string[] Lines {
+            get {
+                if (lines is null) {
+                    var ret = new List<string>();
+                    foreach (var child in ElementChildren) {
+                        if (child is IRawElement rawChild) {
+                            foreach (var line in rawChild.Lines) {
+                                ret.Add(line);
+                            }
+                        }
+                    }
+
+                    return ret.ToArray();
+                }
+
+                return lines;
+            }
+        }
 
         public RawElement(SourceElement? parent, string name) : base(parent, name)
         {
@@ -28,19 +47,21 @@ namespace GCore.Source.Generators.Elements
 
         public virtual void SetLines(IEnumerable<string> lines)
         {
-            Lines = lines.ToArray();
+            this.lines = lines.ToArray();
         }
 
         public virtual void SetLines(string lines)
         {
-            Lines = lines.SplitNewLine();
+            this.lines = lines.SplitNewLine();
         }
 
         public override void Render(CodeWriter writer)
         {
-            for (int i = 0; i < Lines.Length; i++) {
-                writer.Write(Lines[i]);
-                if (i < Lines.Length - 1)
+            var l = Lines;
+
+            for (int i = 0; i < l.Length; i++) {
+                writer.Write(l[i]);
+                if (i < l.Length - 1)
                     writer.WriteLine();
             }
         }

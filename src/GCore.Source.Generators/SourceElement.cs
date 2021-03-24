@@ -10,6 +10,8 @@ namespace GCore.Source.Generators
 {
     public class SourceElement : IRenderable, IConfigurable
     {
+        public static readonly string PATH_SEP = ":";
+
         [Config("Name")]
         public string Name { get; protected set; }
 
@@ -185,7 +187,18 @@ namespace GCore.Source.Generators
             {
                 try
                 {
-                    e = e.ElementChildren.Where(ee => ee.Name == p[i]).First();
+                    if (p[i] == "..")
+                    {
+                        e = e.Parent ?? throw new Exception();
+                    }
+                    else if (p[i] == ".")
+                    {
+
+                    }
+                    else
+                    {
+                        e = e.ElementChildren.Where(ee => ee.Name == p[i]).First();
+                    }
                 }
                 catch (ArgumentNullException ex)
                 {
@@ -198,7 +211,7 @@ namespace GCore.Source.Generators
 
         public SourceElement? GetElement(params string[] path)
         {
-            return GetElement(path);
+            return GetElement((IEnumerable<string>)path);
         }
 
         public virtual void Configure(IReadOnlyDictionary<string, string> config) {

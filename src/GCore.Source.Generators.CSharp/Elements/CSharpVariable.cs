@@ -1,4 +1,5 @@
 ﻿using System;
+using GCore.Source.Attributes;
 using GCore.Source.Generators.CSharp.Properties;
 using GCore.Source.Generators.Elements;
 using GCore.Source.Generators.Elements.Components;
@@ -7,6 +8,7 @@ namespace GCore.Source.Generators.CSharp.Elements
 {
     public class CSharpVariable : VariableElement, ICSharpModifiable
     {
+        [Config("Modifier")]
         public CSharpModifier Modifier { get; set; }
 
         public CSharpVariable(SourceElement? parent, string name, IDataType? dataType = null, IInitialisation? init = null, CSharpModifier modifier = CSharpModifier.None, bool isArgument = false) 
