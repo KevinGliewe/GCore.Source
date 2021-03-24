@@ -19,6 +19,20 @@ namespace GCore.Source.Generators.Elements
         {
         }
 
+        public IncludeFileElement(SourceElement? parent, string name, string filePath) : base(parent, name)
+        {
+            FilePath = filePath;
+            ReadFile();
+        }
+
+        protected void ReadFile()
+        {
+            if (!File.Exists(FilePath))
+                throw new Exception("FilePath does not extist " + FilePath);
+
+            SetLines(File.ReadAllLines(FilePath));
+        }
+
         public void SetLines(IEnumerable<string> lines)
         {
             Lines = lines.ToArray();
@@ -33,10 +47,7 @@ namespace GCore.Source.Generators.Elements
         {
             base.Configure(config);
 
-            if(!File.Exists(FilePath))
-                throw new Exception("FilePath does not extist " + FilePath);
-
-            SetLines(File.ReadAllLines(FilePath));
+            ReadFile();
         }
 
         public override void Render(CodeWriter writer)
