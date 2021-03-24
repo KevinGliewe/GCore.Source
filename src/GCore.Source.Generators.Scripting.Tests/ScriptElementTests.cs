@@ -46,9 +46,9 @@ namespace GCore.Source.Generators.Scripting.Tests
             var se = @"
 <[Script Dst=""..:Dest"" Src=""..:Source""]>
 <[/Script]>
-<[Raw Name=""Source""]>
+/*<[Raw Name=""Source""]>
 Writer.Write(""Hello World"");
-<[/Raw]>
+<[/Raw]>*/
 <[Raw Name=""Dest""]>
 Will be overwritten
 <[/Raw]>
@@ -59,9 +59,9 @@ Will be overwritten
             Assert.AreEqual(@"
 <[Script Dst=""..:Dest"" Src=""..:Source""]>
 <[/Script]>
-<[Raw Name=""Source""]>
+/*<[Raw Name=""Source""]>
 Writer.Write(""Hello World"");
-<[/Raw]>
+<[/Raw]>*/
 <[Raw Name=""Dest""]>
 Hello World
 <[/Raw]>".Trim(), result);
