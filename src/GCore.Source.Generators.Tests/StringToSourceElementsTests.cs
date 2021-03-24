@@ -1,4 +1,5 @@
-﻿using GCore.Source.Extensions;
+﻿using System.Collections.Generic;
+using GCore.Source.Extensions;
 using GCore.Source.Generators.Elements;
 using GCore.Source.Generators.Extensions;
 using NUnit.Framework;
@@ -43,6 +44,21 @@ namespace GCore.Source.Generators.Tests
 
             Assert.AreEqual(1, se.ElementChildren.Count);
             Assert.AreEqual("TestName", se.ElementChildren[0].Name);
+            Assert.AreEqual(2, se.ElementChildren[0].Config.Count);
+        }
+
+        [Test]
+        public void ParameterInjectTag() {
+            var root = new SourceElement(null, "root");
+            root.Configure(new Dictionary<string, string>()
+            {
+                {"RootDir", "riDtooR"}
+            });
+
+            var se = "<[T Name=\"$(RootDir)|TestName\" Val1=\"asdf\"]>\n<[/T]>".ParseToSourceElement(root);
+
+            Assert.AreEqual(1, se.ElementChildren.Count);
+            Assert.AreEqual("riDtooR|TestName", se.ElementChildren[0].Name);
             Assert.AreEqual(2, se.ElementChildren[0].Config.Count);
         }
 

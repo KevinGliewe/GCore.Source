@@ -4,19 +4,22 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using GCore.Source.Attributes;
 
 namespace GCore.Source.Generators
 {
     public class SourceElement : IRenderable, IConfigurable
     {
+        [Config("Name")]
+        public string Name { get; protected set; }
+
         public IReadOnlyDictionary<string, string> Config { get; protected set; } = new Dictionary<string, string>();
+        
         public SourceElement? Parent { get; }
 
         public SourceElement Root => Parent?.Root ?? this;
-        
-        public string Name { get; protected set; }
 
-#region Elements
+        #region Elements
         public IList<SourceElement> ElementChildren { get; } = new List<SourceElement>();
 
 
@@ -196,8 +199,7 @@ namespace GCore.Source.Generators
         public virtual void Configure(IReadOnlyDictionary<string, string> config) {
             Config = config;
 
-            if (Config.ContainsKey("Name"))
-                Name = Config["Name"].ToString();
+            ConfigAttribute.ApplyAttribute(this, Config, Root.Config);
         }
 
         public virtual void Render(CodeWriter writer)

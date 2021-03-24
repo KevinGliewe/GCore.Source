@@ -4,6 +4,7 @@ using GCore.Source.Generators.Attributes;
 
 namespace GCore.Source.Generators.Elements
 {
+
     [TaggedElement("T")]
     public class TaggedElement : SourceElement, ITaggedElement
     {
