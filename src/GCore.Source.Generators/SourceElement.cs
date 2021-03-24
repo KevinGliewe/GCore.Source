@@ -93,7 +93,12 @@ namespace GCore.Source.Generators
 
         public IEnumerable<string> GetPath()
         {
-            return GetParents().Reverse().Select(e => e.Name);
+            foreach (var name in GetParents().Reverse().Select(e => e.Name))
+            {
+                yield return name;
+            }
+
+            yield return Name;
         }
 
         public bool IsElementDefined(string name)
