@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.Scr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.Scripting.Tests", "src\GCore.Source.Generators.Scripting.Tests\GCore.Source.Generators.Scripting.Tests.csproj", "{9620DB5B-6AE6-4EFF-9E9C-9ADEEC2EDAAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.Razor", "src\GCore.Source.Generators.Razor\GCore.Source.Generators.Razor.csproj", "{F52DF021-4D17-44CA-9A37-CB1AFDF91CD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.Razor", "src\GCore.Source.Generators.Razor\GCore.Source.Generators.Razor.csproj", "{F52DF021-4D17-44CA-9A37-CB1AFDF91CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.Razor.Tests", "src\GCore.Source.Generators.Razor.Tests\GCore.Source.Generators.Razor.Tests.csproj", "{90345043-4207-47A7-ABD5-21056AE88E02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.Razor.Tests", "src\GCore.Source.Generators.Razor.Tests\GCore.Source.Generators.Razor.Tests.csproj", "{90345043-4207-47A7-ABD5-21056AE88E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.Tests.Library", "src\GCore.Source.Generators.Tests.Library\GCore.Source.Generators.Tests.Library.csproj", "{576D142B-43AA-430D-B306-D01DA122DDC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{90345043-4207-47A7-ABD5-21056AE88E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90345043-4207-47A7-ABD5-21056AE88E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90345043-4207-47A7-ABD5-21056AE88E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576D142B-43AA-430D-B306-D01DA122DDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576D142B-43AA-430D-B306-D01DA122DDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576D142B-43AA-430D-B306-D01DA122DDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576D142B-43AA-430D-B306-D01DA122DDC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{43942539-D206-4DE0-B2B1-49F313410A7B} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
 		{9620DB5B-6AE6-4EFF-9E9C-9ADEEC2EDAAD} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
 		{90345043-4207-47A7-ABD5-21056AE88E02} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
+		{576D142B-43AA-430D-B306-D01DA122DDC7} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E444A06-9F82-459C-A065-44639330FC46}

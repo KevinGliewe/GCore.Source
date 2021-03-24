@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
+    <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GCore.Source.Generators.Tests.Library\GCore.Source.Generators.Tests.Library.csproj" />
     <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
