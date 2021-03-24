@@ -110,7 +110,7 @@ namespace GCore.Source.Generators.Extensions
             if (elemStack.Count > 1)
             {
                 var remain = elemStack.Peek();
-                throw new Exception($"Element '{remain.GetPath()}' of type '{remain.GetType().FullName}' was not closed!");
+                throw new Exception($"Element '{string.Join(":",remain.GetPath())}' of type '{remain.GetType().FullName}' was not closed!");
             }
 
             // Add all accumulated lines 

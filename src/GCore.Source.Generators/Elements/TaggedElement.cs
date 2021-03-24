@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using GCore.Source.Attributes;
 using GCore.Source.Generators.Attributes;
 
 namespace GCore.Source.Generators.Elements
@@ -11,13 +12,15 @@ namespace GCore.Source.Generators.Elements
         protected string? _startLine;
         protected string? _stopLine;
 
+        [Config("RenderTags")] public bool RenderTags { get; set; } = true;
+
         public TaggedElement(SourceElement? parent, string name) : base(parent, name)
         {
         }
 
         public override void Render(CodeWriter writer)
         {
-            if (!(_startLine is null))
+            if (!(_startLine is null) && RenderTags)
                 writer.WriteLine(_startLine);
 
             var lengthBevore = writer.Length;
@@ -29,7 +32,7 @@ namespace GCore.Source.Generators.Elements
             if (lengthBevore < lengthAfter)
                 writer.WriteLine();
 
-            if (!(_stopLine is null))
+            if (!(_stopLine is null) && RenderTags)
                 writer.Write(_stopLine);
         }
 

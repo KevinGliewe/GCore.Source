@@ -4,7 +4,7 @@ using GCore.Source.Extensions;
 
 namespace GCore.Source.Generators.Elements
 {
-    public class RawElement : SourceElement
+    public class RawElement : SourceElement, IRawElement
     {
         public string[] Lines { get; private set; } = new string[0];
 

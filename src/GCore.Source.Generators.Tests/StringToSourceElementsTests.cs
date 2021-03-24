@@ -102,5 +102,18 @@ namespace GCore.Source.Generators.Tests
             Assert.AreEqual("<[/T]>", result[5]);
             Assert.AreEqual("Line3", result[6]);
         }
+
+        [Test]
+        public void IncludeFile()
+        {
+            var se = "<[IncludeFile FilePath=\".\\IncludeFile.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
+
+            var result = se.Render().SplitNewLine();
+
+            Assert.AreEqual(4, result.Length);
+
+            Assert.AreEqual("IncludeFile.txt", result[1]);
+            Assert.AreEqual("Content", result[2]);
+        }
     }
 }
