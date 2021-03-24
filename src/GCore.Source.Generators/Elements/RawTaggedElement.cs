@@ -54,6 +54,8 @@ namespace GCore.Source.Generators.Elements
             if (!(_startLine is null) && RenderTags)
                 writer.WriteLine(_startLine);
 
+            writer.CurrentIndent += Indent;
+
             var l = Lines;
 
             for (int i = 0; i < l.Length; i++) {
@@ -64,6 +66,8 @@ namespace GCore.Source.Generators.Elements
 
             if (l.Length > 0)
                 writer.WriteLine();
+
+            writer.CurrentIndent -= Indent;
 
             if (!(_stopLine is null) && RenderTags)
                 writer.Write(_stopLine);

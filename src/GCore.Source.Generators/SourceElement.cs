@@ -15,6 +15,9 @@ namespace GCore.Source.Generators
         [Config("Name")]
         public string Name { get; protected set; }
 
+        [Config("Indent")]
+        public int Indent { get; set; } = 0;
+
         public IReadOnlyDictionary<string, string> Config { get; protected set; } = new Dictionary<string, string>();
         
         public SourceElement? Parent { get; }
@@ -222,11 +225,14 @@ namespace GCore.Source.Generators
 
         public virtual void Render(CodeWriter writer)
         {
+            writer.CurrentIndent += Indent;
+
             for (int i = 0; i < ElementChildren.Count; i++) {
                 ElementChildren[i].Render(writer);
                 if (i < ElementChildren.Count - 1)
                     writer.WriteLine();
             }
+            writer.CurrentIndent -= Indent;
         }
     }
 }

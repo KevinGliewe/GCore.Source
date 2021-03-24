@@ -23,6 +23,8 @@ namespace GCore.Source.Generators.Elements
             if (!(_startLine is null) && RenderTags)
                 writer.WriteLine(_startLine);
 
+            writer.CurrentIndent += Indent;
+
             var lengthBevore = writer.Length;
 
             base.Render(writer);
@@ -31,6 +33,8 @@ namespace GCore.Source.Generators.Elements
 
             if (lengthBevore < lengthAfter)
                 writer.WriteLine();
+
+            writer.CurrentIndent -= Indent;
 
             if (!(_stopLine is null) && RenderTags)
                 writer.Write(_stopLine);

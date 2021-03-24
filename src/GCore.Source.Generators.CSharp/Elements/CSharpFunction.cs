@@ -16,14 +16,13 @@ namespace GCore.Source.Generators.CSharp.Elements
 
         public CSharpFunction(SourceElement? parent, string name, DataType? returnType = null, CSharpModifier modifier = CSharpModifier.None) : base(parent, name)
         {
+            Indent = 4;
             ReturnType = returnType;
             Modifier = modifier;
         }
 
         public override void Render(CodeWriter writer) {
             Modifier.Render(writer);
-            if (Modifier != CSharpModifier.None)
-                writer.Write(' ');
 
             ReturnType?.Render(writer);
 
@@ -44,7 +43,7 @@ namespace GCore.Source.Generators.CSharp.Elements
             if (Modifier.HasFlag(CSharpModifier.Abstract))
                 writer.WriteLine(';');
             else
-                using (new BracketIndentCodeContext(writer)) {
+                using (new BracketIndentCodeContext(writer, Indent)) {
                     RenderBody(writer);
                 }
         }

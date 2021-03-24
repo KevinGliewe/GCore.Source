@@ -6,6 +6,7 @@ namespace GCore.Source.Generators.Elements
     {
 
         public virtual IDataType? ResultingType => new DataType(this.Name, Namespace);
+
         public TypeElement(SourceElement? parent, string name) : base(parent, name)
         {
         }

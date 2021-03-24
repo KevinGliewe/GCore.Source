@@ -12,6 +12,7 @@ namespace GCore.Source.Generators.CSharp.Elements
         };
         public CSharpDocument(SourceElement? parent, string name) : base(parent, name)
         {
+            Indent = 0;
         }
 
         public override void Render(CodeWriter writer)

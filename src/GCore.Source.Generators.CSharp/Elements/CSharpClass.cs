@@ -15,6 +15,7 @@ namespace GCore.Source.Generators.CSharp.Elements
 
         public CSharpClass(SourceElement? parent, string name, INamespace? ns) : base(parent, name)
         {
+            Indent = 4;
             Namespace = ns;
         }
 
@@ -36,7 +37,7 @@ namespace GCore.Source.Generators.CSharp.Elements
                 writer.Write(Name);
 
                 // Class body
-                using (new BracketIndentCodeContext(writer)) {
+                using (new BracketIndentCodeContext(writer, Indent)) {
 
                     foreach (var child in this.ElementChildren) {
                         child.Render(writer);

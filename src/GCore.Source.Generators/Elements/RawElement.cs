@@ -57,6 +57,10 @@ namespace GCore.Source.Generators.Elements
 
         public override void Render(CodeWriter writer)
         {
+            var oldIndent = writer.CurrentIndent;
+
+            writer.CurrentIndent = 0;
+
             var l = Lines;
 
             for (int i = 0; i < l.Length; i++) {
@@ -64,6 +68,8 @@ namespace GCore.Source.Generators.Elements
                 if (i < l.Length - 1)
                     writer.WriteLine();
             }
+
+            writer.CurrentIndent = oldIndent;
         }
     }
 }
