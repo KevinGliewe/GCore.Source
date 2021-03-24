@@ -106,7 +106,7 @@ namespace GCore.Source.Generators.Tests
         [Test]
         public void IncludeFile()
         {
-            var se = "<[IncludeFile FilePath=\".\\IncludeFile.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
+            var se = "<[IncludeFile FilePath=\"./IncludeFile.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
 
             var result = se.Render().SplitNewLine();
 
