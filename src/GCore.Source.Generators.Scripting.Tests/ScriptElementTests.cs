@@ -24,7 +24,7 @@ namespace GCore.Source.Generators.Scripting.Tests
         [Test]
         public void ScriptFile()
         {
-            var se = "<[Script Dst=\".\" ScriptFile=\"TestData\\ScriptSimple.csx\" RenderTags=\"false\"]>\n<[/Script]>".ParseToSourceElement();
+            var se = "<[Script Dst=\".\" ScriptFile=\"TestData/ScriptSimple.csx\" RenderTags=\"false\"]>\n<[/Script]>".ParseToSourceElement();
 
             var result = se.Render().Trim();
 
@@ -33,7 +33,7 @@ namespace GCore.Source.Generators.Scripting.Tests
 
         [Test]
         public void ScriptModelFile() {
-            var se = "<[Script Dst=\".\" ScriptFile=\"TestData\\ScriptModel.csx\" ModelFile=\"TestData\\Model.json\" RenderTags=\"false\"]>\n<[/Script]>".ParseToSourceElement();
+            var se = "<[Script Dst=\".\" ScriptFile=\"TestData/ScriptModel.csx\" ModelFile=\"TestData/Model.json\" RenderTags=\"false\"]>\n<[/Script]>".ParseToSourceElement();
 
             var result = se.Render().Trim();
 
