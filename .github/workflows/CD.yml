@@ -24,5 +24,5 @@ jobs:
           dotnet pack --configuration Release --output pack
 
       - name: Deploy
-        run: /
+        run: |
           dotnet nuget push pack/*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
