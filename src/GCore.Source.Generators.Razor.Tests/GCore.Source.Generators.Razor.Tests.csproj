@@ -12,16 +12,24 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="GitHubActionsTestLogger" Version="1.1.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GCore.Source.Generators.Razor\GCore.Source.Generators.Razor.csproj" />
+    <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="TestData\TestModel.json">
+    <None Update="TestData\Model.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\TemplateModel.razor">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\TemplateSimple.razor">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

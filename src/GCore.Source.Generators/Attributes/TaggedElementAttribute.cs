@@ -31,13 +31,22 @@ namespace GCore.Source.Generators.Attributes
                     // Check it type is ITaggedElement
                     if(!typeof(ITaggedElement).IsAssignableFrom(type))
                         continue;
-                    
+
+                    if(type.IsAbstract || type.IsInterface)
+                        continue;
+
                     var attr = type.GetCustomAttributes(typeof(TaggedElementAttribute), true);
 
                     if(attr.Length == 0)
                         continue;
 
                     var tag = (attr[0] as TaggedElementAttribute)?.Tag ?? throw new Exception("Where is the guru?");
+
+                    if(tag == "")
+                        continue;
+
+                    if(ret.ContainsKey(tag))
+                        throw new Exception($"Tag conflict '{tag}': '{type}' vs '{ret[tag]}'");
 
                     ret.Add(tag, type);
                 }
