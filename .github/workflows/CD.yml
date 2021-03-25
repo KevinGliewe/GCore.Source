@@ -23,7 +23,7 @@ jobs:
           dotnet nuget locals all --clear
           dotnet pack --configuration Release --output pack
 
-     - name: Deploy Nuget
+      - name: Deploy Nuget
         run: |
           dotnet nuget push pack/*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
         
