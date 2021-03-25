@@ -23,7 +23,7 @@ jobs:
           dotnet nuget locals all --clear
           dotnet pack --configuration Release --output pack
 
-      - name: Deploy Nuget
+     - name: Deploy Nuget
         run: |
           dotnet nuget push pack/*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
         
@@ -33,8 +33,8 @@ jobs:
           args: doc/docfx/docfx.json
 
       # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
-      - name: Add .nojekyll file
-        run: touch doc/docfx/_site/.nojekyll
+#      - name: Add .nojekyll file
+#        run: touch doc/docfx/_site/.nojekyll
         
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.5.9

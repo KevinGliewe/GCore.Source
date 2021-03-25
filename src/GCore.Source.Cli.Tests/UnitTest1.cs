@@ -16,7 +16,7 @@ Writer.Write(""- Overwrite -"");
 <[/Script]>
 <[Raw Name=""out""]>
 - Overwrite -
-<[/Raw]>".Trim();
+<[/Raw]>".Trim().FixNL();
 
         private static string TestFile = "TestData/InjectFile.txt";
 
@@ -38,7 +38,7 @@ Writer.Write(""- Overwrite -"");
 
             Assert.AreEqual("", process.StandardError.ReadToEnd());
             Assert.AreEqual(0, process.ExitCode);
-            Assert.AreEqual(Expected + Environment.NewLine, process.StandardOutput.ReadToEnd());
+            Assert.AreEqual(Expected + Environment.NewLine, process.StandardOutput.ReadToEnd().FixNL());
         }
 
         [Test]
@@ -52,7 +52,7 @@ Writer.Write(""- Overwrite -"");
 
             Assert.AreEqual("", process.StandardError.ReadToEnd());
             Assert.AreEqual(0, process.ExitCode);
-            Assert.AreEqual(Expected, process.StandardOutput.ReadToEnd());
+            Assert.AreEqual(Expected, process.StandardOutput.ReadToEnd().FixNL());
         }
 
         [Test]
@@ -72,7 +72,7 @@ Writer.Write(""- Overwrite -"");
 
             Assert.AreEqual("", process.StandardError.ReadToEnd());
             Assert.AreEqual(0, process.ExitCode);
-            Assert.AreEqual(Expected, File.ReadAllText(tmpFile));
+            Assert.AreEqual(Expected, File.ReadAllText(tmpFile).FixNL());
         }
     }
 }

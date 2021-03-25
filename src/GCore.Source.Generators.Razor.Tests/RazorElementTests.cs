@@ -1,3 +1,4 @@
+using GCore.Source.Cli.Tests.Extensions;
 using GCore.Source.Generators.Extensions;
 using NUnit.Framework;
 
@@ -61,7 +62,7 @@ Hello World
 <[/Raw]>*/
 <[Raw Name=""Dest""]>
 Hello World
-<[/Raw]>".Trim(), result);
+<[/Raw]>".Trim().FixNL(), result);
         }
     }
 }

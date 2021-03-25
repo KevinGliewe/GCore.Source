@@ -1,9 +1,11 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
+using GCore.Source.Extensions;
 
 namespace GCore.Source.Cli.Tests.Extensions
 {
-    public static class StringExtensionsSh
+    public static class StringExtensions
     {
         public static void Sh3(
             this string cmd,
@@ -30,6 +32,11 @@ namespace GCore.Source.Cli.Tests.Extensions
                 }
             };
             process.Start();
+        }
+    
+        public static string FixNL(this string @this)
+        {
+            return string.Join(Environment.NewLine, @this.SplitNewLine());
         }
     }
 }
