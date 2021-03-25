@@ -1,0 +1,6 @@
+﻿<[Script Dst="..:out"]>
+Writer.Write("- Overwrite -");
+<[/Script]>
+<[Raw Name="out"]>
+This gets overwritten
+<[/Raw]>

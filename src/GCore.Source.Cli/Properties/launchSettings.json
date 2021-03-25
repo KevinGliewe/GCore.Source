@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GCore.Source.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "--in .\\TestData\\InjectFile.txt --out [in]"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>gsource</ToolCommandName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj" />
+    <ProjectReference Include="..\GCore.Source.Generators.Razor\GCore.Source.Generators.Razor.csproj" />
+    <ProjectReference Include="..\GCore.Source.Generators.Scripting\GCore.Source.Generators.Scripting.csproj" />
+    <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
+    <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData\InjectFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
