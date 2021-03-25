@@ -11,7 +11,8 @@
     <Authors>$(Company)</Authors>
     <Description>Code generation</Description>
     <PackageTags> codegen code generation source generators</PackageTags>
-    <PackageProjectUrl>https://github.com/KevinGliewe/GCore.Source</PackageProjectUrl>
+    <PackageProjectUrl>https://kevingliewe.github.io/GCore.Source/</PackageProjectUrl>
+    <PublishRepositoryUrl>https://github.com/KevinGliewe/GCore.Source</PublishRepositoryUrl>
     <PackageReleaseNotes>https://github.com/KevinGliewe/GCore.Source/blob/master/Changelog.md</PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
