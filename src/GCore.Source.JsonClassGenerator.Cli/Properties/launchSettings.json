@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JsonClassGenerator.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "--namespace TestNamespace --main-class MainClass"
+    }
+  }
+}
