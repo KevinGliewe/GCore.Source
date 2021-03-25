@@ -35,7 +35,8 @@ namespace GCore.Source.Generators.Scripting
                     typeof(CodeWriter).Assembly,
                     typeof(SourceElement).Assembly,
                     typeof(ScriptElement).Assembly,
-                    typeof(System.Dynamic.ExpandoObject).Assembly
+                    typeof(System.Dynamic.ExpandoObject).Assembly,
+                    typeof(GCore.GMath.Half).Assembly
                 )
                 .AddImports(
                     "System",
