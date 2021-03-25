@@ -1,0 +1,1428 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CSharpVariable
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CSharpVariable
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable">
+  
+  
+  <h1 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable" class="text-break">Class CSharpVariable
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></div>
+    <div class="level2"><a class="xref" href="GCore.Source.Generators.Elements.VariableElement.html">VariableElement</a></div>
+    <div class="level3"><span class="xref">CSharpVariable</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GCore.Source.IRenderable.html">IRenderable</a></div>
+    <div><a class="xref" href="GCore.Source.IConfigurable.html">IConfigurable</a></div>
+    <div><a class="xref" href="GCore.Source.Generators.CSharp.ICSharpModifiable.html">ICSharpModifiable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.VariableElement.html#GCore_Source_Generators_Elements_VariableElement_IsArgument">VariableElement.IsArgument</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.VariableElement.html#GCore_Source_Generators_Elements_VariableElement_DataType">VariableElement.DataType</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.VariableElement.html#GCore_Source_Generators_Elements_VariableElement_Initialisation">VariableElement.Initialisation</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_PATH_SEP">SourceElement.PATH_SEP</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Name">SourceElement.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Indent">SourceElement.Indent</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Config">SourceElement.Config</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Parent">SourceElement.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Root">SourceElement.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_ElementChildren">SourceElement.ElementChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElements">SourceElement.GetElements()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElement__1_System_String_">SourceElement.GetElement&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElementLocally__1_System_String_">SourceElement.GetElementLocally&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElements__1">SourceElement.GetElements&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElementsLocally__1">SourceElement.GetElementsLocally&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetParents">SourceElement.GetParents()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetPath">SourceElement.GetPath()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_IsElementDefined_System_String_">SourceElement.IsElementDefined(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_IsElementDefinedLocally_System_String_">SourceElement.IsElementDefinedLocally(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_IsElementDefined__1">SourceElement.IsElementDefined&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_IsElementDefinedLocally__1">SourceElement.IsElementDefinedLocally&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElement_IEnumerable_System_String__">SourceElement.GetElement(IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_GetElement_System_String___">SourceElement.GetElement(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Configure_IReadOnlyDictionary_System_String_System_String__">SourceElement.Configure(IReadOnlyDictionary&lt;String, String&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Source.Generators.CSharp.Elements.html">GCore.Source.Generators.CSharp.Elements</a></h6>
+  <h6><strong>Assembly</strong>: GCore.Source.Generators.CSharp.dll</h6>
+  <h5 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CSharpVariable : VariableElement, IRenderable, IConfigurable, ICSharpModifiable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Boolean_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CBoolean%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L59">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Boolean_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Boolean,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Boolean, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Boolean value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Byte_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CByte%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L20">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Byte_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Byte,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Byte, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Byte value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Byte</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Char_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CChar%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L56">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Char_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Char,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Char, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Char value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Char</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_DateTime_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CDateTime%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L71">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_DateTime_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,DateTime,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, DateTime, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, DateTime value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Decimal_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CDecimal%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L68">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Decimal_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Decimal,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Decimal, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Decimal value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Double_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CDouble%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L53">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Double_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Double,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Double, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Double value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_Elements_Components_IDataType_GCore_Source_Generators_Elements_Components_IInitialisation_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CGCore.Source.Generators.Elements.Components.IDataType%2CGCore.Source.Generators.Elements.Components.IInitialisation%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L14">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_Elements_Components_IDataType_GCore_Source_Generators_Elements_Components_IInitialisation_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,GCore.Source.Generators.Elements.Components.IDataType,GCore.Source.Generators.Elements.Components.IInitialisation,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, IDataType, IInitialisation, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, IDataType dataType = null, IInitialisation init = null, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.Elements.Components.IDataType.html">IDataType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.Elements.Components.IInitialisation.html">IInitialisation</a></td>
+        <td><span class="parametername">init</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Int16_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CInt16%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L32">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Int16_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Int16,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Int16, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Int16 value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Int16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Int32_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CInt32%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L26">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Int32_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Int32,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Int32, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Int32 value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Int64_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CInt64%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L38">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Int64_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Int64,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Int64, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Int64 value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_IntPtr_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CIntPtr%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L44">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_IntPtr_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,IntPtr,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, IntPtr, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, IntPtr value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Object_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CObject%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L62">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Object_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Object,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Object, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Object value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_SByte_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CSByte%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L23">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_SByte_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,SByte,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, SByte, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, SByte value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SByte</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Single_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CSingle%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L50">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_Single_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,Single,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, Single, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, Single value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CString%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L65">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,String,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, String, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, String value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UInt16_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CUInt16%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L35">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UInt16_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,UInt16,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, UInt16, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, UInt16 value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UInt16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UInt32_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CUInt32%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L29">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UInt32_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,UInt32,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, UInt32, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, UInt32 value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UInt64_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CUInt64%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L41">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UInt64_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,UInt64,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, UInt64, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, UInt64 value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UIntPtr_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CUIntPtr%2CGCore.Source.Generators.CSharp.CSharpModifier%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L47">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable__ctor_GCore_Source_Generators_SourceElement_System_String_UIntPtr_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.#ctor(GCore.Source.Generators.SourceElement,System.String,UIntPtr,GCore.Source.Generators.CSharp.CSharpModifier,System.Boolean)">CSharpVariable(SourceElement, String, UIntPtr, CSharpModifier, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpVariable(SourceElement parent, string name, UIntPtr value, CSharpModifier modifier = default(CSharpModifier), bool isArgument = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UIntPtr</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable_Modifier.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.Modifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L11">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_Modifier_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.Modifier*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_Modifier" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.Modifier">Modifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSharpModifier Modifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.Generators.CSharp.CSharpModifier.html">CSharpModifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable_Render_GCore_Source_CodeWriter_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.Render(GCore.Source.CodeWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L74">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_Render_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.Render*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_Render_GCore_Source_CodeWriter_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.Render(GCore.Source.CodeWriter)">Render(CodeWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Render(CodeWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Source.CodeWriter.html">CodeWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Render_GCore_Source_CodeWriter_">SourceElement.Render(CodeWriter)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable_ToString.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L100">View Source</a>
+  </span>
+  <a id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_ToString_" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.ToString*"></a>
+  <h4 id="GCore_Source_Generators_CSharp_Elements_CSharpVariable_ToString" data-uid="GCore.Source.Generators.CSharp.Elements.CSharpVariable.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_ToString">SourceElement.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GCore.Source.IRenderable.html">IRenderable</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.IConfigurable.html">IConfigurable</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.ICSharpModifiable.html">ICSharpModifiable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Byte_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Byte, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_SByte_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, SByte, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Int32_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Int32, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_UInt32_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, UInt32, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Int16_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Int16, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_UInt16_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, UInt16, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Int64_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Int64, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_UInt64_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, UInt64, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_IntPtr_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, IntPtr, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_UIntPtr_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, UIntPtr, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Single_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Single, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Double_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Double, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Char_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Char, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Boolean_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Boolean, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Object_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Object, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_Decimal_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, Decimal, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVar_GCore_Source_Generators_SourceElement_System_String_DateTime_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVar(SourceElement, String, DateTime, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarByte_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarByte(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarSByte_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarSByte(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarInt32_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarInt32(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarUInt32_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarUInt32(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarInt16_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarInt16(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarUInt16_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarUInt16(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarInt64_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarInt64(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarUInt64_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarUInt64(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarIntPtr_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarIntPtr(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarUIntPtr_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarUIntPtr(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarSingle_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarSingle(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarDouble_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarDouble(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarChar_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarChar(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarBoolean_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarBoolean(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarObject_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarObject(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarString_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarString(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarDecimal_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarDecimal(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarDateTime_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarDateTime(SourceElement, String, CSharpModifier, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/new/fb005a5014f33f710f4e79a281edc53a4995aaa6/apiSpec/new?filename=GCore_Source_Generators_CSharp_Elements_CSharpVariable.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.CSharp.Elements.CSharpVariable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/fb005a5014f33f710f4e79a281edc53a4995aaa6/src/GCore.Source.Generators.CSharp/Elements/CSharpVariable.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
