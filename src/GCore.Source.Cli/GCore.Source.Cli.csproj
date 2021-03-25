@@ -16,10 +16,4 @@
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="TestData\InjectFile.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

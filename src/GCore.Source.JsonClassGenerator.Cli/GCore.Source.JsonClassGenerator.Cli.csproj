@@ -7,9 +7,6 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>jsongen</ToolCommandName>
 
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
