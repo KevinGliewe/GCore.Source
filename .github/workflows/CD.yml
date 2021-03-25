@@ -31,10 +31,6 @@ jobs:
         name: Build Documentation
         with:
           args: doc/docfx/docfx.json
-
-      # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
-#      - name: Add .nojekyll file
-#        run: touch doc/docfx/_site/.nojekyll
         
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.5.9
