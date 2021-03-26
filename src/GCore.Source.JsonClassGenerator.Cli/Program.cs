@@ -5,16 +5,6 @@ using GCore.Source.JsonClassGenerator.CodeWriters;
 
 namespace GCore.Source.JsonClassGenerator.Cli
 {
-    public enum Lang
-    {
-        CSharp,
-        Java,
-        Php,
-        Sql,
-        TypeScript,
-        VisualBasic
-    }
-
     class Program
     {
         static void Main(
