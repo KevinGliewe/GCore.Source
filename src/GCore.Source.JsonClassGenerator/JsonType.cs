@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using System.Globalization;
+using System.Numerics;
 
 namespace GCore.Source.JsonClassGenerator
 {
@@ -296,7 +297,10 @@ namespace GCore.Source.JsonClassGenerator
             var type = token.Type;
             if (type == JTokenType.Integer)
             {
-                if ((long)((JValue)token).Value < int.MaxValue) return JsonTypeEnum.Integer;
+                if (((JValue) token).Value is BigInteger)
+                    return JsonTypeEnum.Long;
+
+                if ((long)(object)((JValue)token).Value < int.MaxValue) return JsonTypeEnum.Integer;
                 else return JsonTypeEnum.Long;
 
             }

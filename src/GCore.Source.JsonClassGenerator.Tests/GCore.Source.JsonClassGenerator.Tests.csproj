@@ -23,4 +23,10 @@
     <ProjectReference Include="..\GCore.Source.JsonClassGenerator\GCore.Source.JsonClassGenerator.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestData\BigIntEx.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

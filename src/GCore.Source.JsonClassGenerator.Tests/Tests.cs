@@ -101,6 +101,16 @@ namespace TestNamespace
             Assert.AreEqual(CSharpExpected, code);
         }
 
+        [Test]
+        public void CSharp3()
+        {
+            var json = File.ReadAllText("TestData/BigIntEx.json");
+
+            var code = JsonClassGenerator.Generate(json, MainClass: "MainClass", Namespace: "TestNamespace").Trim();
+
+            //Assert.AreEqual(CSharpExpected, code);
+        }
+
         /*[Test]
         public void StdInStdOut() {
             Process process;
