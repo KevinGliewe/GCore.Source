@@ -5126,6 +5126,19 @@ references:
   commentId: F:GCore.Source.JsonClassGenerator.JsonClassGenerator.FileHeader
   fullName: GCore.Source.JsonClassGenerator.JsonClassGenerator.FileHeader
   nameWithType: JsonClassGenerator.FileHeader
+- uid: GCore.Source.JsonClassGenerator.JsonClassGenerator.Generate(System.String,GCore.Source.JsonClassGenerator.Lang,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
+  name: Generate(String, Lang, String, String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String)
+  href: api/GCore.Source.JsonClassGenerator.JsonClassGenerator.html#GCore_Source_JsonClassGenerator_JsonClassGenerator_Generate_System_String_GCore_Source_JsonClassGenerator_Lang_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_String_
+  commentId: M:GCore.Source.JsonClassGenerator.JsonClassGenerator.Generate(System.String,GCore.Source.JsonClassGenerator.Lang,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
+  fullName: GCore.Source.JsonClassGenerator.JsonClassGenerator.Generate(System.String, GCore.Source.JsonClassGenerator.Lang, System.String, System.String, System.String, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.String)
+  nameWithType: JsonClassGenerator.Generate(String, Lang, String, String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String)
+- uid: GCore.Source.JsonClassGenerator.JsonClassGenerator.Generate*
+  name: Generate
+  href: api/GCore.Source.JsonClassGenerator.JsonClassGenerator.html#GCore_Source_JsonClassGenerator_JsonClassGenerator_Generate_
+  commentId: Overload:GCore.Source.JsonClassGenerator.JsonClassGenerator.Generate
+  isSpec: "True"
+  fullName: GCore.Source.JsonClassGenerator.JsonClassGenerator.Generate
+  nameWithType: JsonClassGenerator.Generate
 - uid: GCore.Source.JsonClassGenerator.JsonClassGenerator.GenerateClasses
   name: GenerateClasses()
   href: api/GCore.Source.JsonClassGenerator.JsonClassGenerator.html#GCore_Source_JsonClassGenerator_JsonClassGenerator_GenerateClasses
@@ -5139,6 +5152,19 @@ references:
   isSpec: "True"
   fullName: GCore.Source.JsonClassGenerator.JsonClassGenerator.GenerateClasses
   nameWithType: JsonClassGenerator.GenerateClasses
+- uid: GCore.Source.JsonClassGenerator.JsonClassGenerator.GetWriter(GCore.Source.JsonClassGenerator.Lang)
+  name: GetWriter(Lang)
+  href: api/GCore.Source.JsonClassGenerator.JsonClassGenerator.html#GCore_Source_JsonClassGenerator_JsonClassGenerator_GetWriter_GCore_Source_JsonClassGenerator_Lang_
+  commentId: M:GCore.Source.JsonClassGenerator.JsonClassGenerator.GetWriter(GCore.Source.JsonClassGenerator.Lang)
+  fullName: GCore.Source.JsonClassGenerator.JsonClassGenerator.GetWriter(GCore.Source.JsonClassGenerator.Lang)
+  nameWithType: JsonClassGenerator.GetWriter(Lang)
+- uid: GCore.Source.JsonClassGenerator.JsonClassGenerator.GetWriter*
+  name: GetWriter
+  href: api/GCore.Source.JsonClassGenerator.JsonClassGenerator.html#GCore_Source_JsonClassGenerator_JsonClassGenerator_GetWriter_
+  commentId: Overload:GCore.Source.JsonClassGenerator.JsonClassGenerator.GetWriter
+  isSpec: "True"
+  fullName: GCore.Source.JsonClassGenerator.JsonClassGenerator.GetWriter
+  nameWithType: JsonClassGenerator.GetWriter
 - uid: GCore.Source.JsonClassGenerator.JsonClassGenerator.HasSecondaryClasses
   name: HasSecondaryClasses
   href: api/GCore.Source.JsonClassGenerator.JsonClassGenerator.html#GCore_Source_JsonClassGenerator_JsonClassGenerator_HasSecondaryClasses
@@ -5626,6 +5652,48 @@ references:
   commentId: F:GCore.Source.JsonClassGenerator.JsonTypeEnum.String
   fullName: GCore.Source.JsonClassGenerator.JsonTypeEnum.String
   nameWithType: JsonTypeEnum.String
+- uid: GCore.Source.JsonClassGenerator.Lang
+  name: Lang
+  href: api/GCore.Source.JsonClassGenerator.Lang.html
+  commentId: T:GCore.Source.JsonClassGenerator.Lang
+  fullName: GCore.Source.JsonClassGenerator.Lang
+  nameWithType: Lang
+- uid: GCore.Source.JsonClassGenerator.Lang.CSharp
+  name: CSharp
+  href: api/GCore.Source.JsonClassGenerator.Lang.html#GCore_Source_JsonClassGenerator_Lang_CSharp
+  commentId: F:GCore.Source.JsonClassGenerator.Lang.CSharp
+  fullName: GCore.Source.JsonClassGenerator.Lang.CSharp
+  nameWithType: Lang.CSharp
+- uid: GCore.Source.JsonClassGenerator.Lang.Java
+  name: Java
+  href: api/GCore.Source.JsonClassGenerator.Lang.html#GCore_Source_JsonClassGenerator_Lang_Java
+  commentId: F:GCore.Source.JsonClassGenerator.Lang.Java
+  fullName: GCore.Source.JsonClassGenerator.Lang.Java
+  nameWithType: Lang.Java
+- uid: GCore.Source.JsonClassGenerator.Lang.Php
+  name: Php
+  href: api/GCore.Source.JsonClassGenerator.Lang.html#GCore_Source_JsonClassGenerator_Lang_Php
+  commentId: F:GCore.Source.JsonClassGenerator.Lang.Php
+  fullName: GCore.Source.JsonClassGenerator.Lang.Php
+  nameWithType: Lang.Php
+- uid: GCore.Source.JsonClassGenerator.Lang.Sql
+  name: Sql
+  href: api/GCore.Source.JsonClassGenerator.Lang.html#GCore_Source_JsonClassGenerator_Lang_Sql
+  commentId: F:GCore.Source.JsonClassGenerator.Lang.Sql
+  fullName: GCore.Source.JsonClassGenerator.Lang.Sql
+  nameWithType: Lang.Sql
+- uid: GCore.Source.JsonClassGenerator.Lang.TypeScript
+  name: TypeScript
+  href: api/GCore.Source.JsonClassGenerator.Lang.html#GCore_Source_JsonClassGenerator_Lang_TypeScript
+  commentId: F:GCore.Source.JsonClassGenerator.Lang.TypeScript
+  fullName: GCore.Source.JsonClassGenerator.Lang.TypeScript
+  nameWithType: Lang.TypeScript
+- uid: GCore.Source.JsonClassGenerator.Lang.VisualBasic
+  name: VisualBasic
+  href: api/GCore.Source.JsonClassGenerator.Lang.html#GCore_Source_JsonClassGenerator_Lang_VisualBasic
+  commentId: F:GCore.Source.JsonClassGenerator.Lang.VisualBasic
+  fullName: GCore.Source.JsonClassGenerator.Lang.VisualBasic
+  nameWithType: Lang.VisualBasic
 - uid: GCore.Source.SourceLocation
   name: SourceLocation
   href: api/GCore.Source.SourceLocation.html
