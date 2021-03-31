@@ -3841,6 +3841,22 @@ references:
   commentId: T:GCore.Source.Helper.TypeHelper
   fullName: GCore.Source.Helper.TypeHelper
   nameWithType: TypeHelper
+- uid: GCore.Source.Helper.TypeHelper.CombineHash(System.Nullable{System.Object}[])
+  name: CombineHash(Nullable<Object>[])
+  href: api/GCore.Source.Helper.TypeHelper.html#GCore_Source_Helper_TypeHelper_CombineHash_System_Nullable_System_Object____
+  commentId: M:GCore.Source.Helper.TypeHelper.CombineHash(System.Nullable{System.Object}[])
+  name.vb: CombineHash(Nullable(Of Object)())
+  fullName: GCore.Source.Helper.TypeHelper.CombineHash(System.Nullable<System.Object>[])
+  fullName.vb: GCore.Source.Helper.TypeHelper.CombineHash(System.Nullable(Of System.Object)())
+  nameWithType: TypeHelper.CombineHash(Nullable<Object>[])
+  nameWithType.vb: TypeHelper.CombineHash(Nullable(Of Object)())
+- uid: GCore.Source.Helper.TypeHelper.CombineHash*
+  name: CombineHash
+  href: api/GCore.Source.Helper.TypeHelper.html#GCore_Source_Helper_TypeHelper_CombineHash_
+  commentId: Overload:GCore.Source.Helper.TypeHelper.CombineHash
+  isSpec: "True"
+  fullName: GCore.Source.Helper.TypeHelper.CombineHash
+  nameWithType: TypeHelper.CombineHash
 - uid: GCore.Source.Helper.TypeHelper.FindType(Assembly,System.String)
   name: FindType(Assembly, String)
   href: api/GCore.Source.Helper.TypeHelper.html#GCore_Source_Helper_TypeHelper_FindType_Assembly_System_String_
