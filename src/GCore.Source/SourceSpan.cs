@@ -3,6 +3,7 @@
 
 using System;
 using System.Globalization;
+using GCore.Source.Helper;
 
 namespace GCore.Source
 {
@@ -55,7 +56,7 @@ namespace GCore.Source
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(
+            return TypeHelper.CombineHash(
                 FilePath,
                 AbsoluteIndex,
                 LineIndex,

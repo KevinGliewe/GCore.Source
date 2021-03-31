@@ -123,7 +123,7 @@ namespace GCore.Source.Helper
             if (split.Length == 1)
                 return json;
 
-            return json.Query(string.Join('?', split.Skip(1)));
+            return json.Query(string.Join("?", split.Skip(1)));
         }
     }
 }

@@ -1,10 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\Tool.Build.props" />
+  
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-
-    <PackAsTool>true</PackAsTool>
     <ToolCommandName>gsource</ToolCommandName>
   </PropertyGroup>
 

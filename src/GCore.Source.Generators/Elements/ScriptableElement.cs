@@ -66,7 +66,7 @@ namespace GCore.Source.Generators.Elements
             if (Src is null)
                 throw new Exception("Src is null");
 
-            var srcElem = GetElement(Src.Split(PATH_SEP));
+            var srcElem = GetElement(Src.Split(new string[] { PATH_SEP }, StringSplitOptions.None));
 
             if (srcElem is null)
                 throw new Exception($"{string.Join(PATH_SEP, GetPath())} does not have a child named {Src}");
@@ -96,7 +96,7 @@ namespace GCore.Source.Generators.Elements
         protected void WriteOutput(string result) {
             var dst = Dst ?? throw new Exception(this + " output element 'Dst' not defined!");
 
-            SourceElement dstElem = GetElement(dst.Split(PATH_SEP)) ??
+            SourceElement dstElem = GetElement(dst.Split(new string[] { PATH_SEP }, StringSplitOptions.None)) ??
                                     throw new Exception(this + " output element 'Dst' not found!");
 
             if (dstElem == this) {

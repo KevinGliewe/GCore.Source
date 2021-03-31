@@ -15,6 +15,24 @@ jobs:
         with:
           dotnet-version: 5.0.x
 
+      - name: Install .NET (v3.1)
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 3.1.x
+
+      - name: Install .NET (v2.1)
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 2.1.x
+
+      - name: Build & test (.NET v2.1)
+        # Doesn't support test loggers
+        run: dotnet test --configuration Release --framework netcoreapp2.1
+
+      - name: Build & test (.NET v3.1)
+        # Doesn't support test loggers
+        run: dotnet test --configuration Release --framework netcoreapp3.1
+
       - name: Build & test (.NET v5.0)
         run: dotnet test --configuration Release --logger GitHubActions --framework net5.0
 

@@ -1,0 +1,8 @@
+<Project>
+  <Import Project=".\Exe.TargetFramework.Build.props" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>
+</Project>
