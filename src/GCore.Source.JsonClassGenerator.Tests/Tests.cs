@@ -26,7 +26,7 @@ namespace GCore.Source.JsonClassGenerator.Tests
       ""lastName"": ""Jones ""
     }
   ]
-}".Trim();
+}".Trim().Replace("\r\n", "\n");
 
         public static readonly string CSharpExpected = @"
 namespace TestNamespace
@@ -47,7 +47,7 @@ namespace TestNamespace
     }
 
 }
-".Trim();
+".Trim().Replace("\r\n", "\n");
 
         public static string Generate(ICodeWriter langWriter)
         {
@@ -90,7 +90,7 @@ namespace TestNamespace
         {
             var code = Generate(new CSharpCodeWriter());
 
-            Assert.AreEqual(CSharpExpected, code);
+            Assert.AreEqual(CSharpExpected, code.Replace("\r\n", "\n"));
         }
 
         [Test]
@@ -98,7 +98,7 @@ namespace TestNamespace
         {
             var code = JsonClassGenerator.Generate(JsonData, MainClass: "MainClass", Namespace: "TestNamespace").Trim();
 
-            Assert.AreEqual(CSharpExpected, code);
+            Assert.AreEqual(CSharpExpected, code.Replace("\r\n", "\n"));
         }
 
         [Test]
