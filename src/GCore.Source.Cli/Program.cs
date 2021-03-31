@@ -36,7 +36,7 @@ namespace GCore.Source.Cli
 
         static bool Flag(string key)
         {
-            return Args.ContainsKey(key) && Args[key] != null;
+            return Args.ContainsKey(key) && Args[key] == null;
         }
 
         static IReadOnlyDictionary<string, string> GetConfig()
