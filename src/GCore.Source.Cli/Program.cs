@@ -91,7 +91,7 @@ Reads and writes to the same file:
 
                 if (Flag("version"))
                 {
-                    Console.WriteLine("GCore.Source.Cli: " + AssemblyVersionConstants.Version);
+                    Console.WriteLine(AssemblyVersionConstants.InformationalVersion);
                     Environment.Exit(0);
                 }
 
