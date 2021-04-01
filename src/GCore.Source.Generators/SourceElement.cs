@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using GCore.Source.Attributes;
+using GCore.Source.CodeContexts;
 
 namespace GCore.Source.Generators
 {
@@ -17,6 +18,9 @@ namespace GCore.Source.Generators
 
         [Config("Indent")]
         public int Indent { get; set; } = 0;
+
+        [Config("AbsoluteIndent")]
+        public int AbsoluteIndent { get; set; } = int.MinValue;
 
         public IReadOnlyDictionary<string, string> Config { get; protected set; } = new Dictionary<string, string>();
         
@@ -225,14 +229,19 @@ namespace GCore.Source.Generators
 
         public virtual void Render(CodeWriter writer)
         {
-            writer.CurrentIndent += Indent;
-
-            for (int i = 0; i < ElementChildren.Count; i++) {
-                ElementChildren[i].Render(writer);
-                if (i < ElementChildren.Count - 1)
-                    writer.WriteLine();
+            using (new AbsoluteIndentContext(writer, AbsoluteIndent))
+            {
+                using (new IndentContext(writer, Indent))
+                {
+                    for (int i = 0; i < ElementChildren.Count; i++)
+                    {
+                        ElementChildren[i].Render(writer);
+                        if (i < ElementChildren.Count - 1)
+                            writer.WriteLine();
+                    }
+                }
             }
-            writer.CurrentIndent -= Indent;
+
         }
     }
 }

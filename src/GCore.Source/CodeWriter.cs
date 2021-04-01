@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
+using GCore.Source.Extensions;
 
 namespace GCore.Source
 {
@@ -19,6 +20,8 @@ namespace GCore.Source
         private int _absoluteIndex;
         private int _currentLineIndex;
         private int _currentLineCharacterIndex;
+
+        private int _skippedIndents;
 
         private Stack<ICodeContext> _contextStacks = new Stack<ICodeContext>();
 
@@ -60,6 +63,8 @@ namespace GCore.Source
             get => _contextStacks;
         }
 
+        public bool IsNewLine => Length == 0 || this[Length - 1] == '\n';
+
         public void PushContext(ICodeContext context) 
             => _contextStacks.Push(context);
 
@@ -75,10 +80,9 @@ namespace GCore.Source
                 return _builder[index];
             }
         }
-
-        // Internal for testing.
+        
         internal CodeWriter Indent(int size) {
-            if (Length == 0 || this[Length - 1] == '\n') {
+            if (IsNewLine) {
                 _builder.Append(' ', size);
 
                 _currentLineCharacterIndex += size;
@@ -101,7 +105,30 @@ namespace GCore.Source
             return Write(value, 0, value.Length);
         }
 
-        public CodeWriter Write(string value, int startIndex, int count) {
+        public CodeWriter Write(string value, int startIndex, int count)
+        {
+            if (value == null) {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            if (count == 1)
+                return WriteInternal(value, startIndex, count);
+
+            var lines = value.Substring(startIndex, count).SplitNewLine();
+            var lastIndex = lines.Length - 1;
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                WriteInternal(lines[i], 0, lines[i].Length);
+
+                if (i < lastIndex)
+                    WriteLine();
+            }
+
+            return this;
+        }
+
+        internal CodeWriter WriteInternal(string value, int startIndex, int count) {
             if (value == null) {
                 throw new ArgumentNullException(nameof(value));
             }
@@ -122,7 +149,23 @@ namespace GCore.Source
                 return this;
             }
 
-            Indent(CurrentIndent);
+            if(CurrentIndent > 0)
+                Indent(CurrentIndent);
+            else if (CurrentIndent < 0)
+            {
+                if (IsNewLine)
+                {
+                    while (count > 0 && _skippedIndents < -CurrentIndent && value[startIndex] == ' ')
+                    {
+                        startIndex++;
+                        count--;
+                        _skippedIndents++;
+                    }
+                }
+
+                if (count == 0)
+                    return this;
+            }
 
             _builder.Append(value, startIndex, count);
 
@@ -155,6 +198,7 @@ namespace GCore.Source
                 // Newline found.
                 _currentLineIndex++;
                 _currentLineCharacterIndex = 0;
+                _skippedIndents = 0;
 
                 i++;
 
@@ -187,6 +231,7 @@ namespace GCore.Source
             _currentLineIndex++;
             _currentLineCharacterIndex = 0;
             _absoluteIndex += NewLine.Length;
+            _skippedIndents = 0;
 
             return this;
         }

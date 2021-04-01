@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using GCore.Source.CodeContexts;
 using GCore.Source.Extensions;
 
 namespace GCore.Source.Generators.Elements
@@ -57,19 +58,19 @@ namespace GCore.Source.Generators.Elements
 
         public override void Render(CodeWriter writer)
         {
-            var oldIndent = writer.CurrentIndent;
+            using (new AbsoluteIndentContext(writer, AbsoluteIndent))
+            {
 
-            writer.CurrentIndent = 0;
+                var l = Lines;
 
-            var l = Lines;
+                for (int i = 0; i < l.Length; i++)
+                {
+                    writer.Write(l[i]);
+                    if (i < l.Length - 1)
+                        writer.WriteLine();
+                }
 
-            for (int i = 0; i < l.Length; i++) {
-                writer.Write(l[i]);
-                if (i < l.Length - 1)
-                    writer.WriteLine();
             }
-
-            writer.CurrentIndent = oldIndent;
         }
     }
 }
