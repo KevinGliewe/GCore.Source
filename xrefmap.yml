@@ -116,6 +116,38 @@ references:
   commentId: N:GCore.Source.CodeContexts
   fullName: GCore.Source.CodeContexts
   nameWithType: GCore.Source.CodeContexts
+- uid: GCore.Source.CodeContexts.AbsoluteIndentContext
+  name: AbsoluteIndentContext
+  href: api/GCore.Source.CodeContexts.AbsoluteIndentContext.html
+  commentId: T:GCore.Source.CodeContexts.AbsoluteIndentContext
+  fullName: GCore.Source.CodeContexts.AbsoluteIndentContext
+  nameWithType: AbsoluteIndentContext
+- uid: GCore.Source.CodeContexts.AbsoluteIndentContext.#ctor(GCore.Source.CodeWriter,System.Int32)
+  name: AbsoluteIndentContext(CodeWriter, Int32)
+  href: api/GCore.Source.CodeContexts.AbsoluteIndentContext.html#GCore_Source_CodeContexts_AbsoluteIndentContext__ctor_GCore_Source_CodeWriter_System_Int32_
+  commentId: M:GCore.Source.CodeContexts.AbsoluteIndentContext.#ctor(GCore.Source.CodeWriter,System.Int32)
+  fullName: GCore.Source.CodeContexts.AbsoluteIndentContext.AbsoluteIndentContext(GCore.Source.CodeWriter, System.Int32)
+  nameWithType: AbsoluteIndentContext.AbsoluteIndentContext(CodeWriter, Int32)
+- uid: GCore.Source.CodeContexts.AbsoluteIndentContext.#ctor*
+  name: AbsoluteIndentContext
+  href: api/GCore.Source.CodeContexts.AbsoluteIndentContext.html#GCore_Source_CodeContexts_AbsoluteIndentContext__ctor_
+  commentId: Overload:GCore.Source.CodeContexts.AbsoluteIndentContext.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.CodeContexts.AbsoluteIndentContext.AbsoluteIndentContext
+  nameWithType: AbsoluteIndentContext.AbsoluteIndentContext
+- uid: GCore.Source.CodeContexts.AbsoluteIndentContext.OnEndContext
+  name: OnEndContext()
+  href: api/GCore.Source.CodeContexts.AbsoluteIndentContext.html#GCore_Source_CodeContexts_AbsoluteIndentContext_OnEndContext
+  commentId: M:GCore.Source.CodeContexts.AbsoluteIndentContext.OnEndContext
+  fullName: GCore.Source.CodeContexts.AbsoluteIndentContext.OnEndContext()
+  nameWithType: AbsoluteIndentContext.OnEndContext()
+- uid: GCore.Source.CodeContexts.AbsoluteIndentContext.OnEndContext*
+  name: OnEndContext
+  href: api/GCore.Source.CodeContexts.AbsoluteIndentContext.html#GCore_Source_CodeContexts_AbsoluteIndentContext_OnEndContext_
+  commentId: Overload:GCore.Source.CodeContexts.AbsoluteIndentContext.OnEndContext
+  isSpec: "True"
+  fullName: GCore.Source.CodeContexts.AbsoluteIndentContext.OnEndContext
+  nameWithType: AbsoluteIndentContext.OnEndContext
 - uid: GCore.Source.CodeContexts.ACodeContext
   name: ACodeContext
   href: api/GCore.Source.CodeContexts.ACodeContext.html
@@ -402,6 +434,19 @@ references:
   isSpec: "True"
   fullName: GCore.Source.CodeWriter.GenerateCode
   nameWithType: CodeWriter.GenerateCode
+- uid: GCore.Source.CodeWriter.IsNewLine
+  name: IsNewLine
+  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_IsNewLine
+  commentId: P:GCore.Source.CodeWriter.IsNewLine
+  fullName: GCore.Source.CodeWriter.IsNewLine
+  nameWithType: CodeWriter.IsNewLine
+- uid: GCore.Source.CodeWriter.IsNewLine*
+  name: IsNewLine
+  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_IsNewLine_
+  commentId: Overload:GCore.Source.CodeWriter.IsNewLine
+  isSpec: "True"
+  fullName: GCore.Source.CodeWriter.IsNewLine
+  nameWithType: CodeWriter.IsNewLine
 - uid: GCore.Source.CodeWriter.Item(System.Int32)
   name: Item[Int32]
   href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_Item_System_Int32_
@@ -3437,6 +3482,19 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Generators.SourceElement.SourceElement
   nameWithType: SourceElement.SourceElement
+- uid: GCore.Source.Generators.SourceElement.AbsoluteIndent
+  name: AbsoluteIndent
+  href: api/GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_AbsoluteIndent
+  commentId: P:GCore.Source.Generators.SourceElement.AbsoluteIndent
+  fullName: GCore.Source.Generators.SourceElement.AbsoluteIndent
+  nameWithType: SourceElement.AbsoluteIndent
+- uid: GCore.Source.Generators.SourceElement.AbsoluteIndent*
+  name: AbsoluteIndent
+  href: api/GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_AbsoluteIndent_
+  commentId: Overload:GCore.Source.Generators.SourceElement.AbsoluteIndent
+  isSpec: "True"
+  fullName: GCore.Source.Generators.SourceElement.AbsoluteIndent
+  nameWithType: SourceElement.AbsoluteIndent
 - uid: GCore.Source.Generators.SourceElement.Config
   name: Config
   href: api/GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Config
