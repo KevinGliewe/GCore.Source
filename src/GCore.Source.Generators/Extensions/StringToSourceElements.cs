@@ -15,9 +15,25 @@ namespace GCore.Source.Generators.Extensions
         public readonly static Regex StartTagRegex = new Regex(STARTTAG_PATTERN);
         public readonly static Regex EndTagRegex = new Regex(ENDTAG_PATTERN);
 
-        public static SourceElement ParseToSourceElement(this string @this)
+        public static SourceElement ParseToSourceElement(this string @this, IReadOnlyDictionary<string, string>? config = null)
         {
-            return @this.ParseToSourceElement(new SourceElement(null, "root"));
+            var root = new SourceElement(null, "root");
+
+            var _config = new Dictionary<string, string>()
+            {
+                {"BaseDir", Environment.CurrentDirectory},
+                {"InDir", Environment.CurrentDirectory},
+                {"OutDir", Environment.CurrentDirectory},
+            };
+
+            
+
+            if(!(config is null))
+                foreach (var kv in config)
+                    _config[kv.Key] = kv.Value;
+
+            root.Configure(_config);
+            return @this.ParseToSourceElement(root);
         }
 
         public static SourceElement ParseToSourceElement(this string @this, SourceElement root)

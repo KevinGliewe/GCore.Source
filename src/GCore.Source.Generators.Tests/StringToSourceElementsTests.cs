@@ -106,7 +106,7 @@ namespace GCore.Source.Generators.Tests
         [Test]
         public void IncludeFile()
         {
-            var se = "<[IncludeFile FilePath=\"./IncludeFile.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
+            var se = "<[IncludeFile FileUri=\"file://$(BaseDir)/IncludeFile.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
 
             var result = se.Render().SplitNewLine();
 
@@ -114,6 +114,31 @@ namespace GCore.Source.Generators.Tests
 
             Assert.AreEqual("IncludeFile.txt", result[1]);
             Assert.AreEqual("Content", result[2]);
+        }
+
+        [Test]
+        public void IncludeFileHttps() {
+            var se = "<[IncludeFile FileUri=\"https://gist.githubusercontent.com/prabansal/115387/raw/0e5911c791c03f2ffb9708d98cac70dd2c1bf0ba/HelloWorld.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
+
+            var result = se.Render().SplitNewLine();
+
+            Assert.AreEqual(3, result.Length);
+
+            Assert.AreEqual("Hi there", result[1]);
+        }
+
+        [Test]
+        public void IncludeFileFtp() {
+            // Using this service:
+            // https://test.rebex.net/
+
+            var se = "<[IncludeFile FileUri=\"ftp://demo:password@test.rebex.net/readme.txt\"]>\n<[/IncludeFile]>".ParseToSourceElement();
+
+            var result = se.Render().SplitNewLine();
+
+            Assert.AreEqual(13, result.Length);
+
+            Assert.AreEqual("Welcome,", result[1]);
         }
 
         [Test]

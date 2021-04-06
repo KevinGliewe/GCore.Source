@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using GCore.Source.Attributes;
 using GCore.Source.Extensions;
 using GCore.Source.Generators.Attributes;
@@ -11,7 +13,7 @@ namespace GCore.Source.Generators.Elements
     [TaggedElement("IncludeFile")]
     public class IncludeFileElement : TaggedElement, IRawElement
     {
-        [Config("FilePath")] public string FilePath { get; set; } = "";
+        [Config("FileUri")] public string FileUri { get; set; } = "";
 
         public string[] Lines { get; protected set; } = new string[0];
 
@@ -19,18 +21,58 @@ namespace GCore.Source.Generators.Elements
         {
         }
 
-        public IncludeFileElement(SourceElement? parent, string name, string filePath) : base(parent, name)
+        public IncludeFileElement(SourceElement? parent, string name, string fileUri) : base(parent, name)
         {
-            FilePath = filePath;
+            FileUri = fileUri;
             ReadFile();
         }
 
         protected void ReadFile()
         {
-            if (!File.Exists(FilePath))
-                throw new Exception("FilePath does not extist " + FilePath);
+            var uri = new Uri(FileUri);
 
-            SetLines(File.ReadAllLines(FilePath));
+            if (uri.IsFile)
+            {
+                if (!File.Exists(uri.AbsolutePath))
+                    throw new Exception("FilePath does not extist " + FileUri);
+
+                SetLines(File.ReadAllLines(uri.AbsolutePath));
+                return;
+            }
+
+            if (new string[] {"http", "https"}.Contains(uri.Scheme.ToLower()))
+            {
+                HttpClient client = new HttpClient();
+                string result = client.GetStringAsync(uri).Result;
+                SetLines(result.SplitNewLine());
+                return;
+            }
+
+            if (new string[] {"ftp", "sftp", "ftps"}.Contains(uri.Scheme.ToLower()))
+            {
+                WebClient request = new WebClient();
+
+                var userName = "anonymous";
+                var password = "anonymous@anonymous.com";
+
+                if (uri.UserInfo.Length > 0)
+                {
+                    var userInfoSplit = uri.UserInfo.Split(':');
+                    userName = userInfoSplit[0];
+
+                    if (userInfoSplit.Length > 1)
+                        password = string.Join(":", userInfoSplit.Skip(1));
+                }
+
+                request.Credentials = new NetworkCredential(userName, password);
+
+                byte[] fileData = request.DownloadData(uri);
+                string result = System.Text.Encoding.UTF8.GetString(fileData);
+                SetLines(result.SplitNewLine());
+                return;
+            }
+
+            throw new Exception("Unknown Uri Schema: " + FileUri);
         }
 
         public void SetLines(IEnumerable<string> lines)
