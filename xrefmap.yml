@@ -2543,19 +2543,19 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Generators.Elements.IncludeFileElement.Configure
   nameWithType: IncludeFileElement.Configure
-- uid: GCore.Source.Generators.Elements.IncludeFileElement.FilePath
-  name: FilePath
-  href: api/GCore.Source.Generators.Elements.IncludeFileElement.html#GCore_Source_Generators_Elements_IncludeFileElement_FilePath
-  commentId: P:GCore.Source.Generators.Elements.IncludeFileElement.FilePath
-  fullName: GCore.Source.Generators.Elements.IncludeFileElement.FilePath
-  nameWithType: IncludeFileElement.FilePath
-- uid: GCore.Source.Generators.Elements.IncludeFileElement.FilePath*
-  name: FilePath
-  href: api/GCore.Source.Generators.Elements.IncludeFileElement.html#GCore_Source_Generators_Elements_IncludeFileElement_FilePath_
-  commentId: Overload:GCore.Source.Generators.Elements.IncludeFileElement.FilePath
+- uid: GCore.Source.Generators.Elements.IncludeFileElement.FileUri
+  name: FileUri
+  href: api/GCore.Source.Generators.Elements.IncludeFileElement.html#GCore_Source_Generators_Elements_IncludeFileElement_FileUri
+  commentId: P:GCore.Source.Generators.Elements.IncludeFileElement.FileUri
+  fullName: GCore.Source.Generators.Elements.IncludeFileElement.FileUri
+  nameWithType: IncludeFileElement.FileUri
+- uid: GCore.Source.Generators.Elements.IncludeFileElement.FileUri*
+  name: FileUri
+  href: api/GCore.Source.Generators.Elements.IncludeFileElement.html#GCore_Source_Generators_Elements_IncludeFileElement_FileUri_
+  commentId: Overload:GCore.Source.Generators.Elements.IncludeFileElement.FileUri
   isSpec: "True"
-  fullName: GCore.Source.Generators.Elements.IncludeFileElement.FilePath
-  nameWithType: IncludeFileElement.FilePath
+  fullName: GCore.Source.Generators.Elements.IncludeFileElement.FileUri
+  nameWithType: IncludeFileElement.FileUri
 - uid: GCore.Source.Generators.Elements.IncludeFileElement.Lines
   name: Lines
   href: api/GCore.Source.Generators.Elements.IncludeFileElement.html#GCore_Source_Generators_Elements_IncludeFileElement_Lines
@@ -3340,18 +3340,21 @@ references:
   commentId: F:GCore.Source.Generators.Extensions.StringToSourceElements.EndTagRegex
   fullName: GCore.Source.Generators.Extensions.StringToSourceElements.EndTagRegex
   nameWithType: StringToSourceElements.EndTagRegex
-- uid: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String)
-  name: ParseToSourceElement(String)
-  href: api/GCore.Source.Generators.Extensions.StringToSourceElements.html#GCore_Source_Generators_Extensions_StringToSourceElements_ParseToSourceElement_System_String_
-  commentId: M:GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String)
-  fullName: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String)
-  nameWithType: StringToSourceElements.ParseToSourceElement(String)
 - uid: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String,GCore.Source.Generators.SourceElement)
   name: ParseToSourceElement(String, SourceElement)
   href: api/GCore.Source.Generators.Extensions.StringToSourceElements.html#GCore_Source_Generators_Extensions_StringToSourceElements_ParseToSourceElement_System_String_GCore_Source_Generators_SourceElement_
   commentId: M:GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String,GCore.Source.Generators.SourceElement)
   fullName: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String, GCore.Source.Generators.SourceElement)
   nameWithType: StringToSourceElements.ParseToSourceElement(String, SourceElement)
+- uid: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String,System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name: ParseToSourceElement(String, Nullable<IReadOnlyDictionary<String, String>>)
+  href: api/GCore.Source.Generators.Extensions.StringToSourceElements.html#GCore_Source_Generators_Extensions_StringToSourceElements_ParseToSourceElement_System_String_System_Nullable_IReadOnlyDictionary_System_String_System_String___
+  commentId: M:GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String,System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name.vb: ParseToSourceElement(String, Nullable(Of IReadOnlyDictionary(Of String, String)))
+  fullName: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String, System.Nullable<IReadOnlyDictionary<System.String, System.String>>)
+  fullName.vb: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement(System.String, System.Nullable(Of IReadOnlyDictionary(Of System.String, System.String)))
+  nameWithType: StringToSourceElements.ParseToSourceElement(String, Nullable<IReadOnlyDictionary<String, String>>)
+  nameWithType.vb: StringToSourceElements.ParseToSourceElement(String, Nullable(Of IReadOnlyDictionary(Of String, String)))
 - uid: GCore.Source.Generators.Extensions.StringToSourceElements.ParseToSourceElement*
   name: ParseToSourceElement
   href: api/GCore.Source.Generators.Extensions.StringToSourceElements.html#GCore_Source_Generators_Extensions_StringToSourceElements_ParseToSourceElement_
