@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using GCore.Source.Generators.Scripting.Nuget;
+using GCore.Source.Scripting.Nuget;
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.CodeAnalysis.Scripting.Hosting;
 
-namespace GCore.Source.Generators.Scripting
+namespace GCore.Source.Scripting
 {
     public class ScriptRunner
     {
@@ -19,25 +19,17 @@ namespace GCore.Source.Generators.Scripting
         private ScriptOptions scriptOptions;
         private ScriptState<object>? state;
 
-        public ScriptRunner() {
+        public ScriptRunner(Assembly[] references, string[] imports) {
             this.assemblyLoader = new InteractiveAssemblyLoader(new MetadataShadowCopyProvider());
             this.nugetResolver = new NugetMetadataResolver(new ReferenceAssemblyService().ReferenceAssemblyPaths);
             this.scriptOptions = ScriptOptions.Default
                 .WithMetadataResolver(nugetResolver)
-                .WithReferences(
-                    typeof(CodeWriter).Assembly,
-                    typeof(SourceElement).Assembly,
-                    typeof(ScriptElement).Assembly,
-                    typeof(System.Dynamic.ExpandoObject).Assembly,
-                    typeof(GCore.GMath.Half).Assembly)
+                .WithReferences(references)
                 .WithAllowUnsafe(true)
-                .AddImports(
-                    "System",
-                    "System.Dynamic",
-                    "GCore.Source");
+                .AddImports(imports);
         }
 
-        public async Task<EvaluationResult> Run(string text, object globals) {
+        public async Task<EvaluationResult> Run(string text, object? globals) {
             try {
                 var nugetCommands = text
                     .Split(new[] { '\r', '\n' }, StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)

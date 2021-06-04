@@ -26,7 +26,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using GCore.Extensions.StringEx;
 
-namespace GCore.Source.Generators.Scripting.Nuget
+namespace GCore.Source.Scripting.Nuget
 {
     public class NugetPackageInstaller
     {
@@ -43,7 +43,7 @@ namespace GCore.Source.Generators.Scripting.Nuget
             string packageId, string? version = null, CancellationToken cancellationToken = default) {
             ISettings settings = ReadSettings();
             var frameworkVersion = GetCurrentFramework();
-            var nuGetProject = CreateFolderProject(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".GCore.Source.Generators.Scripting", "packages"));
+            var nuGetProject = CreateFolderProject(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".GCore.Source.Scripting", "packages"));
             var sourceRepositoryProvider = new SourceRepositoryProvider(new PackageSourceProvider(settings), Repository.Provider.GetCoreV3());
             var packageManager = CreatePackageManager(settings, nuGetProject, sourceRepositoryProvider);
 

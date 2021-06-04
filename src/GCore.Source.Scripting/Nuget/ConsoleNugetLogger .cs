@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using NuGet.Common;
 
-namespace GCore.Source.Generators.Scripting.Nuget
+namespace GCore.Source.Scripting.Nuget
 {
     public class ConsoleNugetLogger : ILogger
     {

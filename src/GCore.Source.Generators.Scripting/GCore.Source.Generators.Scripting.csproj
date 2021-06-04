@@ -3,19 +3,13 @@
   <Import Project="..\Lib.Build.props" />
 
   <ItemGroup>
-    <PackageReference Include="Fody" Version="6.4.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="GCore" Version="1.1.2.43" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.10.0-1.final" />
-    <PackageReference Include="NuGet.PackageManagement" Version="5.9.1" />
-    <PackageReference Include="Virtuosity.Fody" Version="3.1.1" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
+    <ProjectReference Include="..\GCore.Source.Scripting\GCore.Source.Scripting.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
 

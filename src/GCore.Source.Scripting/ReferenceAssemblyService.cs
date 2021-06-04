@@ -9,14 +9,14 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using GCore.Source.Generators.Scripting.Helper;
+using GCore.Source.Scripting.Helper;
 
-namespace GCore.Source.Generators.Scripting
+namespace GCore.Source.Scripting
 {
     /// <remarks>
     /// Useful notes https://github.com/dotnet/roslyn/blob/main/docs/wiki/Runtime-code-generation-using-Roslyn-compilations-in-.NET-Core-App.md
     /// </remarks>
-    class ReferenceAssemblyService
+    public class ReferenceAssemblyService
     {
 
         public IReadOnlyCollection<string> ReferenceAssemblyPaths { get; }

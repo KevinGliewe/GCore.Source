@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GCore.Source.Generators.Scripting.Helper
+namespace GCore.Source.Scripting.Helper
 {
     public class EqualityComparerFunc<T> : IEqualityComparer<T>
     {

@@ -15,7 +15,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using GCore.Logging;
 
-namespace GCore.Source.Generators.Scripting.Nuget
+namespace GCore.Source.Scripting.Nuget
 {
     public class NugetMetadataResolver : MetadataReferenceResolver
     {
@@ -29,7 +29,7 @@ namespace GCore.Source.Generators.Scripting.Nuget
         public NugetMetadataResolver(IReadOnlyCollection<string> implementationAssemblyPaths) {
             this.defaultResolver = ScriptMetadataResolver.Default;
             this.assemblyPaths = new HashSet<string>(implementationAssemblyPaths);
-            this.loadContext = new AssemblyLoadContext("GCore.Source.Generators.Scripting");
+            this.loadContext = new AssemblyLoadContext("GCore.Source.Scripting");
             this.nugetInstaller = new NugetPackageInstaller();
             this.dummyPlaceholder = new[] { MetadataReference.CreateFromFile(typeof(object).Assembly.Location) }.ToImmutableArray();
 
