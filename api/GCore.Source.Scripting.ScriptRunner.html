@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface INamespace
+    <title>Class ScriptRunner
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface INamespace
+    <meta name="title" content="Class ScriptRunner
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,83 +68,113 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.Source.Generators.Elements.Components.INamespace">
+            <article class="content wrap" id="_content" data-uid="GCore.Source.Scripting.ScriptRunner">
   
   
-  <h1 id="GCore_Source_Generators_Elements_Components_INamespace" data-uid="GCore.Source.Generators.Elements.Components.INamespace" class="text-break">Interface INamespace
+  <h1 id="GCore_Source_Scripting_ScriptRunner" data-uid="GCore.Source.Scripting.ScriptRunner" class="text-break">Class ScriptRunner
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="GCore.Source.IRenderable.html#GCore_Source_IRenderable_Render_GCore_Source_CodeWriter_">IRenderable.Render(CodeWriter)</a>
-    </div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ScriptRunner</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Source.Generators.Elements.Components.html">GCore.Source.Generators.Elements.Components</a></h6>
-  <h6><strong>Assembly</strong>: GCore.Source.Generators.dll</h6>
-  <h5 id="GCore_Source_Generators_Elements_Components_INamespace_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Source.Scripting.html">GCore.Source.Scripting</a></h6>
+  <h6><strong>Assembly</strong>: GCore.Source.Scripting.dll</h6>
+  <h5 id="GCore_Source_Scripting_ScriptRunner_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INamespace : IRenderable</code></pre>
+    <pre><code class="lang-csharp hljs">public class ScriptRunner : object</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/8d17174eb332376a3e44acee2d32d7afa2df16c3/apiSpec/new?filename=GCore_Source_Generators_Elements_Components_INamespace_Namespaces.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.Components.INamespace.Namespaces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/8d17174eb332376a3e44acee2d32d7afa2df16c3/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.%23ctor(Assembly%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/8d17174eb332376a3e44acee2d32d7afa2df16c3/src/GCore.Source.Generators/Elements/Components/INamespace.cs/#L9">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/8d17174eb332376a3e44acee2d32d7afa2df16c3/src/GCore.Source.Scripting/ScriptRunner.cs/#L22">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_Components_INamespace_Namespaces_" data-uid="GCore.Source.Generators.Elements.Components.INamespace.Namespaces*"></a>
-  <h4 id="GCore_Source_Generators_Elements_Components_INamespace_Namespaces" data-uid="GCore.Source.Generators.Elements.Components.INamespace.Namespaces">Namespaces</h4>
+  <a id="GCore_Source_Scripting_ScriptRunner__ctor_" data-uid="GCore.Source.Scripting.ScriptRunner.#ctor*"></a>
+  <h4 id="GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___" data-uid="GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[])">ScriptRunner(Assembly[], String[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; Namespaces { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ScriptRunner(Assembly[] references, string[] imports)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Assembly</span>[]</td>
+        <td><span class="parametername">references</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">imports</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/8d17174eb332376a3e44acee2d32d7afa2df16c3/apiSpec/new?filename=GCore_Source_Generators_Elements_Components_INamespace_Separator.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.Components.INamespace.Separator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/8d17174eb332376a3e44acee2d32d7afa2df16c3/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner_Run_System_String_System_Nullable_System_Object__.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.Run(System.String%2CSystem.Nullable%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/8d17174eb332376a3e44acee2d32d7afa2df16c3/src/GCore.Source.Generators/Elements/Components/INamespace.cs/#L7">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/8d17174eb332376a3e44acee2d32d7afa2df16c3/src/GCore.Source.Scripting/ScriptRunner.cs/#L32">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_Components_INamespace_Separator_" data-uid="GCore.Source.Generators.Elements.Components.INamespace.Separator*"></a>
-  <h4 id="GCore_Source_Generators_Elements_Components_INamespace_Separator" data-uid="GCore.Source.Generators.Elements.Components.INamespace.Separator">Separator</h4>
+  <a id="GCore_Source_Scripting_ScriptRunner_Run_" data-uid="GCore.Source.Scripting.ScriptRunner.Run*"></a>
+  <h4 id="GCore_Source_Scripting_ScriptRunner_Run_System_String_System_Nullable_System_Object__" data-uid="GCore.Source.Scripting.ScriptRunner.Run(System.String,System.Nullable{System.Object})">Run(String, Nullable&lt;Object&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Separator { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;EvaluationResult&gt; Run(string text, object? globals)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">globals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">EvaluationResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -157,10 +187,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/new/8d17174eb332376a3e44acee2d32d7afa2df16c3/apiSpec/new?filename=GCore_Source_Generators_Elements_Components_INamespace.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.Components.INamespace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/new/8d17174eb332376a3e44acee2d32d7afa2df16c3/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/8d17174eb332376a3e44acee2d32d7afa2df16c3/src/GCore.Source.Generators/Elements/Components/INamespace.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/8d17174eb332376a3e44acee2d32d7afa2df16c3/src/GCore.Source.Scripting/ScriptRunner.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
