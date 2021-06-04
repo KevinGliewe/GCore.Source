@@ -56,6 +56,19 @@ Writer.Write(""- Overwrite -"");
         }
 
         [Test]
+        public void FileConfig() {
+            Process process;
+
+            $@"dotnet GCore.Source.Cli.dll --RenderTagsArgs false --in TestData/InjectConfig.txt".Sh3(out process);
+
+            process.WaitForExit();
+
+            Assert.AreEqual("", process.StandardError.ReadToEnd());
+            Assert.AreEqual(0, process.ExitCode);
+            Assert.AreEqual("Hello World", process.StandardOutput.ReadToEnd().Trim());
+        }
+
+        [Test]
         public void FileIn() {
             Process process;
 

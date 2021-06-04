@@ -100,9 +100,7 @@ Reads and writes to the same file:
 
                 var data = ReadInput();
 
-                var se = data.ParseToSourceElement();
-
-                se.Configure(GetConfig());
+                var se = data.ParseToSourceElement(GetConfig());
 
                 var output = se.Render();
 

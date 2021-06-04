@@ -1,0 +1,3 @@
+﻿<[Script Dst="." RenderTags="$(RenderTagsArgs)"]>
+Writer.Write("Hello World");
+<[/Script]>

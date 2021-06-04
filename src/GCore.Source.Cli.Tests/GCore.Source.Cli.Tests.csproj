@@ -22,6 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="TestData\InjectConfig.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="TestData\InjectFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
