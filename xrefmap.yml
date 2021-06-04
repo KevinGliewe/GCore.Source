@@ -489,19 +489,6 @@ references:
   isSpec: "True"
   fullName: GCore.Source.CodeWriter.Location
   nameWithType: CodeWriter.Location
-- uid: GCore.Source.CodeWriter.NewLine
-  name: NewLine
-  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_NewLine
-  commentId: P:GCore.Source.CodeWriter.NewLine
-  fullName: GCore.Source.CodeWriter.NewLine
-  nameWithType: CodeWriter.NewLine
-- uid: GCore.Source.CodeWriter.NewLine*
-  name: NewLine
-  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_NewLine_
-  commentId: Overload:GCore.Source.CodeWriter.NewLine
-  isSpec: "True"
-  fullName: GCore.Source.CodeWriter.NewLine
-  nameWithType: CodeWriter.NewLine
 - uid: GCore.Source.CodeWriter.PopContext
   name: PopContext()
   href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_PopContext
@@ -547,12 +534,15 @@ references:
   commentId: M:GCore.Source.CodeWriter.Write(System.Char)
   fullName: GCore.Source.CodeWriter.Write(System.Char)
   nameWithType: CodeWriter.Write(Char)
-- uid: GCore.Source.CodeWriter.Write(System.String)
-  name: Write(String)
-  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_Write_System_String_
-  commentId: M:GCore.Source.CodeWriter.Write(System.String)
-  fullName: GCore.Source.CodeWriter.Write(System.String)
-  nameWithType: CodeWriter.Write(String)
+- uid: GCore.Source.CodeWriter.Write(System.Nullable{System.String})
+  name: Write(Nullable<String>)
+  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_Write_System_Nullable_System_String__
+  commentId: M:GCore.Source.CodeWriter.Write(System.Nullable{System.String})
+  name.vb: Write(Nullable(Of String))
+  fullName: GCore.Source.CodeWriter.Write(System.Nullable<System.String>)
+  fullName.vb: GCore.Source.CodeWriter.Write(System.Nullable(Of System.String))
+  nameWithType: CodeWriter.Write(Nullable<String>)
+  nameWithType.vb: CodeWriter.Write(Nullable(Of String))
 - uid: GCore.Source.CodeWriter.Write(System.String,System.Int32,System.Int32)
   name: Write(String, Int32, Int32)
   href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_Write_System_String_System_Int32_System_Int32_
@@ -572,12 +562,15 @@ references:
   commentId: M:GCore.Source.CodeWriter.WriteLine
   fullName: GCore.Source.CodeWriter.WriteLine()
   nameWithType: CodeWriter.WriteLine()
-- uid: GCore.Source.CodeWriter.WriteLine(System.String)
-  name: WriteLine(String)
-  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_WriteLine_System_String_
-  commentId: M:GCore.Source.CodeWriter.WriteLine(System.String)
-  fullName: GCore.Source.CodeWriter.WriteLine(System.String)
-  nameWithType: CodeWriter.WriteLine(String)
+- uid: GCore.Source.CodeWriter.WriteLine(System.Nullable{System.String})
+  name: WriteLine(Nullable<String>)
+  href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_WriteLine_System_Nullable_System_String__
+  commentId: M:GCore.Source.CodeWriter.WriteLine(System.Nullable{System.String})
+  name.vb: WriteLine(Nullable(Of String))
+  fullName: GCore.Source.CodeWriter.WriteLine(System.Nullable<System.String>)
+  fullName.vb: GCore.Source.CodeWriter.WriteLine(System.Nullable(Of System.String))
+  nameWithType: CodeWriter.WriteLine(Nullable<String>)
+  nameWithType.vb: CodeWriter.WriteLine(Nullable(Of String))
 - uid: GCore.Source.CodeWriter.WriteLine*
   name: WriteLine
   href: api/GCore.Source.CodeWriter.html#GCore_Source_CodeWriter_WriteLine_
@@ -3418,6 +3411,381 @@ references:
   commentId: N:GCore.Source.Generators.Scripting
   fullName: GCore.Source.Generators.Scripting
   nameWithType: GCore.Source.Generators.Scripting
+- uid: GCore.Source.Generators.Scripting.Helper
+  name: GCore.Source.Generators.Scripting.Helper
+  href: api/GCore.Source.Generators.Scripting.Helper.html
+  commentId: N:GCore.Source.Generators.Scripting.Helper
+  fullName: GCore.Source.Generators.Scripting.Helper
+  nameWithType: GCore.Source.Generators.Scripting.Helper
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1
+  name: EqualityComparerFunc<T>
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html
+  commentId: T:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1
+  name.vb: EqualityComparerFunc(Of T)
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T)
+  nameWithType: EqualityComparerFunc<T>
+  nameWithType.vb: EqualityComparerFunc(Of T)
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.#ctor(Func{`0,`0,System.Boolean},Func{`0,System.Int32})
+  name: EqualityComparerFunc(Func<T, T, Boolean>, Func<T, Int32>)
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html#GCore_Source_Generators_Scripting_Helper_EqualityComparerFunc_1__ctor_Func__0__0_System_Boolean__Func__0_System_Int32__
+  commentId: M:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.#ctor(Func{`0,`0,System.Boolean},Func{`0,System.Int32})
+  name.vb: EqualityComparerFunc(Func(Of T, T, Boolean), Func(Of T, Int32))
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>.EqualityComparerFunc(Func<T, T, System.Boolean>, Func<T, System.Int32>)
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T).EqualityComparerFunc(Func(Of T, T, System.Boolean), Func(Of T, System.Int32))
+  nameWithType: EqualityComparerFunc<T>.EqualityComparerFunc(Func<T, T, Boolean>, Func<T, Int32>)
+  nameWithType.vb: EqualityComparerFunc(Of T).EqualityComparerFunc(Func(Of T, T, Boolean), Func(Of T, Int32))
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.#ctor*
+  name: EqualityComparerFunc
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html#GCore_Source_Generators_Scripting_Helper_EqualityComparerFunc_1__ctor_
+  commentId: Overload:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>.EqualityComparerFunc
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T).EqualityComparerFunc
+  nameWithType: EqualityComparerFunc<T>.EqualityComparerFunc
+  nameWithType.vb: EqualityComparerFunc(Of T).EqualityComparerFunc
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.Equals(`0,`0)
+  name: Equals(T, T)
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html#GCore_Source_Generators_Scripting_Helper_EqualityComparerFunc_1_Equals__0__0_
+  commentId: M:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.Equals(`0,`0)
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>.Equals(T, T)
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T).Equals(T, T)
+  nameWithType: EqualityComparerFunc<T>.Equals(T, T)
+  nameWithType.vb: EqualityComparerFunc(Of T).Equals(T, T)
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.Equals*
+  name: Equals
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html#GCore_Source_Generators_Scripting_Helper_EqualityComparerFunc_1_Equals_
+  commentId: Overload:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.Equals
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>.Equals
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T).Equals
+  nameWithType: EqualityComparerFunc<T>.Equals
+  nameWithType.vb: EqualityComparerFunc(Of T).Equals
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.GetHashCode(`0)
+  name: GetHashCode(T)
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html#GCore_Source_Generators_Scripting_Helper_EqualityComparerFunc_1_GetHashCode__0_
+  commentId: M:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.GetHashCode(`0)
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>.GetHashCode(T)
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T).GetHashCode(T)
+  nameWithType: EqualityComparerFunc<T>.GetHashCode(T)
+  nameWithType.vb: EqualityComparerFunc(Of T).GetHashCode(T)
+- uid: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.GetHashCode*
+  name: GetHashCode
+  href: api/GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc-1.html#GCore_Source_Generators_Scripting_Helper_EqualityComparerFunc_1_GetHashCode_
+  commentId: Overload:GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc`1.GetHashCode
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc<T>.GetHashCode
+  fullName.vb: GCore.Source.Generators.Scripting.Helper.EqualityComparerFunc(Of T).GetHashCode
+  nameWithType: EqualityComparerFunc<T>.GetHashCode
+  nameWithType.vb: EqualityComparerFunc(Of T).GetHashCode
+- uid: GCore.Source.Generators.Scripting.Nuget
+  name: GCore.Source.Generators.Scripting.Nuget
+  href: api/GCore.Source.Generators.Scripting.Nuget.html
+  commentId: N:GCore.Source.Generators.Scripting.Nuget
+  fullName: GCore.Source.Generators.Scripting.Nuget
+  nameWithType: GCore.Source.Generators.Scripting.Nuget
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger
+  name: ConsoleNugetLogger
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html
+  commentId: T:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger
+  nameWithType: ConsoleNugetLogger
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.#ctor
+  name: ConsoleNugetLogger()
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger__ctor
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.#ctor
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.ConsoleNugetLogger()
+  nameWithType: ConsoleNugetLogger.ConsoleNugetLogger()
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.#ctor*
+  name: ConsoleNugetLogger
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger__ctor_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.ConsoleNugetLogger
+  nameWithType: ConsoleNugetLogger.ConsoleNugetLogger
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log(ILogMessage)
+  name: Log(ILogMessage)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_Log_ILogMessage_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log(ILogMessage)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log(ILogMessage)
+  nameWithType: ConsoleNugetLogger.Log(ILogMessage)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log(LogLevel,System.String)
+  name: Log(LogLevel, String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_Log_LogLevel_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log(LogLevel,System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log(LogLevel, System.String)
+  nameWithType: ConsoleNugetLogger.Log(LogLevel, String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log*
+  name: Log
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_Log_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.Log
+  nameWithType: ConsoleNugetLogger.Log
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync(ILogMessage)
+  name: LogAsync(ILogMessage)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogAsync_ILogMessage_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync(ILogMessage)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync(ILogMessage)
+  nameWithType: ConsoleNugetLogger.LogAsync(ILogMessage)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync(LogLevel,System.String)
+  name: LogAsync(LogLevel, String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogAsync_LogLevel_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync(LogLevel,System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync(LogLevel, System.String)
+  nameWithType: ConsoleNugetLogger.LogAsync(LogLevel, String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync*
+  name: LogAsync
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogAsync_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogAsync
+  nameWithType: ConsoleNugetLogger.LogAsync
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogDebug(System.String)
+  name: LogDebug(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogDebug_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogDebug(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogDebug(System.String)
+  nameWithType: ConsoleNugetLogger.LogDebug(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogDebug*
+  name: LogDebug
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogDebug_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogDebug
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogDebug
+  nameWithType: ConsoleNugetLogger.LogDebug
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogError(System.String)
+  name: LogError(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogError_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogError(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogError(System.String)
+  nameWithType: ConsoleNugetLogger.LogError(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogError*
+  name: LogError
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogError_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogError
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogError
+  nameWithType: ConsoleNugetLogger.LogError
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformation(System.String)
+  name: LogInformation(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogInformation_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformation(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformation(System.String)
+  nameWithType: ConsoleNugetLogger.LogInformation(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformation*
+  name: LogInformation
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogInformation_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformation
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformation
+  nameWithType: ConsoleNugetLogger.LogInformation
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformationSummary(System.String)
+  name: LogInformationSummary(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogInformationSummary_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformationSummary(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformationSummary(System.String)
+  nameWithType: ConsoleNugetLogger.LogInformationSummary(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformationSummary*
+  name: LogInformationSummary
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogInformationSummary_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformationSummary
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogInformationSummary
+  nameWithType: ConsoleNugetLogger.LogInformationSummary
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogMinimal(System.String)
+  name: LogMinimal(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogMinimal_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogMinimal(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogMinimal(System.String)
+  nameWithType: ConsoleNugetLogger.LogMinimal(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogMinimal*
+  name: LogMinimal
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogMinimal_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogMinimal
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogMinimal
+  nameWithType: ConsoleNugetLogger.LogMinimal
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogVerbose(System.String)
+  name: LogVerbose(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogVerbose_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogVerbose(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogVerbose(System.String)
+  nameWithType: ConsoleNugetLogger.LogVerbose(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogVerbose*
+  name: LogVerbose
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogVerbose_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogVerbose
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogVerbose
+  nameWithType: ConsoleNugetLogger.LogVerbose
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogWarning(System.String)
+  name: LogWarning(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogWarning_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogWarning(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogWarning(System.String)
+  nameWithType: ConsoleNugetLogger.LogWarning(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogWarning*
+  name: LogWarning
+  href: api/GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.html#GCore_Source_Generators_Scripting_Nuget_ConsoleNugetLogger_LogWarning_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogWarning
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.ConsoleNugetLogger.LogWarning
+  nameWithType: ConsoleNugetLogger.LogWarning
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver
+  name: NugetMetadataResolver
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html
+  commentId: T:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver
+  nameWithType: NugetMetadataResolver
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.#ctor(IReadOnlyCollection{System.String})
+  name: NugetMetadataResolver(IReadOnlyCollection<String>)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver__ctor_IReadOnlyCollection_System_String__
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.#ctor(IReadOnlyCollection{System.String})
+  name.vb: NugetMetadataResolver(IReadOnlyCollection(Of String))
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.NugetMetadataResolver(IReadOnlyCollection<System.String>)
+  fullName.vb: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.NugetMetadataResolver(IReadOnlyCollection(Of System.String))
+  nameWithType: NugetMetadataResolver.NugetMetadataResolver(IReadOnlyCollection<String>)
+  nameWithType.vb: NugetMetadataResolver.NugetMetadataResolver(IReadOnlyCollection(Of String))
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.#ctor*
+  name: NugetMetadataResolver
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver__ctor_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.NugetMetadataResolver
+  nameWithType: NugetMetadataResolver.NugetMetadataResolver
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals(System.Nullable{System.Object})
+  name: Equals(Nullable<Object>)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_Equals_System_Nullable_System_Object__
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals(System.Nullable{System.Object})
+  name.vb: Equals(Nullable(Of Object))
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals(System.Nullable<System.Object>)
+  fullName.vb: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals(System.Nullable(Of System.Object))
+  nameWithType: NugetMetadataResolver.Equals(Nullable<Object>)
+  nameWithType.vb: NugetMetadataResolver.Equals(Nullable(Of Object))
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals*
+  name: Equals
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_Equals_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.Equals
+  nameWithType: NugetMetadataResolver.Equals
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.GetHashCode
+  name: GetHashCode()
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_GetHashCode
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.GetHashCode
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.GetHashCode()
+  nameWithType: NugetMetadataResolver.GetHashCode()
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.GetHashCode*
+  name: GetHashCode
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_GetHashCode_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.GetHashCode
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.GetHashCode
+  nameWithType: NugetMetadataResolver.GetHashCode
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.InstallNugetPackageAsync(System.String,CancellationToken)
+  name: InstallNugetPackageAsync(String, CancellationToken)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_InstallNugetPackageAsync_System_String_CancellationToken_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.InstallNugetPackageAsync(System.String,CancellationToken)
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.InstallNugetPackageAsync(System.String, CancellationToken)
+  nameWithType: NugetMetadataResolver.InstallNugetPackageAsync(String, CancellationToken)
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.InstallNugetPackageAsync*
+  name: InstallNugetPackageAsync
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_InstallNugetPackageAsync_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.InstallNugetPackageAsync
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.InstallNugetPackageAsync
+  nameWithType: NugetMetadataResolver.InstallNugetPackageAsync
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.IsNugetReference(System.String)
+  name: IsNugetReference(String)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_IsNugetReference_System_String_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.IsNugetReference(System.String)
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.IsNugetReference(System.String)
+  nameWithType: NugetMetadataResolver.IsNugetReference(String)
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.IsNugetReference*
+  name: IsNugetReference
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_IsNugetReference_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.IsNugetReference
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.IsNugetReference
+  nameWithType: NugetMetadataResolver.IsNugetReference
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssemblies
+  name: ResolveMissingAssemblies
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_ResolveMissingAssemblies
+  commentId: P:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssemblies
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssemblies
+  nameWithType: NugetMetadataResolver.ResolveMissingAssemblies
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssemblies*
+  name: ResolveMissingAssemblies
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_ResolveMissingAssemblies_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssemblies
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssemblies
+  nameWithType: NugetMetadataResolver.ResolveMissingAssemblies
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssembly(MetadataReference,AssemblyIdentity)
+  name: ResolveMissingAssembly(MetadataReference, AssemblyIdentity)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_ResolveMissingAssembly_MetadataReference_AssemblyIdentity_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssembly(MetadataReference,AssemblyIdentity)
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssembly(MetadataReference, AssemblyIdentity)
+  nameWithType: NugetMetadataResolver.ResolveMissingAssembly(MetadataReference, AssemblyIdentity)
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssembly*
+  name: ResolveMissingAssembly
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_ResolveMissingAssembly_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssembly
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveMissingAssembly
+  nameWithType: NugetMetadataResolver.ResolveMissingAssembly
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference(System.String,System.Nullable{System.String},MetadataReferenceProperties)
+  name: ResolveReference(String, Nullable<String>, MetadataReferenceProperties)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_ResolveReference_System_String_System_Nullable_System_String__MetadataReferenceProperties_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference(System.String,System.Nullable{System.String},MetadataReferenceProperties)
+  name.vb: ResolveReference(String, Nullable(Of String), MetadataReferenceProperties)
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference(System.String, System.Nullable<System.String>, MetadataReferenceProperties)
+  fullName.vb: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference(System.String, System.Nullable(Of System.String), MetadataReferenceProperties)
+  nameWithType: NugetMetadataResolver.ResolveReference(String, Nullable<String>, MetadataReferenceProperties)
+  nameWithType.vb: NugetMetadataResolver.ResolveReference(String, Nullable(Of String), MetadataReferenceProperties)
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference*
+  name: ResolveReference
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.html#GCore_Source_Generators_Scripting_Nuget_NugetMetadataResolver_ResolveReference_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetMetadataResolver.ResolveReference
+  nameWithType: NugetMetadataResolver.ResolveReference
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller
+  name: NugetPackageInstaller
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.html
+  commentId: T:GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller
+  nameWithType: NugetPackageInstaller
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.#ctor
+  name: NugetPackageInstaller()
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.html#GCore_Source_Generators_Scripting_Nuget_NugetPackageInstaller__ctor
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.#ctor
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.NugetPackageInstaller()
+  nameWithType: NugetPackageInstaller.NugetPackageInstaller()
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.#ctor*
+  name: NugetPackageInstaller
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.html#GCore_Source_Generators_Scripting_Nuget_NugetPackageInstaller__ctor_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.NugetPackageInstaller
+  nameWithType: NugetPackageInstaller.NugetPackageInstaller
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync(System.String,System.Nullable{System.String},CancellationToken)
+  name: InstallAsync(String, Nullable<String>, CancellationToken)
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.html#GCore_Source_Generators_Scripting_Nuget_NugetPackageInstaller_InstallAsync_System_String_System_Nullable_System_String__CancellationToken_
+  commentId: M:GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync(System.String,System.Nullable{System.String},CancellationToken)
+  name.vb: InstallAsync(String, Nullable(Of String), CancellationToken)
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync(System.String, System.Nullable<System.String>, CancellationToken)
+  fullName.vb: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync(System.String, System.Nullable(Of System.String), CancellationToken)
+  nameWithType: NugetPackageInstaller.InstallAsync(String, Nullable<String>, CancellationToken)
+  nameWithType.vb: NugetPackageInstaller.InstallAsync(String, Nullable(Of String), CancellationToken)
+- uid: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync*
+  name: InstallAsync
+  href: api/GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.html#GCore_Source_Generators_Scripting_Nuget_NugetPackageInstaller_InstallAsync_
+  commentId: Overload:GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.Nuget.NugetPackageInstaller.InstallAsync
+  nameWithType: NugetPackageInstaller.InstallAsync
 - uid: GCore.Source.Generators.Scripting.ScriptElement
   name: ScriptElement
   href: api/GCore.Source.Generators.Scripting.ScriptElement.html
@@ -3466,6 +3834,38 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Generators.Scripting.ScriptElement.RenderScript
   nameWithType: ScriptElement.RenderScript
+- uid: GCore.Source.Generators.Scripting.ScriptRunner
+  name: ScriptRunner
+  href: api/GCore.Source.Generators.Scripting.ScriptRunner.html
+  commentId: T:GCore.Source.Generators.Scripting.ScriptRunner
+  fullName: GCore.Source.Generators.Scripting.ScriptRunner
+  nameWithType: ScriptRunner
+- uid: GCore.Source.Generators.Scripting.ScriptRunner.#ctor
+  name: ScriptRunner()
+  href: api/GCore.Source.Generators.Scripting.ScriptRunner.html#GCore_Source_Generators_Scripting_ScriptRunner__ctor
+  commentId: M:GCore.Source.Generators.Scripting.ScriptRunner.#ctor
+  fullName: GCore.Source.Generators.Scripting.ScriptRunner.ScriptRunner()
+  nameWithType: ScriptRunner.ScriptRunner()
+- uid: GCore.Source.Generators.Scripting.ScriptRunner.#ctor*
+  name: ScriptRunner
+  href: api/GCore.Source.Generators.Scripting.ScriptRunner.html#GCore_Source_Generators_Scripting_ScriptRunner__ctor_
+  commentId: Overload:GCore.Source.Generators.Scripting.ScriptRunner.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.ScriptRunner.ScriptRunner
+  nameWithType: ScriptRunner.ScriptRunner
+- uid: GCore.Source.Generators.Scripting.ScriptRunner.Run(System.String,System.Object)
+  name: Run(String, Object)
+  href: api/GCore.Source.Generators.Scripting.ScriptRunner.html#GCore_Source_Generators_Scripting_ScriptRunner_Run_System_String_System_Object_
+  commentId: M:GCore.Source.Generators.Scripting.ScriptRunner.Run(System.String,System.Object)
+  fullName: GCore.Source.Generators.Scripting.ScriptRunner.Run(System.String, System.Object)
+  nameWithType: ScriptRunner.Run(String, Object)
+- uid: GCore.Source.Generators.Scripting.ScriptRunner.Run*
+  name: Run
+  href: api/GCore.Source.Generators.Scripting.ScriptRunner.html#GCore_Source_Generators_Scripting_ScriptRunner_Run_
+  commentId: Overload:GCore.Source.Generators.Scripting.ScriptRunner.Run
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Scripting.ScriptRunner.Run
+  nameWithType: ScriptRunner.Run
 - uid: GCore.Source.Generators.SourceElement
   name: SourceElement
   href: api/GCore.Source.Generators.SourceElement.html
@@ -3782,6 +4182,44 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Generators.SourceElement.ToString
   nameWithType: SourceElement.ToString
+- uid: GCore.Source.Generators.T4
+  name: GCore.Source.Generators.T4
+  href: api/GCore.Source.Generators.T4.html
+  commentId: N:GCore.Source.Generators.T4
+  fullName: GCore.Source.Generators.T4
+  nameWithType: GCore.Source.Generators.T4
+- uid: GCore.Source.Generators.T4.T4Element
+  name: T4Element
+  href: api/GCore.Source.Generators.T4.T4Element.html
+  commentId: T:GCore.Source.Generators.T4.T4Element
+  fullName: GCore.Source.Generators.T4.T4Element
+  nameWithType: T4Element
+- uid: GCore.Source.Generators.T4.T4Element.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  name: T4Element(SourceElement, String)
+  href: api/GCore.Source.Generators.T4.T4Element.html#GCore_Source_Generators_T4_T4Element__ctor_GCore_Source_Generators_SourceElement_System_String_
+  commentId: M:GCore.Source.Generators.T4.T4Element.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  fullName: GCore.Source.Generators.T4.T4Element.T4Element(GCore.Source.Generators.SourceElement, System.String)
+  nameWithType: T4Element.T4Element(SourceElement, String)
+- uid: GCore.Source.Generators.T4.T4Element.#ctor*
+  name: T4Element
+  href: api/GCore.Source.Generators.T4.T4Element.html#GCore_Source_Generators_T4_T4Element__ctor_
+  commentId: Overload:GCore.Source.Generators.T4.T4Element.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.T4.T4Element.T4Element
+  nameWithType: T4Element.T4Element
+- uid: GCore.Source.Generators.T4.T4Element.RenderScript(GCore.Source.CodeWriter)
+  name: RenderScript(CodeWriter)
+  href: api/GCore.Source.Generators.T4.T4Element.html#GCore_Source_Generators_T4_T4Element_RenderScript_GCore_Source_CodeWriter_
+  commentId: M:GCore.Source.Generators.T4.T4Element.RenderScript(GCore.Source.CodeWriter)
+  fullName: GCore.Source.Generators.T4.T4Element.RenderScript(GCore.Source.CodeWriter)
+  nameWithType: T4Element.RenderScript(CodeWriter)
+- uid: GCore.Source.Generators.T4.T4Element.RenderScript*
+  name: RenderScript
+  href: api/GCore.Source.Generators.T4.T4Element.html#GCore_Source_Generators_T4_T4Element_RenderScript_
+  commentId: Overload:GCore.Source.Generators.T4.T4Element.RenderScript
+  isSpec: "True"
+  fullName: GCore.Source.Generators.T4.T4Element.RenderScript
+  nameWithType: T4Element.RenderScript
 - uid: GCore.Source.Helper
   name: GCore.Source.Helper
   href: api/GCore.Source.Helper.html
@@ -5831,12 +6269,15 @@ references:
   commentId: M:GCore.Source.SourceLocation.Equals(GCore.Source.SourceLocation)
   fullName: GCore.Source.SourceLocation.Equals(GCore.Source.SourceLocation)
   nameWithType: SourceLocation.Equals(SourceLocation)
-- uid: GCore.Source.SourceLocation.Equals(System.Object)
-  name: Equals(Object)
-  href: api/GCore.Source.SourceLocation.html#GCore_Source_SourceLocation_Equals_System_Object_
-  commentId: M:GCore.Source.SourceLocation.Equals(System.Object)
-  fullName: GCore.Source.SourceLocation.Equals(System.Object)
-  nameWithType: SourceLocation.Equals(Object)
+- uid: GCore.Source.SourceLocation.Equals(System.Nullable{System.Object})
+  name: Equals(Nullable<Object>)
+  href: api/GCore.Source.SourceLocation.html#GCore_Source_SourceLocation_Equals_System_Nullable_System_Object__
+  commentId: M:GCore.Source.SourceLocation.Equals(System.Nullable{System.Object})
+  name.vb: Equals(Nullable(Of Object))
+  fullName: GCore.Source.SourceLocation.Equals(System.Nullable<System.Object>)
+  fullName.vb: GCore.Source.SourceLocation.Equals(System.Nullable(Of System.Object))
+  nameWithType: SourceLocation.Equals(Nullable<Object>)
+  nameWithType.vb: SourceLocation.Equals(Nullable(Of Object))
 - uid: GCore.Source.SourceLocation.Equals*
   name: Equals
   href: api/GCore.Source.SourceLocation.html#GCore_Source_SourceLocation_Equals_
@@ -6022,12 +6463,15 @@ references:
   commentId: M:GCore.Source.SourceSpan.Equals(GCore.Source.SourceSpan)
   fullName: GCore.Source.SourceSpan.Equals(GCore.Source.SourceSpan)
   nameWithType: SourceSpan.Equals(SourceSpan)
-- uid: GCore.Source.SourceSpan.Equals(System.Object)
-  name: Equals(Object)
-  href: api/GCore.Source.SourceSpan.html#GCore_Source_SourceSpan_Equals_System_Object_
-  commentId: M:GCore.Source.SourceSpan.Equals(System.Object)
-  fullName: GCore.Source.SourceSpan.Equals(System.Object)
-  nameWithType: SourceSpan.Equals(Object)
+- uid: GCore.Source.SourceSpan.Equals(System.Nullable{System.Object})
+  name: Equals(Nullable<Object>)
+  href: api/GCore.Source.SourceSpan.html#GCore_Source_SourceSpan_Equals_System_Nullable_System_Object__
+  commentId: M:GCore.Source.SourceSpan.Equals(System.Nullable{System.Object})
+  name.vb: Equals(Nullable(Of Object))
+  fullName: GCore.Source.SourceSpan.Equals(System.Nullable<System.Object>)
+  fullName.vb: GCore.Source.SourceSpan.Equals(System.Nullable(Of System.Object))
+  nameWithType: SourceSpan.Equals(Nullable<Object>)
+  nameWithType.vb: SourceSpan.Equals(Nullable(Of Object))
 - uid: GCore.Source.SourceSpan.Equals*
   name: Equals
   href: api/GCore.Source.SourceSpan.html#GCore_Source_SourceSpan_Equals_

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ScriptableElement
+    <title>Class T4Element
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ScriptableElement
+    <meta name="title" content="Class T4Element
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.Source.Generators.Elements.ScriptableElement">
+            <article class="content wrap" id="_content" data-uid="GCore.Source.Generators.T4.T4Element">
   
   
-  <h1 id="GCore_Source_Generators_Elements_ScriptableElement" data-uid="GCore.Source.Generators.Elements.ScriptableElement" class="text-break">Class ScriptableElement
+  <h1 id="GCore_Source_Generators_T4_T4Element" data-uid="GCore.Source.Generators.T4.T4Element" class="text-break">Class T4Element
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -80,11 +80,8 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></div>
     <div class="level2"><a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html">TaggedElement</a></div>
-    <div class="level3"><span class="xref">ScriptableElement</span></div>
-      <div class="level4"><a class="xref" href="GCore.Source.Generators.Elements.ObjectElement.html">ObjectElement</a></div>
-      <div class="level4"><a class="xref" href="GCore.Source.Generators.Razor.RazorElement.html">RazorElement</a></div>
-      <div class="level4"><a class="xref" href="GCore.Source.Generators.Scripting.ScriptElement.html">ScriptElement</a></div>
-      <div class="level4"><a class="xref" href="GCore.Source.Generators.T4.T4Element.html">T4Element</a></div>
+    <div class="level3"><a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html">ScriptableElement</a></div>
+    <div class="level4"><span class="xref">T4Element</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -94,6 +91,30 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_ModelFile">ScriptableElement.ModelFile</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_ScriptFile">ScriptableElement.ScriptFile</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_Src">ScriptableElement.Src</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_Dst">ScriptableElement.Dst</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_Render_GCore_Source_CodeWriter_">ScriptableElement.Render(CodeWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_ReadInput">ScriptableElement.ReadInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_WriteOutput_System_String_">ScriptableElement.WriteOutput(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_GetModel">ScriptableElement.GetModel()</a>
+    </div>
     <div>
       <a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html#GCore_Source_Generators_Elements_TaggedElement__startLine">TaggedElement._startLine</a>
     </div>
@@ -179,28 +200,28 @@
       <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Configure_IReadOnlyDictionary_System_String_System_String__">SourceElement.Configure(IReadOnlyDictionary&lt;String, String&gt;)</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Source.Generators.Elements.html">GCore.Source.Generators.Elements</a></h6>
-  <h6><strong>Assembly</strong>: GCore.Source.Generators.dll</h6>
-  <h5 id="GCore_Source_Generators_Elements_ScriptableElement_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Source.Generators.T4.html">GCore.Source.Generators.T4</a></h6>
+  <h6><strong>Assembly</strong>: GCore.Source.Generators.T4.dll</h6>
+  <h5 id="GCore_Source_Generators_T4_T4Element_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ScriptableElement : TaggedElement, IRenderable, ITaggedElement, IConfigurable</code></pre>
+    <pre><code class="lang-csharp hljs">public class T4Element : ScriptableElement, IRenderable, ITaggedElement, IConfigurable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement__ctor_GCore_Source_Generators_SourceElement_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_T4_T4Element__ctor_GCore_Source_Generators_SourceElement_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.T4.T4Element.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L40">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators.T4/T4Element.cs/#L13">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement__ctor_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.#ctor*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement__ctor_GCore_Source_Generators_SourceElement_System_String_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.#ctor(GCore.Source.Generators.SourceElement,System.String)">ScriptableElement(SourceElement, String)</h4>
+  <a id="GCore_Source_Generators_T4_T4Element__ctor_" data-uid="GCore.Source.Generators.T4.T4Element.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_T4_T4Element__ctor_GCore_Source_Generators_SourceElement_System_String_" data-uid="GCore.Source.Generators.T4.T4Element.#ctor(GCore.Source.Generators.SourceElement,System.String)">T4Element(SourceElement, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ScriptableElement(SourceElement parent, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public T4Element(SourceElement parent, string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -224,204 +245,22 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_Dst.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.Dst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L37">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_Dst_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.Dst*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_Dst" data-uid="GCore.Source.Generators.Elements.ScriptableElement.Dst">Dst</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Dst { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_ModelFile.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.ModelFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L28">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_ModelFile_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.ModelFile*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_ModelFile" data-uid="GCore.Source.Generators.Elements.ScriptableElement.ModelFile">ModelFile</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ModelFile { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_ScriptFile.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.ScriptFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L31">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_ScriptFile_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.ScriptFile*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_ScriptFile" data-uid="GCore.Source.Generators.Elements.ScriptableElement.ScriptFile">ScriptFile</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ScriptFile { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_Src.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.Src%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L34">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_Src_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.Src*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_Src" data-uid="GCore.Source.Generators.Elements.ScriptableElement.Src">Src</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Src { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_GetModel.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.GetModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_T4_T4Element_RenderScript_GCore_Source_CodeWriter_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.T4.T4Element.RenderScript(GCore.Source.CodeWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L113">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators.T4/T4Element.cs/#L17">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_GetModel_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.GetModel*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_GetModel" data-uid="GCore.Source.Generators.Elements.ScriptableElement.GetModel">GetModel()</h4>
+  <a id="GCore_Source_Generators_T4_T4Element_RenderScript_" data-uid="GCore.Source.Generators.T4.T4Element.RenderScript*"></a>
+  <h4 id="GCore_Source_Generators_T4_T4Element_RenderScript_GCore_Source_CodeWriter_" data-uid="GCore.Source.Generators.T4.T4Element.RenderScript(GCore.Source.CodeWriter)">RenderScript(CodeWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected dynamic GetModel()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_ReadInput.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.ReadInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L91">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_ReadInput_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.ReadInput*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_ReadInput" data-uid="GCore.Source.Generators.Elements.ScriptableElement.ReadInput">ReadInput()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string ReadInput()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_Render_GCore_Source_CodeWriter_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.Render(GCore.Source.CodeWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L43">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_Render_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.Render*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_Render_GCore_Source_CodeWriter_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.Render(GCore.Source.CodeWriter)">Render(CodeWriter)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Render(CodeWriter writer)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void RenderScript(CodeWriter writer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -441,71 +280,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html#GCore_Source_Generators_Elements_TaggedElement_Render_GCore_Source_CodeWriter_">TaggedElement.Render(CodeWriter)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_RenderScript_GCore_Source_CodeWriter_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.RenderScript(GCore.Source.CodeWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L120">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_RenderScript_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.RenderScript*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_RenderScript_GCore_Source_CodeWriter_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.RenderScript(GCore.Source.CodeWriter)">RenderScript(CodeWriter)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void RenderScript(CodeWriter writer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GCore.Source.CodeWriter.html">CodeWriter</a></td>
-        <td><span class="parametername">writer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement_WriteOutput_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement.WriteOutput(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L96">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_ScriptableElement_WriteOutput_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.WriteOutput*"></a>
-  <h4 id="GCore_Source_Generators_Elements_ScriptableElement_WriteOutput_System_String_" data-uid="GCore.Source.Generators.Elements.ScriptableElement.WriteOutput(System.String)">WriteOutput(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void WriteOutput(string result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <div><a class="xref" href="GCore.Source.Generators.Elements.ScriptableElement.html#GCore_Source_Generators_Elements_ScriptableElement_RenderScript_GCore_Source_CodeWriter_">ScriptableElement.RenderScript(CodeWriter)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="GCore.Source.IRenderable.html">IRenderable</a>
@@ -625,12 +400,6 @@
   <div>
       <a class="xref" href="GCore.Source.Generators.CSharp.Extensions.CSharpSourceElementExtensions.html#GCore_Source_Generators_CSharp_Extensions_CSharpSourceElementExtensions_AddVarDateTime_GCore_Source_Generators_SourceElement_System_String_GCore_Source_Generators_CSharp_CSharpModifier_System_Boolean_">CSharpSourceElementExtensions.AddVarDateTime(SourceElement, String, CSharpModifier, Boolean)</a>
   </div>
-  <div>
-      <a class="xref" href="GCore.Source.Generators.Extensions.SourceElementExtensions.html#GCore_Source_Generators_Extensions_SourceElementExtensions_Render_GCore_Source_Generators_SourceElement_">SourceElementExtensions.Render(SourceElement)</a>
-  </div>
-  <div>
-      <a class="xref" href="GCore.Source.Generators.Extensions.SourceElementExtensions.html#GCore_Source_Generators_Extensions_SourceElementExtensions_Add__1_GCore_Source_Generators_SourceElement___0_">SourceElementExtensions.Add&lt;T&gt;(SourceElement, T)</a>
-  </div>
 </article>
           </div>
           
@@ -639,10 +408,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_Elements_ScriptableElement.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.ScriptableElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/new/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/apiSpec/new?filename=GCore_Source_Generators_T4_T4Element.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.T4.T4Element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators/Elements/ScriptableElement.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/abbad86d82f4be9e8a9acc9c8a75e6c9b0f2075e/src/GCore.Source.Generators.T4/T4Element.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
