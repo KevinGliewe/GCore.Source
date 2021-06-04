@@ -3,7 +3,6 @@
 .actrc
 
 act/
-NuGet
 
 src/*/Properties/VersionInfo.cs
 pack/
