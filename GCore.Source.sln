@@ -43,6 +43,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.JsonClassGener
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.JsonClassGenerator.Tests", "src\GCore.Source.JsonClassGenerator.Tests\GCore.Source.JsonClassGenerator.Tests.csproj", "{722C42FE-B944-4D00-9BCD-90C2A2497595}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.T4", "src\GCore.Source.Generators.T4\GCore.Source.Generators.T4.csproj", "{A0F7D4B3-2F08-4CB7-A6EB-94BCBF1822B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Generators.T4.Tests", "src\GCore.Source.Generators.T4.Tests\GCore.Source.Generators.T4.Tests.csproj", "{27772422-9776-46D7-900C-89408BCE4E82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +117,14 @@ Global
 		{722C42FE-B944-4D00-9BCD-90C2A2497595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{722C42FE-B944-4D00-9BCD-90C2A2497595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{722C42FE-B944-4D00-9BCD-90C2A2497595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F7D4B3-2F08-4CB7-A6EB-94BCBF1822B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F7D4B3-2F08-4CB7-A6EB-94BCBF1822B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F7D4B3-2F08-4CB7-A6EB-94BCBF1822B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F7D4B3-2F08-4CB7-A6EB-94BCBF1822B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27772422-9776-46D7-900C-89408BCE4E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27772422-9776-46D7-900C-89408BCE4E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27772422-9776-46D7-900C-89408BCE4E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27772422-9776-46D7-900C-89408BCE4E82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +138,7 @@ Global
 		{576D142B-43AA-430D-B306-D01DA122DDC7} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
 		{66504EB3-D86B-430F-BD44-AA0A04A37F22} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
 		{722C42FE-B944-4D00-9BCD-90C2A2497595} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
+		{27772422-9776-46D7-900C-89408BCE4E82} = {79D1AB15-0A41-4A32-820C-AFED98120C7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E444A06-9F82-459C-A065-44639330FC46}

@@ -1,4 +1,4 @@
-using GCore.Source.Cli.Tests.Extensions;
+﻿using GCore.Source.Cli.Tests.Extensions;
 using GCore.Source.Generators.Extensions;
 using NUnit.Framework;
 
@@ -39,6 +39,15 @@ namespace GCore.Source.Generators.Scripting.Tests
             var result = se.Render().Trim();
 
             Assert.AreEqual("42", result);
+        }
+
+        [Test]
+        public void ScriptNugetFile() {
+            var se = "<[Script Dst=\".\" ScriptFile=\"TestData/ScriptNuget.csx\" RenderTags=\"false\"]>\n<[/Script]>".ParseToSourceElement();
+
+            var result = se.Render().Trim();
+
+            Assert.AreEqual("🂠", result);
         }
 
         [Test]

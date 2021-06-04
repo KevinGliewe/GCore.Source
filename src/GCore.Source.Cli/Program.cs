@@ -7,6 +7,7 @@ using GCore.Source.Extensions;
 using GCore.Source.Generators.Extensions;
 using GCore.Source.Generators.Razor;
 using GCore.Source.Generators.Scripting;
+using GCore.Source.Generators.T4;
 
 namespace GCore.Source.Cli
 {
@@ -54,8 +55,10 @@ namespace GCore.Source.Cli
         static void Main(string[] args) {
             try
             {
+                // To load the assemblies
                 typeof(ScriptElement).GetType();
                 typeof(RazorElement).GetType();
+                typeof(T4Element).GetType();
 
                 var args_ = ArgsParse.Parse(args);
                 InjectDefaultArgs(args_);

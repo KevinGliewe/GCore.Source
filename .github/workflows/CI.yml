@@ -17,6 +17,8 @@ jobs:
 
       - name: Restore
         run: dotnet restore
+        env:
+          DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
       - name: Build & test (.NET v5.0)
         run: dotnet test --configuration Release --logger GitHubActions --framework net5.0

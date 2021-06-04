@@ -10,6 +10,7 @@
     <ProjectReference Include="..\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj" />
     <ProjectReference Include="..\GCore.Source.Generators.Razor\GCore.Source.Generators.Razor.csproj" />
     <ProjectReference Include="..\GCore.Source.Generators.Scripting\GCore.Source.Generators.Scripting.csproj" />
+    <ProjectReference Include="..\GCore.Source.Generators.T4\GCore.Source.Generators.T4.csproj" />
     <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>

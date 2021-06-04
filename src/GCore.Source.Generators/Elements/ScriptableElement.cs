@@ -58,7 +58,7 @@ namespace GCore.Source.Generators.Elements
             if (!File.Exists(ScriptFile))
                 throw new Exception("Script file not found " + ScriptFile);
 
-            return File.ReadAllText(ScriptFile);
+            return File.ReadAllText(ScriptFile ?? throw new Exception());
         }
 
         string ReadScriptElement() 

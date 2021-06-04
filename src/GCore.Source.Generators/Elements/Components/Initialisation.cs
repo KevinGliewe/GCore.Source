@@ -14,7 +14,7 @@ namespace GCore.Source.Generators.Elements.Components
         {
             InitValue = initValue;
         }
-        public virtual void Render(CodeWriter writer) => writer.Write(InitValue.ToString());
+        public virtual void Render(CodeWriter writer) => writer.Write(InitValue?.ToString() ?? "");
 
     }
 }

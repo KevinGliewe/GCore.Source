@@ -4,6 +4,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -35,21 +36,6 @@ namespace GCore.Source
         public int Length => _builder.Length;
 
         public override Encoding Encoding { get => Encoding.Unicode; }
-
-        public override string NewLine {
-            get => base.NewLine;
-            set {
-                if (value == null) {
-                    throw new ArgumentNullException(nameof(value));
-                }
-
-                if (value != "\r\n" && value != "\n") {
-                    throw new ArgumentException($"Invalid NewLine '{ToLiteral(value)}'", nameof(value));
-                }
-
-                base.NewLine = value;
-            }
-        }
 
         public SourceLocation Location => new SourceLocation(_absoluteIndex, _currentLineIndex, _currentLineCharacterIndex);
 
@@ -97,7 +83,7 @@ namespace GCore.Source
             Write(new string(value, 1), 0, 1);
         }
 
-        public CodeWriter Write(string value) {
+        public CodeWriter Write(string? value) {
             if (value == null) {
                 throw new ArgumentNullException(nameof(value));
             }
@@ -236,7 +222,7 @@ namespace GCore.Source
             return this;
         }
 
-        public CodeWriter WriteLine(string value) {
+        public CodeWriter WriteLine(string? value) {
             if (value == null) {
                 throw new ArgumentNullException(nameof(value));
             }

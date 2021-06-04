@@ -311,7 +311,7 @@ namespace GCore.Source.CSharp
                 }
 
                 if (hasInterfaces) {
-                    writer.Write(string.Join(", ", interfaces));
+                    writer.Write(string.Join(", ", interfaces ?? throw new Exception()));
                 }
             }
 

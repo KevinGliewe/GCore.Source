@@ -8,6 +8,8 @@ NuGet
 src/*/Properties/VersionInfo.cs
 pack/
 
+doc/puml
+
 .vs
 
 # User-specific files

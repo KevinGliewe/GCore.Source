@@ -7,6 +7,7 @@ using GCore.Source.Attributes;
 using GCore.Source.Extensions;
 using GCore.Source.Generators.Attributes;
 using GCore.Source.Generators.Elements;
+using GCore.Source.Generators.Scripting.Nuget;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 
@@ -25,7 +26,12 @@ namespace GCore.Source.Generators.Scripting
             var code = ReadInput();
             var model = GetModel();
 
-            var result = CSharpScript.RunAsync(code, BuildScriptOptions(), globals: new Globals(model, this, writer)).Result;
+            var result = new ScriptRunner().Run(code, new Globals(model, this, writer)).Result;
+
+            if (result is EvaluationResult.Error err)
+                throw err.Exception;
+
+            //var result = CSharpScript.RunAsync(code, BuildScriptOptions(), globals: new Globals(model, this, writer)).Result;
         }
 
 
@@ -42,7 +48,7 @@ namespace GCore.Source.Generators.Scripting
                     "System",
                     "System.Dynamic",
                     "GCore.Source"
-                );
+                ).WithMetadataResolver(new NugetMetadataResolver(new ReferenceAssemblyService().ReferenceAssemblyPaths));
 
             if (assemblys != null)
                 so.AddReferences(assemblys);

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -17,24 +17,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GCore.Source.Generators.Scripting\GCore.Source.Generators.Scripting.csproj" />
+    <ProjectReference Include="..\GCore.Source.Generators.T4\GCore.Source.Generators.T4.csproj" />
     <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="TestData\Model.json">
+    <None Update="TestData\TemplateCount.t4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\ScriptNuget.csx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="TestData\ScriptModel.csx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="TestData\ScriptSimple.csx">
+    <None Update="TestData\TemplateSimple.t4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
 
 </Project>

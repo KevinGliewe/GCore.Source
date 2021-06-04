@@ -14,7 +14,7 @@ namespace GCore.Source.Generators.CSharp.Properties
 
         public CSharpNamespace(Type type)
         {
-            _ns = type.Namespace.Split(new string[] { Separator }, StringSplitOptions.None);
+            _ns = type.Namespace?.Split(new string[] { Separator }, StringSplitOptions.None) ?? throw new Exception();
         }
         public void Render(CodeWriter writer) {
             writer.Write(String.Join(Separator, Namespaces));
