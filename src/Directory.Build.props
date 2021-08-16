@@ -12,7 +12,7 @@
     <Description>Code generation</Description>
     <PackageTags> codegen code generation source generators</PackageTags>
     <PackageProjectUrl>https://kevingliewe.github.io/GCore.Source/</PackageProjectUrl>
-    <PublishRepositoryUrl>https://github.com/KevinGliewe/GCore.Source</PublishRepositoryUrl>
+    <RepositoryUrl>https://github.com/KevinGliewe/GCore.Source</RepositoryUrl>
     <PackageReleaseNotes>https://github.com/KevinGliewe/GCore.Source/blob/master/Changelog.md</PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
