@@ -6,7 +6,8 @@ namespace GCore.Source.Tests
 {
     public class JsonDynamicTests
     {
-        private JsonDynamic json = JsonDynamic.Parse(File.ReadAllText("TestData/TestModel.json"));
+        private const string TestModelFile = "TestData/TestModel.json";
+        private JsonDynamic json = JsonDynamic.Parse(File.ReadAllText(TestModelFile));
 
         [SetUp]
         public void Setup()
@@ -80,6 +81,12 @@ namespace GCore.Source.Tests
         public void FileQuery()
         {
             Assert.AreEqual(42, JsonDynamic.QueryFile("TestData/TestModel.json?menu.int_"));
+        }
+
+        [Test]
+        public void ToStringTest()
+        {
+            Assert.AreEqual(File.ReadAllText(TestModelFile), json.ToString());
         }
     }
 }

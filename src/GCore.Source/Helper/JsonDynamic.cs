@@ -165,5 +165,10 @@ namespace GCore.Source.Helper
 
             return json.Query(string.Join("?", split.Skip(1)));
         }
+
+        public override string ToString()
+        {
+            return RealObject.ToString();
+        }
     }
 }
