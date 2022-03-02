@@ -1,6 +1,7 @@
 <Project>
 
   <Import Project="..\Version.props" />
+  <Import Project=".\GenerateVersionInfo.props" />
 
   <PropertyGroup>
     <Company>Gliewe.NET</Company>
@@ -35,24 +36,5 @@
   <ItemGroup>
     <None Include="../../doc/icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
-
-  <!-- Suppress default attributes created by the compiler to prevent duplicate attribute errors -->
-  <PropertyGroup>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-  </PropertyGroup>
-
-  <Target Name="GenerateVersionInfo" BeforeTargets="CoreCompile">
-    <Exec Command="dotnet tool restore" />
-    <Exec Command="dotnet tool run rw-project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
-    <ItemGroup>
-      <Compile Remove="Properties\VersionInfo.cs" />
-      <Compile Include="Properties\VersionInfo.cs" />
-    </ItemGroup>
-  </Target>
 
 </Project>

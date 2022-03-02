@@ -2,14 +2,10 @@
 
   <Import Project="..\Lib.Build.props" />
 
-  <ItemGroup>
-    <PackageReference Include="Mono.TextTemplating" Version="2.2.1" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
-  </ItemGroup>
+  <Import Project="..\PackageReferences\Mono.TextTemplating.props" />
 
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
-
 </Project>

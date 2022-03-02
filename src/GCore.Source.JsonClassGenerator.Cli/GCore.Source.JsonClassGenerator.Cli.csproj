@@ -7,10 +7,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.20574.7" />
-  </ItemGroup>
-
+  <Import Project="..\PackageReferences\System.CommandLine.DragonFruit.props" />
+  
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source.JsonClassGenerator\GCore.Source.JsonClassGenerator.csproj" />
   </ItemGroup>

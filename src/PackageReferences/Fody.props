@@ -1,0 +1,8 @@
+<!--<Import Project="..\PackageReferences\Fody.props" />-->
+<Project>
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="6.6.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

@@ -1,20 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-
-    <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
-    <CollectCoverage>true</CollectCoverage>
-    <CoverletOutputFormat>opencover</CoverletOutputFormat>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="GitHubActionsTestLogger" Version="1.1.2" />
-  </ItemGroup>
+  <Import Project="..\Tests.Build.props" />
 
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source.Generators.Scripting\GCore.Source.Generators.Scripting.csproj" />

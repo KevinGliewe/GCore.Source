@@ -2,10 +2,7 @@
 
   <Import Project="..\Lib.Build.props" />
 
-  <ItemGroup>
-    <PackageReference Include="MiniRazor" Version="2.1.2" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
-  </ItemGroup>
+  <Import Project="..\PackageReferences\MiniRazor.props" />
 
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source.Generators\GCore.Source.Generators.csproj" />
