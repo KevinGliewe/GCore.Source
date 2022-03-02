@@ -3965,6 +3965,19 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Helper.JsonDynamic.ToDynamic
   nameWithType: JsonDynamic.ToDynamic
+- uid: GCore.Source.Helper.JsonDynamic.ToString
+  name: ToString()
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_ToString
+  commentId: M:GCore.Source.Helper.JsonDynamic.ToString
+  fullName: GCore.Source.Helper.JsonDynamic.ToString()
+  nameWithType: JsonDynamic.ToString()
+- uid: GCore.Source.Helper.JsonDynamic.ToString*
+  name: ToString
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_ToString_
+  commentId: Overload:GCore.Source.Helper.JsonDynamic.ToString
+  isSpec: "True"
+  fullName: GCore.Source.Helper.JsonDynamic.ToString
+  nameWithType: JsonDynamic.ToString
 - uid: GCore.Source.Helper.JsonDynamic.TryGetMember(GetMemberBinder,System.Nullable{System.Object}@)
   name: TryGetMember(GetMemberBinder, out Nullable<Object>)
   href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_TryGetMember_GetMemberBinder_System_Nullable_System_Object___
