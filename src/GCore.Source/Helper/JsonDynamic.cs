@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
@@ -26,6 +27,27 @@ namespace GCore.Source.Helper
             return true;
         }
 
+        public dynamic? this[int index]
+        {
+            get {
+                if(RealObject.ValueKind == JsonValueKind.Array)
+                    return ToDynamic(RealObject[index]);
+
+                string sindex = index.ToString();
+                if(RealObject.ValueKind == JsonValueKind.Object)
+                    return ToDynamic(RealObject.EnumerateObject().FirstOrDefault(x => x.Name == sindex).Value);
+
+                return null;
+            }
+        }
+
+        public dynamic? this[string index]
+        {
+            get {
+                return Query(index);
+            }
+        }
+
         public dynamic? Query(IEnumerable<string> query)
         {
             JsonElement elem = RealObject;
@@ -38,7 +60,7 @@ namespace GCore.Source.Helper
                     continue;
 
                 if(elem.ValueKind != JsonValueKind.Object)
-                    throw new Exception(string.Join(".", queryHistory) + " is not a object!");
+                    return null; //throw new Exception(string.Join(".", queryHistory) + " is not a object!");
 
 
                 var arrMatch = ArrayQueryRegex.Match(q);
@@ -48,7 +70,7 @@ namespace GCore.Source.Helper
                 queryHistory.Add(elemName);
 
                 if(elem.EnumerateObject().Count(p => p.Name == elemName) == 0)
-                    throw new Exception(string.Join(".", queryHistory) + $" has no property '{elemName}'!");
+                    return null; //throw new Exception(string.Join(".", queryHistory) + $" has no property '{elemName}'!");
 
                 elem = elem.GetProperty(elemName);
 
@@ -58,7 +80,7 @@ namespace GCore.Source.Helper
                     var index = Int32.Parse(arrMatch.Groups["index"].Value);
 
                     if(elem.ValueKind != JsonValueKind.Array)
-                        throw new Exception(string.Join(".", queryHistory) + " is not a array!");
+                        return null; //throw new Exception(string.Join(".", queryHistory) + " is not a array!");
 
                     queryHistory.Add(index.ToString());
 
@@ -72,6 +94,24 @@ namespace GCore.Source.Helper
         public dynamic? Query(string query)
         {
             return Query(query.Split('.'));
+        }
+
+        public IEnumerable<dynamic?> Enumerate()
+        {
+            if(RealObject.ValueKind == JsonValueKind.Array)
+            {
+                foreach(var elem in RealObject.EnumerateArray())
+                {
+                    yield return ToDynamic(elem);
+                }
+            }
+            else if(RealObject.ValueKind == JsonValueKind.Object)
+            {
+                foreach(var elem in RealObject.EnumerateObject())
+                {
+                    yield return new KeyValuePair<string, dynamic?>(elem.Name,ToDynamic(elem.Value));
+                }
+            }
         }
 
         public static dynamic? ToDynamic(JsonElement elem)

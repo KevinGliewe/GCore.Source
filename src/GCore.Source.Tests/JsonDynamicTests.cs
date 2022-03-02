@@ -36,6 +36,47 @@ namespace GCore.Source.Tests
         }
 
         [Test]
+        public void IndexString()
+        {
+            Assert.AreEqual("file", json["menu.id"]);
+            Assert.AreEqual("file", json["menu"]?["id"]);
+        }
+
+        [Test]
+        public void EnumerateArray()
+        {
+            dynamic? d = json.Query("menu.popup.menuitem");
+            int index = 0;
+            var vals = new string[] { "New", "Open", "Close" };
+
+            if(d != null)
+                foreach (dynamic? item in d)
+                {
+                    Assert.AreEqual(vals[index], item.value);
+                    index++;
+                }
+            else
+                Assert.Fail();
+        }
+
+        [Test]
+        public void EnumerateObject()
+        {
+            dynamic? d = json.Query("menu");
+            int index = 0;
+            var vals = new string[] { "id", "value", "int_", "float_", "bool_", "popup"};
+
+            if (d != null)
+                foreach (dynamic? item in d.Enumerate())
+                {
+                    Assert.AreEqual(vals[index], item.Key);
+                    index++;
+                }
+            else
+                Assert.Fail();
+        }
+
+        [Test]
         public void FileQuery()
         {
             Assert.AreEqual(42, JsonDynamic.QueryFile("TestData/TestModel.json?menu.int_"));
