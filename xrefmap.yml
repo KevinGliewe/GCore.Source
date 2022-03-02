@@ -3847,6 +3847,44 @@ references:
   commentId: F:GCore.Source.Helper.JsonDynamic.ArrayQueryRegex
   fullName: GCore.Source.Helper.JsonDynamic.ArrayQueryRegex
   nameWithType: JsonDynamic.ArrayQueryRegex
+- uid: GCore.Source.Helper.JsonDynamic.Enumerate
+  name: Enumerate()
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_Enumerate
+  commentId: M:GCore.Source.Helper.JsonDynamic.Enumerate
+  fullName: GCore.Source.Helper.JsonDynamic.Enumerate()
+  nameWithType: JsonDynamic.Enumerate()
+- uid: GCore.Source.Helper.JsonDynamic.Enumerate*
+  name: Enumerate
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_Enumerate_
+  commentId: Overload:GCore.Source.Helper.JsonDynamic.Enumerate
+  isSpec: "True"
+  fullName: GCore.Source.Helper.JsonDynamic.Enumerate
+  nameWithType: JsonDynamic.Enumerate
+- uid: GCore.Source.Helper.JsonDynamic.Item(System.Int32)
+  name: Item[Int32]
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_Item_System_Int32_
+  commentId: P:GCore.Source.Helper.JsonDynamic.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: GCore.Source.Helper.JsonDynamic.Item[System.Int32]
+  fullName.vb: GCore.Source.Helper.JsonDynamic.Item(System.Int32)
+  nameWithType: JsonDynamic.Item[Int32]
+  nameWithType.vb: JsonDynamic.Item(Int32)
+- uid: GCore.Source.Helper.JsonDynamic.Item(System.String)
+  name: Item[String]
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_Item_System_String_
+  commentId: P:GCore.Source.Helper.JsonDynamic.Item(System.String)
+  name.vb: Item(String)
+  fullName: GCore.Source.Helper.JsonDynamic.Item[System.String]
+  fullName.vb: GCore.Source.Helper.JsonDynamic.Item(System.String)
+  nameWithType: JsonDynamic.Item[String]
+  nameWithType.vb: JsonDynamic.Item(String)
+- uid: GCore.Source.Helper.JsonDynamic.Item*
+  name: Item
+  href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_Item_
+  commentId: Overload:GCore.Source.Helper.JsonDynamic.Item
+  isSpec: "True"
+  fullName: GCore.Source.Helper.JsonDynamic.Item
+  nameWithType: JsonDynamic.Item
 - uid: GCore.Source.Helper.JsonDynamic.Parse(System.String)
   name: Parse(String)
   href: api/GCore.Source.Helper.JsonDynamic.html#GCore_Source_Helper_JsonDynamic_Parse_System_String_
