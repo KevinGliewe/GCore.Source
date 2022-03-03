@@ -47,9 +47,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.T4"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Generators.T4.Tests", "src\GCore.Source.Generators.T4.Tests\GCore.Source.Generators.T4.Tests.csproj", "{27772422-9776-46D7-900C-89408BCE4E82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Scripting", "src\GCore.Source.Scripting\GCore.Source.Scripting.csproj", "{54B1D3D8-BB61-4EC8-93CD-D7CB4B7BD034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Scripting", "src\GCore.Source.Scripting\GCore.Source.Scripting.csproj", "{54B1D3D8-BB61-4EC8-93CD-D7CB4B7BD034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Source.Scripting.Tests", "src\GCore.Source.Scripting.Tests\GCore.Source.Scripting.Tests.csproj", "{74FD3C6F-C043-4D2E-B5C6-253C59BC68EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore.Source.Scripting.Tests", "src\GCore.Source.Scripting.Tests\GCore.Source.Scripting.Tests.csproj", "{74FD3C6F-C043-4D2E-B5C6-253C59BC68EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PackageReferences", "PackageReferences", "{D54965D6-6DE0-4E62-804C-1581D105C814}"
+	ProjectSection(SolutionItems) = preProject
+		src\PackageReferences\Fody.props = src\PackageReferences\Fody.props
+		src\PackageReferences\GCore.props = src\PackageReferences\GCore.props
+		src\PackageReferences\Microsoft.CodeAnalysis.CSharp.Scripting.props = src\PackageReferences\Microsoft.CodeAnalysis.CSharp.Scripting.props
+		src\PackageReferences\Microsoft.SourceLink.GitHub.props = src\PackageReferences\Microsoft.SourceLink.GitHub.props
+		src\PackageReferences\MiniRazor.props = src\PackageReferences\MiniRazor.props
+		src\PackageReferences\Mono.TextTemplating.props = src\PackageReferences\Mono.TextTemplating.props
+		src\PackageReferences\Newtonsoft.Json.props = src\PackageReferences\Newtonsoft.Json.props
+		src\PackageReferences\NuGet.PackageManagement.props = src\PackageReferences\NuGet.PackageManagement.props
+		src\PackageReferences\Pluralize.NET.props = src\PackageReferences\Pluralize.NET.props
+		src\PackageReferences\System.CommandLine.DragonFruit.props = src\PackageReferences\System.CommandLine.DragonFruit.props
+		src\PackageReferences\System.Text.Json.props = src\PackageReferences\System.Text.Json.props
+		src\PackageReferences\Virtuosity.Fody.props = src\PackageReferences\Virtuosity.Fody.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

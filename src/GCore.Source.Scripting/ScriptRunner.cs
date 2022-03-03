@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
@@ -9,20 +11,41 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.CodeAnalysis.Scripting.Hosting;
+using NuGet.PackageManagement;
 
 namespace GCore.Source.Scripting
 {
     public class ScriptRunner
     {
+        public const string CONFIG_SEARCHPATHS = "searchpaths";
+        public const string CONFIG_BASEDIRECTORY = "basedirectory";
+
         private readonly InteractiveAssemblyLoader assemblyLoader;
         private readonly NugetMetadataResolver nugetResolver;
         private ScriptOptions scriptOptions;
         private ScriptState<object>? state;
 
-        public ScriptRunner(Assembly[] references, string[] imports) {
+        public ScriptRunner(Assembly[] references, string[] imports, string[]? searchPaths = null, string? baseDirectory = null, IReadOnlyDictionary<string, string>? config = null)
+        {
+            var _searchPaths = searchPaths is null ? new List<string>() : new List<string>(searchPaths);
+
+            if (config is not null)
+            {
+                if(config.ContainsKey(CONFIG_SEARCHPATHS))
+                    _searchPaths.AddRange(config[CONFIG_SEARCHPATHS].Split(';'));
+
+                if (baseDirectory is null && config.ContainsKey(CONFIG_BASEDIRECTORY))
+                    baseDirectory = config[CONFIG_BASEDIRECTORY];
+            }
+
+            if (baseDirectory is null)
+                baseDirectory = Directory.GetCurrentDirectory();
+
+
             this.assemblyLoader = new InteractiveAssemblyLoader(new MetadataShadowCopyProvider());
             this.nugetResolver = new NugetMetadataResolver(new ReferenceAssemblyService().ReferenceAssemblyPaths);
             this.scriptOptions = ScriptOptions.Default
+                .WithSourceResolver(new RemoteFileResolver(_searchPaths.ToImmutableArray(), baseDirectory, config))
                 .WithMetadataResolver(nugetResolver)
                 .WithReferences(references)
                 .WithAllowUnsafe(true)

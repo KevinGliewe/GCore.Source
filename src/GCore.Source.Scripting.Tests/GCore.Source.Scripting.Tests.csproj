@@ -6,4 +6,10 @@
     <ProjectReference Include="..\GCore.Source.Scripting\GCore.Source.Scripting.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestData\importme.csx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

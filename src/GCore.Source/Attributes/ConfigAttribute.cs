@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using GCore.Extensions.StringEx.Inject;
+using GCore.Source.Extensions;
 
 namespace GCore.Source.Attributes
 {
@@ -30,9 +32,11 @@ namespace GCore.Source.Attributes
                 var value = props[attr.Name];
 
                 // inject values
-                if(!(inject is null))
-                    foreach (var pair in inject)
-                        value = value.Replace($"$({pair.Key})", pair.Value);
+                //if(!(inject is null))
+                //    foreach (var pair in inject)
+                //        value = value.Replace($"$({pair.Key})", pair.Value);
+
+                value = value.SimpleInject(inject);
 
                 var convertedValue = Convert.ChangeType(value, prop.PropertyType);
 
