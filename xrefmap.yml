@@ -6519,21 +6519,132 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Scripting.ReferenceAssemblyService.SupportedFrameworks
   nameWithType: ReferenceAssemblyService.SupportedFrameworks
+- uid: GCore.Source.Scripting.RemoteFileResolver
+  name: RemoteFileResolver
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html
+  commentId: T:GCore.Source.Scripting.RemoteFileResolver
+  fullName: GCore.Source.Scripting.RemoteFileResolver
+  nameWithType: RemoteFileResolver
+- uid: GCore.Source.Scripting.RemoteFileResolver.#ctor(ImmutableArray{System.String},System.Nullable{System.String},System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name: RemoteFileResolver(ImmutableArray<String>, Nullable<String>, Nullable<IReadOnlyDictionary<String, String>>)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver__ctor_ImmutableArray_System_String__System_Nullable_System_String__System_Nullable_IReadOnlyDictionary_System_String_System_String___
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.#ctor(ImmutableArray{System.String},System.Nullable{System.String},System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name.vb: RemoteFileResolver(ImmutableArray(Of String), Nullable(Of String), Nullable(Of IReadOnlyDictionary(Of String, String)))
+  fullName: GCore.Source.Scripting.RemoteFileResolver.RemoteFileResolver(ImmutableArray<System.String>, System.Nullable<System.String>, System.Nullable<IReadOnlyDictionary<System.String, System.String>>)
+  fullName.vb: GCore.Source.Scripting.RemoteFileResolver.RemoteFileResolver(ImmutableArray(Of System.String), System.Nullable(Of System.String), System.Nullable(Of IReadOnlyDictionary(Of System.String, System.String)))
+  nameWithType: RemoteFileResolver.RemoteFileResolver(ImmutableArray<String>, Nullable<String>, Nullable<IReadOnlyDictionary<String, String>>)
+  nameWithType.vb: RemoteFileResolver.RemoteFileResolver(ImmutableArray(Of String), Nullable(Of String), Nullable(Of IReadOnlyDictionary(Of String, String)))
+- uid: GCore.Source.Scripting.RemoteFileResolver.#ctor(System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name: RemoteFileResolver(Nullable<IReadOnlyDictionary<String, String>>)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver__ctor_System_Nullable_IReadOnlyDictionary_System_String_System_String___
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.#ctor(System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name.vb: RemoteFileResolver(Nullable(Of IReadOnlyDictionary(Of String, String)))
+  fullName: GCore.Source.Scripting.RemoteFileResolver.RemoteFileResolver(System.Nullable<IReadOnlyDictionary<System.String, System.String>>)
+  fullName.vb: GCore.Source.Scripting.RemoteFileResolver.RemoteFileResolver(System.Nullable(Of IReadOnlyDictionary(Of System.String, System.String)))
+  nameWithType: RemoteFileResolver.RemoteFileResolver(Nullable<IReadOnlyDictionary<String, String>>)
+  nameWithType.vb: RemoteFileResolver.RemoteFileResolver(Nullable(Of IReadOnlyDictionary(Of String, String)))
+- uid: GCore.Source.Scripting.RemoteFileResolver.#ctor*
+  name: RemoteFileResolver
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver__ctor_
+  commentId: Overload:GCore.Source.Scripting.RemoteFileResolver.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Scripting.RemoteFileResolver.RemoteFileResolver
+  nameWithType: RemoteFileResolver.RemoteFileResolver
+- uid: GCore.Source.Scripting.RemoteFileResolver.Equals(GCore.Source.Scripting.RemoteFileResolver)
+  name: Equals(RemoteFileResolver)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_Equals_GCore_Source_Scripting_RemoteFileResolver_
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.Equals(GCore.Source.Scripting.RemoteFileResolver)
+  fullName: GCore.Source.Scripting.RemoteFileResolver.Equals(GCore.Source.Scripting.RemoteFileResolver)
+  nameWithType: RemoteFileResolver.Equals(RemoteFileResolver)
+- uid: GCore.Source.Scripting.RemoteFileResolver.Equals(System.Nullable{System.Object})
+  name: Equals(Nullable<Object>)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_Equals_System_Nullable_System_Object__
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.Equals(System.Nullable{System.Object})
+  name.vb: Equals(Nullable(Of Object))
+  fullName: GCore.Source.Scripting.RemoteFileResolver.Equals(System.Nullable<System.Object>)
+  fullName.vb: GCore.Source.Scripting.RemoteFileResolver.Equals(System.Nullable(Of System.Object))
+  nameWithType: RemoteFileResolver.Equals(Nullable<Object>)
+  nameWithType.vb: RemoteFileResolver.Equals(Nullable(Of Object))
+- uid: GCore.Source.Scripting.RemoteFileResolver.Equals*
+  name: Equals
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_Equals_
+  commentId: Overload:GCore.Source.Scripting.RemoteFileResolver.Equals
+  isSpec: "True"
+  fullName: GCore.Source.Scripting.RemoteFileResolver.Equals
+  nameWithType: RemoteFileResolver.Equals
+- uid: GCore.Source.Scripting.RemoteFileResolver.GetHashCode
+  name: GetHashCode()
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_GetHashCode
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.GetHashCode
+  fullName: GCore.Source.Scripting.RemoteFileResolver.GetHashCode()
+  nameWithType: RemoteFileResolver.GetHashCode()
+- uid: GCore.Source.Scripting.RemoteFileResolver.GetHashCode*
+  name: GetHashCode
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_GetHashCode_
+  commentId: Overload:GCore.Source.Scripting.RemoteFileResolver.GetHashCode
+  isSpec: "True"
+  fullName: GCore.Source.Scripting.RemoteFileResolver.GetHashCode
+  nameWithType: RemoteFileResolver.GetHashCode
+- uid: GCore.Source.Scripting.RemoteFileResolver.NormalizePath(System.String,System.Nullable{System.String})
+  name: NormalizePath(String, Nullable<String>)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_NormalizePath_System_String_System_Nullable_System_String__
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.NormalizePath(System.String,System.Nullable{System.String})
+  name.vb: NormalizePath(String, Nullable(Of String))
+  fullName: GCore.Source.Scripting.RemoteFileResolver.NormalizePath(System.String, System.Nullable<System.String>)
+  fullName.vb: GCore.Source.Scripting.RemoteFileResolver.NormalizePath(System.String, System.Nullable(Of System.String))
+  nameWithType: RemoteFileResolver.NormalizePath(String, Nullable<String>)
+  nameWithType.vb: RemoteFileResolver.NormalizePath(String, Nullable(Of String))
+- uid: GCore.Source.Scripting.RemoteFileResolver.NormalizePath*
+  name: NormalizePath
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_NormalizePath_
+  commentId: Overload:GCore.Source.Scripting.RemoteFileResolver.NormalizePath
+  isSpec: "True"
+  fullName: GCore.Source.Scripting.RemoteFileResolver.NormalizePath
+  nameWithType: RemoteFileResolver.NormalizePath
+- uid: GCore.Source.Scripting.RemoteFileResolver.OpenRead(System.String)
+  name: OpenRead(String)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_OpenRead_System_String_
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.OpenRead(System.String)
+  fullName: GCore.Source.Scripting.RemoteFileResolver.OpenRead(System.String)
+  nameWithType: RemoteFileResolver.OpenRead(String)
+- uid: GCore.Source.Scripting.RemoteFileResolver.OpenRead*
+  name: OpenRead
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_OpenRead_
+  commentId: Overload:GCore.Source.Scripting.RemoteFileResolver.OpenRead
+  isSpec: "True"
+  fullName: GCore.Source.Scripting.RemoteFileResolver.OpenRead
+  nameWithType: RemoteFileResolver.OpenRead
+- uid: GCore.Source.Scripting.RemoteFileResolver.ResolveReference(System.String,System.Nullable{System.String})
+  name: ResolveReference(String, Nullable<String>)
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_ResolveReference_System_String_System_Nullable_System_String__
+  commentId: M:GCore.Source.Scripting.RemoteFileResolver.ResolveReference(System.String,System.Nullable{System.String})
+  name.vb: ResolveReference(String, Nullable(Of String))
+  fullName: GCore.Source.Scripting.RemoteFileResolver.ResolveReference(System.String, System.Nullable<System.String>)
+  fullName.vb: GCore.Source.Scripting.RemoteFileResolver.ResolveReference(System.String, System.Nullable(Of System.String))
+  nameWithType: RemoteFileResolver.ResolveReference(String, Nullable<String>)
+  nameWithType.vb: RemoteFileResolver.ResolveReference(String, Nullable(Of String))
+- uid: GCore.Source.Scripting.RemoteFileResolver.ResolveReference*
+  name: ResolveReference
+  href: api/GCore.Source.Scripting.RemoteFileResolver.html#GCore_Source_Scripting_RemoteFileResolver_ResolveReference_
+  commentId: Overload:GCore.Source.Scripting.RemoteFileResolver.ResolveReference
+  isSpec: "True"
+  fullName: GCore.Source.Scripting.RemoteFileResolver.ResolveReference
+  nameWithType: RemoteFileResolver.ResolveReference
 - uid: GCore.Source.Scripting.ScriptRunner
   name: ScriptRunner
   href: api/GCore.Source.Scripting.ScriptRunner.html
   commentId: T:GCore.Source.Scripting.ScriptRunner
   fullName: GCore.Source.Scripting.ScriptRunner
   nameWithType: ScriptRunner
-- uid: GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[])
-  name: ScriptRunner(Assembly[], String[])
-  href: api/GCore.Source.Scripting.ScriptRunner.html#GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___
-  commentId: M:GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[])
-  name.vb: ScriptRunner(Assembly(), String())
-  fullName: GCore.Source.Scripting.ScriptRunner.ScriptRunner(Assembly[], System.String[])
-  fullName.vb: GCore.Source.Scripting.ScriptRunner.ScriptRunner(Assembly(), System.String())
-  nameWithType: ScriptRunner.ScriptRunner(Assembly[], String[])
-  nameWithType.vb: ScriptRunner.ScriptRunner(Assembly(), String())
+- uid: GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[],System.String[],System.Nullable{System.String},System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name: ScriptRunner(Assembly[], String[], String[], Nullable<String>, Nullable<IReadOnlyDictionary<String, String>>)
+  href: api/GCore.Source.Scripting.ScriptRunner.html#GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___System_String___System_Nullable_System_String__System_Nullable_IReadOnlyDictionary_System_String_System_String___
+  commentId: M:GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[],System.String[],System.Nullable{System.String},System.Nullable{IReadOnlyDictionary{System.String,System.String}})
+  name.vb: ScriptRunner(Assembly(), String(), String(), Nullable(Of String), Nullable(Of IReadOnlyDictionary(Of String, String)))
+  fullName: GCore.Source.Scripting.ScriptRunner.ScriptRunner(Assembly[], System.String[], System.String[], System.Nullable<System.String>, System.Nullable<IReadOnlyDictionary<System.String, System.String>>)
+  fullName.vb: GCore.Source.Scripting.ScriptRunner.ScriptRunner(Assembly(), System.String(), System.String(), System.Nullable(Of System.String), System.Nullable(Of IReadOnlyDictionary(Of System.String, System.String)))
+  nameWithType: ScriptRunner.ScriptRunner(Assembly[], String[], String[], Nullable<String>, Nullable<IReadOnlyDictionary<String, String>>)
+  nameWithType.vb: ScriptRunner.ScriptRunner(Assembly(), String(), String(), Nullable(Of String), Nullable(Of IReadOnlyDictionary(Of String, String)))
 - uid: GCore.Source.Scripting.ScriptRunner.#ctor*
   name: ScriptRunner
   href: api/GCore.Source.Scripting.ScriptRunner.html#GCore_Source_Scripting_ScriptRunner__ctor_
@@ -6541,6 +6652,18 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Scripting.ScriptRunner.ScriptRunner
   nameWithType: ScriptRunner.ScriptRunner
+- uid: GCore.Source.Scripting.ScriptRunner.CONFIG_BASEDIRECTORY
+  name: CONFIG_BASEDIRECTORY
+  href: api/GCore.Source.Scripting.ScriptRunner.html#GCore_Source_Scripting_ScriptRunner_CONFIG_BASEDIRECTORY
+  commentId: F:GCore.Source.Scripting.ScriptRunner.CONFIG_BASEDIRECTORY
+  fullName: GCore.Source.Scripting.ScriptRunner.CONFIG_BASEDIRECTORY
+  nameWithType: ScriptRunner.CONFIG_BASEDIRECTORY
+- uid: GCore.Source.Scripting.ScriptRunner.CONFIG_SEARCHPATHS
+  name: CONFIG_SEARCHPATHS
+  href: api/GCore.Source.Scripting.ScriptRunner.html#GCore_Source_Scripting_ScriptRunner_CONFIG_SEARCHPATHS
+  commentId: F:GCore.Source.Scripting.ScriptRunner.CONFIG_SEARCHPATHS
+  fullName: GCore.Source.Scripting.ScriptRunner.CONFIG_SEARCHPATHS
+  nameWithType: ScriptRunner.CONFIG_SEARCHPATHS
 - uid: GCore.Source.Scripting.ScriptRunner.Run(System.String,System.Nullable{System.Object})
   name: Run(String, Nullable<Object>)
   href: api/GCore.Source.Scripting.ScriptRunner.html#GCore_Source_Scripting_ScriptRunner_Run_System_String_System_Nullable_System_Object__

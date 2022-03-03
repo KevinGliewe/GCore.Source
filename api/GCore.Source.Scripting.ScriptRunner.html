@@ -90,18 +90,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.%23ctor(Assembly%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___System_String___System_Nullable_System_String__System_Nullable_IReadOnlyDictionary_System_String_System_String___.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.%23ctor(Assembly%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BIReadOnlyDictionary%7BSystem.String%2CSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L22">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L28">View Source</a>
   </span>
   <a id="GCore_Source_Scripting_ScriptRunner__ctor_" data-uid="GCore.Source.Scripting.ScriptRunner.#ctor*"></a>
-  <h4 id="GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___" data-uid="GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[])">ScriptRunner(Assembly[], String[])</h4>
+  <h4 id="GCore_Source_Scripting_ScriptRunner__ctor_Assembly___System_String___System_String___System_Nullable_System_String__System_Nullable_IReadOnlyDictionary_System_String_System_String___" data-uid="GCore.Source.Scripting.ScriptRunner.#ctor(Assembly[],System.String[],System.String[],System.Nullable{System.String},System.Nullable{IReadOnlyDictionary{System.String,System.String}})">ScriptRunner(Assembly[], String[], String[], Nullable&lt;String&gt;, Nullable&lt;IReadOnlyDictionary&lt;String, String&gt;&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptRunner(Assembly[] references, string[] imports)</code></pre>
+    <pre><code class="lang-csharp hljs">public ScriptRunner(Assembly[] references, string[] imports, string[] searchPaths = null, string? baseDirectory = null, IReadOnlyDictionary&lt;string, string&gt;? config = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,6 +123,81 @@
         <td><span class="parametername">imports</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">searchPaths</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">baseDirectory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner_CONFIG_BASEDIRECTORY.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.CONFIG_BASEDIRECTORY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L21">View Source</a>
+  </span>
+  <h4 id="GCore_Source_Scripting_ScriptRunner_CONFIG_BASEDIRECTORY" data-uid="GCore.Source.Scripting.ScriptRunner.CONFIG_BASEDIRECTORY">CONFIG_BASEDIRECTORY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONFIG_BASEDIRECTORY = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner_CONFIG_SEARCHPATHS.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.CONFIG_SEARCHPATHS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L20">View Source</a>
+  </span>
+  <h4 id="GCore_Source_Scripting_ScriptRunner_CONFIG_SEARCHPATHS" data-uid="GCore.Source.Scripting.ScriptRunner.CONFIG_SEARCHPATHS">CONFIG_SEARCHPATHS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONFIG_SEARCHPATHS = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -132,7 +207,7 @@
     <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner_Run_System_String_System_Nullable_System_Object__.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner.Run(System.String%2CSystem.Nullable%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L32">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L55">View Source</a>
   </span>
   <a id="GCore_Source_Scripting_ScriptRunner_Run_" data-uid="GCore.Source.Scripting.ScriptRunner.Run*"></a>
   <h4 id="GCore_Source_Scripting_ScriptRunner_Run_System_String_System_Nullable_System_Object__" data-uid="GCore.Source.Scripting.ScriptRunner.Run(System.String,System.Nullable{System.Object})">Run(String, Nullable&lt;Object&gt;)</h4>
@@ -190,7 +265,7 @@
                     <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Scripting_ScriptRunner.md&amp;value=---%0Auid%3A%20GCore.Source.Scripting.ScriptRunner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Scripting/ScriptRunner.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

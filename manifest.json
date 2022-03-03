@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Attributes.ConfigAttribute.html",
-          "hash": "3UOpXAzoMJBG4+m9caw7ig=="
+          "hash": "gKaywPsM2/FGzKjWHnmYXw=="
         }
       },
       "is_incremental": false,
@@ -1205,11 +1205,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/GCore.Source.Scripting.RemoteFileResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GCore.Source.Scripting.RemoteFileResolver.html",
+          "hash": "Ztcvc5+9nb5Ky8QcjsRfvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/GCore.Source.Scripting.ScriptRunner.yml",
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Scripting.ScriptRunner.html",
-          "hash": "yDFHEgfumBzn+ZOTuXC3xA=="
+          "hash": "w2VlcA06KoqZt6xKyZk6Yg=="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Scripting.html",
-          "hash": "J1qIhYu2xltKIGHepOrEAw=="
+          "hash": "WQfiTP28U90GW2zGRwlf2w=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HQk/A8WHvdE6TwuqS31sIQ=="
+          "hash": "k8ZUgPunZh7wR0ETCL3FCg=="
         }
       },
       "is_incremental": false,
@@ -1368,7 +1380,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 106,
+          "total_file_count": 107,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
