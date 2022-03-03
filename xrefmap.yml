@@ -2731,6 +2731,120 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Generators.Elements.ObjectElement.Type
   nameWithType: ObjectElement.Type
+- uid: GCore.Source.Generators.Elements.RawAlignedElement
+  name: RawAlignedElement
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html
+  commentId: T:GCore.Source.Generators.Elements.RawAlignedElement
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement
+  nameWithType: RawAlignedElement
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  name: RawAlignedElement(SourceElement, String)
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement__ctor_GCore_Source_Generators_SourceElement_System_String_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement(GCore.Source.Generators.SourceElement, System.String)
+  nameWithType: RawAlignedElement.RawAlignedElement(SourceElement, String)
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String,IEnumerable{System.String})
+  name: RawAlignedElement(SourceElement, String, IEnumerable<String>)
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement__ctor_GCore_Source_Generators_SourceElement_System_String_IEnumerable_System_String__
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String,IEnumerable{System.String})
+  name.vb: RawAlignedElement(SourceElement, String, IEnumerable(Of String))
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement(GCore.Source.Generators.SourceElement, System.String, IEnumerable<System.String>)
+  fullName.vb: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement(GCore.Source.Generators.SourceElement, System.String, IEnumerable(Of System.String))
+  nameWithType: RawAlignedElement.RawAlignedElement(SourceElement, String, IEnumerable<String>)
+  nameWithType.vb: RawAlignedElement.RawAlignedElement(SourceElement, String, IEnumerable(Of String))
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String,System.String)
+  name: RawAlignedElement(SourceElement, String, String)
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement__ctor_GCore_Source_Generators_SourceElement_System_String_System_String_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String,System.String)
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement(GCore.Source.Generators.SourceElement, System.String, System.String)
+  nameWithType: RawAlignedElement.RawAlignedElement(SourceElement, String, String)
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String,System.String[])
+  name: RawAlignedElement(SourceElement, String, String[])
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement__ctor_GCore_Source_Generators_SourceElement_System_String_System_String___
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedElement.#ctor(GCore.Source.Generators.SourceElement,System.String,System.String[])
+  name.vb: RawAlignedElement(SourceElement, String, String())
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement(GCore.Source.Generators.SourceElement, System.String, System.String[])
+  fullName.vb: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement(GCore.Source.Generators.SourceElement, System.String, System.String())
+  nameWithType: RawAlignedElement.RawAlignedElement(SourceElement, String, String[])
+  nameWithType.vb: RawAlignedElement.RawAlignedElement(SourceElement, String, String())
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.#ctor*
+  name: RawAlignedElement
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement__ctor_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedElement.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.RawAlignedElement
+  nameWithType: RawAlignedElement.RawAlignedElement
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.AlignTag
+  name: AlignTag
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement_AlignTag
+  commentId: P:GCore.Source.Generators.Elements.RawAlignedElement.AlignTag
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.AlignTag
+  nameWithType: RawAlignedElement.AlignTag
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.AlignTag*
+  name: AlignTag
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement_AlignTag_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedElement.AlignTag
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.AlignTag
+  nameWithType: RawAlignedElement.AlignTag
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.Render(GCore.Source.CodeWriter)
+  name: Render(CodeWriter)
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement_Render_GCore_Source_CodeWriter_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedElement.Render(GCore.Source.CodeWriter)
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.Render(GCore.Source.CodeWriter)
+  nameWithType: RawAlignedElement.Render(CodeWriter)
+- uid: GCore.Source.Generators.Elements.RawAlignedElement.Render*
+  name: Render
+  href: api/GCore.Source.Generators.Elements.RawAlignedElement.html#GCore_Source_Generators_Elements_RawAlignedElement_Render_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedElement.Render
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Elements.RawAlignedElement.Render
+  nameWithType: RawAlignedElement.Render
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement
+  name: RawAlignedRaggedElement
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html
+  commentId: T:GCore.Source.Generators.Elements.RawAlignedRaggedElement
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement
+  nameWithType: RawAlignedRaggedElement
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  name: RawAlignedRaggedElement(SourceElement, String)
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_GCore_Source_Generators_SourceElement_System_String_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.RawAlignedRaggedElement(GCore.Source.Generators.SourceElement, System.String)
+  nameWithType: RawAlignedRaggedElement.RawAlignedRaggedElement(SourceElement, String)
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor*
+  name: RawAlignedRaggedElement
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.RawAlignedRaggedElement
+  nameWithType: RawAlignedRaggedElement.RawAlignedRaggedElement
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  name: AlignTag
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag
+  commentId: P:GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  nameWithType: RawAlignedRaggedElement.AlignTag
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag*
+  name: AlignTag
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  nameWithType: RawAlignedRaggedElement.AlignTag
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)
+  name: Render(CodeWriter)
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_GCore_Source_CodeWriter_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)
+  nameWithType: RawAlignedRaggedElement.Render(CodeWriter)
+- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render*
+  name: Render
+  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render
+  isSpec: "True"
+  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render
+  nameWithType: RawAlignedRaggedElement.Render
 - uid: GCore.Source.Generators.Elements.RawElement
   name: RawElement
   href: api/GCore.Source.Generators.Elements.RawElement.html
@@ -3994,6 +4108,94 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Helper.JsonDynamic.TryGetMember
   nameWithType: JsonDynamic.TryGetMember
+- uid: GCore.Source.Helper.StringHelper
+  name: StringHelper
+  href: api/GCore.Source.Helper.StringHelper.html
+  commentId: T:GCore.Source.Helper.StringHelper
+  fullName: GCore.Source.Helper.StringHelper
+  nameWithType: StringHelper
+- uid: GCore.Source.Helper.StringHelper.Align(System.String,System.Char,System.Int32)
+  name: Align(String, Char, Int32)
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_Align_System_String_System_Char_System_Int32_
+  commentId: M:GCore.Source.Helper.StringHelper.Align(System.String,System.Char,System.Int32)
+  fullName: GCore.Source.Helper.StringHelper.Align(System.String, System.Char, System.Int32)
+  nameWithType: StringHelper.Align(String, Char, Int32)
+- uid: GCore.Source.Helper.StringHelper.Align(System.String[],System.Char,System.Int32)
+  name: Align(String[], Char, Int32)
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_Align_System_String___System_Char_System_Int32_
+  commentId: M:GCore.Source.Helper.StringHelper.Align(System.String[],System.Char,System.Int32)
+  name.vb: Align(String(), Char, Int32)
+  fullName: GCore.Source.Helper.StringHelper.Align(System.String[], System.Char, System.Int32)
+  fullName.vb: GCore.Source.Helper.StringHelper.Align(System.String(), System.Char, System.Int32)
+  nameWithType: StringHelper.Align(String[], Char, Int32)
+  nameWithType.vb: StringHelper.Align(String(), Char, Int32)
+- uid: GCore.Source.Helper.StringHelper.Align(System.String[]@,System.Char,System.Int32)
+  name: Align(ref String[], Char, Int32)
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_Align_System_String____System_Char_System_Int32_
+  commentId: M:GCore.Source.Helper.StringHelper.Align(System.String[]@,System.Char,System.Int32)
+  name.vb: Align(ByRef String(), Char, Int32)
+  fullName: GCore.Source.Helper.StringHelper.Align(ref System.String[], System.Char, System.Int32)
+  fullName.vb: GCore.Source.Helper.StringHelper.Align(ByRef System.String(), System.Char, System.Int32)
+  nameWithType: StringHelper.Align(ref String[], Char, Int32)
+  nameWithType.vb: StringHelper.Align(ByRef String(), Char, Int32)
+- uid: GCore.Source.Helper.StringHelper.Align*
+  name: Align
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_Align_
+  commentId: Overload:GCore.Source.Helper.StringHelper.Align
+  isSpec: "True"
+  fullName: GCore.Source.Helper.StringHelper.Align
+  nameWithType: StringHelper.Align
+- uid: GCore.Source.Helper.StringHelper.DEFAULTALIGN
+  name: DEFAULTALIGN
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_DEFAULTALIGN
+  commentId: F:GCore.Source.Helper.StringHelper.DEFAULTALIGN
+  fullName: GCore.Source.Helper.StringHelper.DEFAULTALIGN
+  nameWithType: StringHelper.DEFAULTALIGN
+- uid: GCore.Source.Helper.StringHelper.DEFAULTINDENT
+  name: DEFAULTINDENT
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_DEFAULTINDENT
+  commentId: F:GCore.Source.Helper.StringHelper.DEFAULTINDENT
+  fullName: GCore.Source.Helper.StringHelper.DEFAULTINDENT
+  nameWithType: StringHelper.DEFAULTINDENT
+- uid: GCore.Source.Helper.StringHelper.GetSpaces(System.Int32)
+  name: GetSpaces(Int32)
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_GetSpaces_System_Int32_
+  commentId: M:GCore.Source.Helper.StringHelper.GetSpaces(System.Int32)
+  fullName: GCore.Source.Helper.StringHelper.GetSpaces(System.Int32)
+  nameWithType: StringHelper.GetSpaces(Int32)
+- uid: GCore.Source.Helper.StringHelper.GetSpaces*
+  name: GetSpaces
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_GetSpaces_
+  commentId: Overload:GCore.Source.Helper.StringHelper.GetSpaces
+  isSpec: "True"
+  fullName: GCore.Source.Helper.StringHelper.GetSpaces
+  nameWithType: StringHelper.GetSpaces
+- uid: GCore.Source.Helper.StringHelper.ReplaceChar(System.String,System.Int32,String)
+  name: ReplaceChar(String, Int32, String)
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_ReplaceChar_System_String_System_Int32_String_
+  commentId: M:GCore.Source.Helper.StringHelper.ReplaceChar(System.String,System.Int32,String)
+  fullName: GCore.Source.Helper.StringHelper.ReplaceChar(System.String, System.Int32, String)
+  nameWithType: StringHelper.ReplaceChar(String, Int32, String)
+- uid: GCore.Source.Helper.StringHelper.ReplaceChar*
+  name: ReplaceChar
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_ReplaceChar_
+  commentId: Overload:GCore.Source.Helper.StringHelper.ReplaceChar
+  isSpec: "True"
+  fullName: GCore.Source.Helper.StringHelper.ReplaceChar
+  nameWithType: StringHelper.ReplaceChar
+- uid: GCore.Source.Helper.StringHelper.Split(System.String,System.String)
+  name: Split(String, String)
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_Split_System_String_System_String_
+  commentId: M:GCore.Source.Helper.StringHelper.Split(System.String,System.String)
+  fullName: GCore.Source.Helper.StringHelper.Split(System.String, System.String)
+  nameWithType: StringHelper.Split(String, String)
+- uid: GCore.Source.Helper.StringHelper.Split*
+  name: Split
+  href: api/GCore.Source.Helper.StringHelper.html#GCore_Source_Helper_StringHelper_Split_
+  commentId: Overload:GCore.Source.Helper.StringHelper.Split
+  isSpec: "True"
+  fullName: GCore.Source.Helper.StringHelper.Split
+  nameWithType: StringHelper.Split
 - uid: GCore.Source.Helper.TypeHelper
   name: TypeHelper
   href: api/GCore.Source.Helper.TypeHelper.html

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RawElement
+    <title>Class RawAlignedRaggedElement
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RawElement
+    <meta name="title" content="Class RawAlignedRaggedElement
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.Source.Generators.Elements.RawElement">
+            <article class="content wrap" id="_content" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement">
   
   
-  <h1 id="GCore_Source_Generators_Elements_RawElement" data-uid="GCore.Source.Generators.Elements.RawElement" class="text-break">Class RawElement
+  <h1 id="GCore_Source_Generators_Elements_RawAlignedRaggedElement" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement" class="text-break">Class RawAlignedRaggedElement
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -79,17 +79,43 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></div>
-    <div class="level2"><span class="xref">RawElement</span></div>
-      <div class="level3"><a class="xref" href="GCore.Source.Generators.Elements.RawAlignedElement.html">RawAlignedElement</a></div>
+    <div class="level2"><a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html">TaggedElement</a></div>
+    <div class="level3"><a class="xref" href="GCore.Source.Generators.Elements.RawTaggedElement.html">RawTaggedElement</a></div>
+    <div class="level4"><span class="xref">RawAlignedRaggedElement</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="GCore.Source.Generators.Attributes.ITaggedElement.html">ITaggedElement</a></div>
     <div><a class="xref" href="GCore.Source.IConfigurable.html">IConfigurable</a></div>
     <div><a class="xref" href="GCore.Source.Generators.Elements.IRawElement.html">IRawElement</a></div>
     <div><a class="xref" href="GCore.Source.IRenderable.html">IRenderable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.RawTaggedElement.html#GCore_Source_Generators_Elements_RawTaggedElement_RenderTags">RawTaggedElement.RenderTags</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.RawTaggedElement.html#GCore_Source_Generators_Elements_RawTaggedElement_Lines">RawTaggedElement.Lines</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.RawTaggedElement.html#GCore_Source_Generators_Elements_RawTaggedElement_SetLines_IEnumerable_System_String__">RawTaggedElement.SetLines(IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.RawTaggedElement.html#GCore_Source_Generators_Elements_RawTaggedElement_SetLines_System_String_">RawTaggedElement.SetLines(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html#GCore_Source_Generators_Elements_TaggedElement__startLine">TaggedElement._startLine</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html#GCore_Source_Generators_Elements_TaggedElement__stopLine">TaggedElement._stopLine</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html#GCore_Source_Generators_Elements_TaggedElement_SetStartLine_System_String_">TaggedElement.SetStartLine(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Source.Generators.Elements.TaggedElement.html#GCore_Source_Generators_Elements_TaggedElement_SetStopLine_System_String_">TaggedElement.SetStopLine(String)</a>
+    </div>
     <div>
       <a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_PATH_SEP">SourceElement.PATH_SEP</a>
     </div>
@@ -162,26 +188,26 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Source.Generators.Elements.html">GCore.Source.Generators.Elements</a></h6>
   <h6><strong>Assembly</strong>: GCore.Source.Generators.dll</h6>
-  <h5 id="GCore_Source_Generators_Elements_RawElement_syntax">Syntax</h5>
+  <h5 id="GCore_Source_Generators_Elements_RawAlignedRaggedElement_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RawElement : SourceElement, IConfigurable, IRawElement, IRenderable</code></pre>
+    <pre><code class="lang-csharp hljs">public class RawAlignedRaggedElement : RawTaggedElement, ITaggedElement, IConfigurable, IRawElement, IRenderable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_GCore_Source_Generators_SourceElement_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawAlignedRaggedElement.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L31">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawAlignedRaggedElement.cs/#L12">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_RawElement__ctor_" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor(GCore.Source.Generators.SourceElement,System.String)">RawElement(SourceElement, String)</h4>
+  <a id="GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor*"></a>
+  <h4 id="GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_GCore_Source_Generators_SourceElement_System_String_" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)">RawAlignedRaggedElement(SourceElement, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawElement(SourceElement parent, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public RawAlignedRaggedElement(SourceElement parent, string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,132 +227,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CIEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L39">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_RawElement__ctor_" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_IEnumerable_System_String__" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor(GCore.Source.Generators.SourceElement,System.String,IEnumerable{System.String})">RawElement(SourceElement, String, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawElement(SourceElement parent, string name, IEnumerable&lt;string&gt; lines)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">lines</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L35">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_RawElement__ctor_" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_System_String_" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor(GCore.Source.Generators.SourceElement,System.String,System.String)">RawElement(SourceElement, String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawElement(SourceElement parent, string name, string lines)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">lines</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_System_String___.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.%23ctor(GCore.Source.Generators.SourceElement%2CSystem.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L44">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_RawElement__ctor_" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement__ctor_GCore_Source_Generators_SourceElement_System_String_System_String___" data-uid="GCore.Source.Generators.Elements.RawElement.#ctor(GCore.Source.Generators.SourceElement,System.String,System.String[])">RawElement(SourceElement, String, String[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RawElement(SourceElement parent, string name, params string[] lines)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GCore.Source.Generators.SourceElement.html">SourceElement</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">lines</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -335,18 +235,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement_Lines.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.Lines%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L12">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawAlignedRaggedElement.cs/#L10">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_RawElement_Lines_" data-uid="GCore.Source.Generators.Elements.RawElement.Lines*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement_Lines" data-uid="GCore.Source.Generators.Elements.RawElement.Lines">Lines</h4>
+  <a id="GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag_" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag*"></a>
+  <h4 id="GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag">AlignTag</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Lines { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public char AlignTag { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -358,7 +258,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="xref">System.Char</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -367,13 +267,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement_Render_GCore_Source_CodeWriter_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.Render(GCore.Source.CodeWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_GCore_Source_CodeWriter_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L59">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawAlignedRaggedElement.cs/#L16">View Source</a>
   </span>
-  <a id="GCore_Source_Generators_Elements_RawElement_Render_" data-uid="GCore.Source.Generators.Elements.RawElement.Render*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement_Render_GCore_Source_CodeWriter_" data-uid="GCore.Source.Generators.Elements.RawElement.Render(GCore.Source.CodeWriter)">Render(CodeWriter)</h4>
+  <a id="GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render*"></a>
+  <h4 id="GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_GCore_Source_CodeWriter_" data-uid="GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)">Render(CodeWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -398,72 +298,11 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="GCore.Source.Generators.SourceElement.html#GCore_Source_Generators_SourceElement_Render_GCore_Source_CodeWriter_">SourceElement.Render(CodeWriter)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement_SetLines_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.SetLines(IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L49">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_RawElement_SetLines_" data-uid="GCore.Source.Generators.Elements.RawElement.SetLines*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement_SetLines_IEnumerable_System_String__" data-uid="GCore.Source.Generators.Elements.RawElement.SetLines(IEnumerable{System.String})">SetLines(IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void SetLines(IEnumerable&lt;string&gt; lines)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">lines</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement_SetLines_System_String_.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement.SetLines(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L54">View Source</a>
-  </span>
-  <a id="GCore_Source_Generators_Elements_RawElement_SetLines_" data-uid="GCore.Source.Generators.Elements.RawElement.SetLines*"></a>
-  <h4 id="GCore_Source_Generators_Elements_RawElement_SetLines_System_String_" data-uid="GCore.Source.Generators.Elements.RawElement.SetLines(System.String)">SetLines(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void SetLines(string lines)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">lines</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <div><a class="xref" href="GCore.Source.Generators.Elements.RawTaggedElement.html#GCore_Source_Generators_Elements_RawTaggedElement_Render_GCore_Source_CodeWriter_">RawTaggedElement.Render(CodeWriter)</a></div>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GCore.Source.Generators.Attributes.ITaggedElement.html">ITaggedElement</a>
+  </div>
   <div>
       <a class="xref" href="GCore.Source.IConfigurable.html">IConfigurable</a>
   </div>
@@ -596,10 +435,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawElement.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/new/master/apiSpec/new?filename=GCore_Source_Generators_Elements_RawAlignedRaggedElement.md&amp;value=---%0Auid%3A%20GCore.Source.Generators.Elements.RawAlignedRaggedElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawElement.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore.Source/blob/master/src/GCore.Source.Generators/Elements/RawAlignedRaggedElement.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
