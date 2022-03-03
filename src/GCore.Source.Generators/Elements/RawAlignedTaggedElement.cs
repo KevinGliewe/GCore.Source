@@ -5,11 +5,11 @@ using GCore.Source.Helper;
 namespace GCore.Source.Generators.Elements
 {
     [TaggedElement("RawAligned")]
-    public class RawAlignedRaggedElement : RawTaggedElement
+    public class RawAlignedTaggedElement : RawTaggedElement
     {
         [Config("AlignTag")]  public char AlignTag { get; set; } = '§';
 
-        public RawAlignedRaggedElement(SourceElement? parent, string name) : base(parent, name)
+        public RawAlignedTaggedElement(SourceElement? parent, string name) : base(parent, name)
         {
         }
 
