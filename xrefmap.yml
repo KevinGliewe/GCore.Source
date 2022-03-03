@@ -2800,51 +2800,51 @@ references:
   isSpec: "True"
   fullName: GCore.Source.Generators.Elements.RawAlignedElement.Render
   nameWithType: RawAlignedElement.Render
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement
-  name: RawAlignedRaggedElement
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html
-  commentId: T:GCore.Source.Generators.Elements.RawAlignedRaggedElement
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement
-  nameWithType: RawAlignedRaggedElement
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
-  name: RawAlignedRaggedElement(SourceElement, String)
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_GCore_Source_Generators_SourceElement_System_String_
-  commentId: M:GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.RawAlignedRaggedElement(GCore.Source.Generators.SourceElement, System.String)
-  nameWithType: RawAlignedRaggedElement.RawAlignedRaggedElement(SourceElement, String)
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor*
-  name: RawAlignedRaggedElement
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement__ctor_
-  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedRaggedElement.#ctor
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement
+  name: RawAlignedTaggedElement
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html
+  commentId: T:GCore.Source.Generators.Elements.RawAlignedTaggedElement
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement
+  nameWithType: RawAlignedTaggedElement
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  name: RawAlignedTaggedElement(SourceElement, String)
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html#GCore_Source_Generators_Elements_RawAlignedTaggedElement__ctor_GCore_Source_Generators_SourceElement_System_String_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedTaggedElement.#ctor(GCore.Source.Generators.SourceElement,System.String)
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement.RawAlignedTaggedElement(GCore.Source.Generators.SourceElement, System.String)
+  nameWithType: RawAlignedTaggedElement.RawAlignedTaggedElement(SourceElement, String)
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement.#ctor*
+  name: RawAlignedTaggedElement
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html#GCore_Source_Generators_Elements_RawAlignedTaggedElement__ctor_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedTaggedElement.#ctor
   isSpec: "True"
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.RawAlignedRaggedElement
-  nameWithType: RawAlignedRaggedElement.RawAlignedRaggedElement
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement.RawAlignedTaggedElement
+  nameWithType: RawAlignedTaggedElement.RawAlignedTaggedElement
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement.AlignTag
   name: AlignTag
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag
-  commentId: P:GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
-  nameWithType: RawAlignedRaggedElement.AlignTag
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag*
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html#GCore_Source_Generators_Elements_RawAlignedTaggedElement_AlignTag
+  commentId: P:GCore.Source.Generators.Elements.RawAlignedTaggedElement.AlignTag
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement.AlignTag
+  nameWithType: RawAlignedTaggedElement.AlignTag
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement.AlignTag*
   name: AlignTag
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_AlignTag_
-  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html#GCore_Source_Generators_Elements_RawAlignedTaggedElement_AlignTag_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedTaggedElement.AlignTag
   isSpec: "True"
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.AlignTag
-  nameWithType: RawAlignedRaggedElement.AlignTag
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement.AlignTag
+  nameWithType: RawAlignedTaggedElement.AlignTag
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement.Render(GCore.Source.CodeWriter)
   name: Render(CodeWriter)
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_GCore_Source_CodeWriter_
-  commentId: M:GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render(GCore.Source.CodeWriter)
-  nameWithType: RawAlignedRaggedElement.Render(CodeWriter)
-- uid: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render*
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html#GCore_Source_Generators_Elements_RawAlignedTaggedElement_Render_GCore_Source_CodeWriter_
+  commentId: M:GCore.Source.Generators.Elements.RawAlignedTaggedElement.Render(GCore.Source.CodeWriter)
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement.Render(GCore.Source.CodeWriter)
+  nameWithType: RawAlignedTaggedElement.Render(CodeWriter)
+- uid: GCore.Source.Generators.Elements.RawAlignedTaggedElement.Render*
   name: Render
-  href: api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html#GCore_Source_Generators_Elements_RawAlignedRaggedElement_Render_
-  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render
+  href: api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html#GCore_Source_Generators_Elements_RawAlignedTaggedElement_Render_
+  commentId: Overload:GCore.Source.Generators.Elements.RawAlignedTaggedElement.Render
   isSpec: "True"
-  fullName: GCore.Source.Generators.Elements.RawAlignedRaggedElement.Render
-  nameWithType: RawAlignedRaggedElement.Render
+  fullName: GCore.Source.Generators.Elements.RawAlignedTaggedElement.Render
+  nameWithType: RawAlignedTaggedElement.Render
 - uid: GCore.Source.Generators.Elements.RawElement
   name: RawElement
   href: api/GCore.Source.Generators.Elements.RawElement.html

@@ -605,11 +605,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.yml",
+      "source_relative_path": "api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/GCore.Source.Generators.Elements.RawAlignedRaggedElement.html",
-          "hash": "DfbivlB1dyR4orTYtoD21g=="
+          "relative_path": "api/GCore.Source.Generators.Elements.RawAlignedTaggedElement.html",
+          "hash": "N6LpflBNu93NhHBYJYBhyQ=="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Generators.Elements.RawTaggedElement.html",
-          "hash": "Wet0Ww2nW8rP6u9FGKFrog=="
+          "hash": "2mXUMPJQ70m/88Ulr319Rg=="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Generators.Elements.html",
-          "hash": "xS9jnP16uVUiP/t6fEsjSQ=="
+          "hash": "+cCwWaIj2qixGHXuojJmwg=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "5n0FJTi8YY7T64WL7FVUTw=="
+          "hash": "HQk/A8WHvdE6TwuqS31sIQ=="
         }
       },
       "is_incremental": false,
