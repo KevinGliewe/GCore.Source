@@ -1,6 +1,6 @@
 <!--<Import Project="..\PackageReferences\GCore.props" />-->
 <Project>
   <ItemGroup>
-    <PackageReference Include="GCore" Version="1.13.2" />
+    <PackageReference Include="GCore" Version="1.13.3" />
   </ItemGroup>
 </Project>
