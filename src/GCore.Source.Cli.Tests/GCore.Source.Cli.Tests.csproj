@@ -9,6 +9,12 @@
     <None Update="TestData\InjectConfig.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="TestData\InjectFileAligned.expected.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\InjectFileAligned.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="TestData\InjectFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
