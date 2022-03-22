@@ -96,7 +96,9 @@ Reads and writes to the same file:
 
                 if (Flag("version"))
                 {
-                    Console.WriteLine(AssemblyVersionConstants.InformationalVersion);
+                    // ToDo: Add version
+                    //Console.WriteLine(AssemblyVersionConstants.InformationalVersion);
+                    Console.WriteLine("Automatic versioning currently unavailable!");
                     Environment.Exit(0);
                 }
 

@@ -2,11 +2,5 @@
     "version": 1,
     "isRoot": true,
     "tools": {
-      "projectversioning.dotnet.cli": {
-        "version": "4.5.0",
-        "commands": [
-          "rw-project-version"
-        ]
-      }
     }
   }

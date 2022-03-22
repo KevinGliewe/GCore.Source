@@ -7,6 +7,7 @@
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
+  <Import Project=".\PackageReferences\GCore.props" />
   <Import Project=".\PackageReferences\Fody.props" />
   <Import Project=".\PackageReferences\Virtuosity.Fody.props" />
   <Import Project=".\PackageReferences\Microsoft.SourceLink.GitHub.props" />
