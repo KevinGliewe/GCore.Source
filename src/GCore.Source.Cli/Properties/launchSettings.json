@@ -2,7 +2,8 @@
   "profiles": {
     "GCore.Source.Cli": {
       "commandName": "Project",
-      "commandLineArgs": "--help"
+      "commandLineArgs": "gsource --in ge_weatherstates.h",
+      "workingDirectory": "F:\\perforce\\depot7\\Project\\source\\genome\\Engine\\components\\weather"
     }
   }
 }

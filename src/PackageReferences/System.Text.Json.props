@@ -1,6 +1,0 @@
-<!--<Import Project="..\PackageReferences\System.Text.Json.props" />-->
-<Project>
-  <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="6.0.2" />
-  </ItemGroup>
-</Project>

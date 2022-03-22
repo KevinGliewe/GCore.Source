@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using GCore.Dynamics.Json;
 using GCore.Source.Attributes;
 using GCore.Source.Extensions;
 using GCore.Source.Generators.Attributes;
@@ -114,7 +115,7 @@ namespace GCore.Source.Generators.Elements
         {
             if (ModelFile is null)
                 return null;
-            return JsonDynamic.QueryFile(ModelFile);
+            return DynamicJson.QueryFile(ModelFile);
         }
 
         protected abstract void RenderScript(CodeWriter writer);

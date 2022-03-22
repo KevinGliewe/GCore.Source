@@ -6,4 +6,7 @@
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
 
+  <Import Project="..\PackageReferences\GCore.Dynamics.props" />
+  <Import Project="..\PackageReferences\GCore.Dynamics.Json.props" />
+
 </Project>
