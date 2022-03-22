@@ -1,6 +1,6 @@
 <!--<Import Project="..\PackageReferences\GCore.Dynamics.props" />-->
 <Project>
   <ItemGroup>
-    <PackageReference Include="GCore.Dynamics" Version="0.1.2" />
+    <PackageReference Include="GCore.Dynamics" Version="0.2.0" />
   </ItemGroup>
 </Project>
