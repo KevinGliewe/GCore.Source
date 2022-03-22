@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Generators.Elements.ScriptableElement.Globals.html",
-          "hash": "0z9JWBh23QkJDcxNu/xkZQ=="
+          "hash": "Xi6YxEEXEdo7ReabW4Ai6Q=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Generators.Elements.ScriptableElement.html",
-          "hash": "+pV0kdQQpFClVyHDIF1leA=="
+          "hash": "EHkrvplGudvFljO0Tis9Gw=="
         }
       },
       "is_incremental": false,
@@ -857,18 +857,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/GCore.Source.Helper.JsonDynamic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/GCore.Source.Helper.JsonDynamic.html",
-          "hash": "i8oCPnA6XkRCLKGop/UP6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/GCore.Source.Helper.StringHelper.yml",
       "output": {
         ".html": {
@@ -897,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GCore.Source.Helper.html",
-          "hash": "J69h5TSxbhiXY/K0Rfm/LQ=="
+          "hash": "jvcViu/2SFwkaeii3jPDfQ=="
         }
       },
       "is_incremental": false,
@@ -1305,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "k8ZUgPunZh7wR0ETCL3FCg=="
+          "hash": "uQs/fRF6WvLV6QYxevoZhQ=="
         }
       },
       "is_incremental": false,
@@ -1380,7 +1368,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 107,
+          "total_file_count": 106,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
