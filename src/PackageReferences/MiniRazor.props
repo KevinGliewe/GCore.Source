@@ -1,6 +1,6 @@
 <!--<Import Project="..\PackageReferences\MiniRazor.props" />-->
 <Project>
   <ItemGroup>
-    <PackageReference Include="MiniRazor" Version="2.2.0" />
+    <PackageReference Include="MiniRazor" Version="2.2.1" />
   </ItemGroup>
 </Project>

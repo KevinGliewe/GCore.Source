@@ -54,6 +54,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PackageReferences", "PackageReferences", "{D54965D6-6DE0-4E62-804C-1581D105C814}"
 	ProjectSection(SolutionItems) = preProject
 		src\PackageReferences\Fody.props = src\PackageReferences\Fody.props
+		src\PackageReferences\GCore.Dynamics.Json.props = src\PackageReferences\GCore.Dynamics.Json.props
+		src\PackageReferences\GCore.Dynamics.props = src\PackageReferences\GCore.Dynamics.props
 		src\PackageReferences\GCore.props = src\PackageReferences\GCore.props
 		src\PackageReferences\Microsoft.CodeAnalysis.CSharp.Scripting.props = src\PackageReferences\Microsoft.CodeAnalysis.CSharp.Scripting.props
 		src\PackageReferences\Microsoft.SourceLink.GitHub.props = src\PackageReferences\Microsoft.SourceLink.GitHub.props
