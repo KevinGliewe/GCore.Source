@@ -34,7 +34,6 @@ jobs:
           - {name: 'win-arm64', extension: '.exe'}
 
           - {name: 'linux-x64', extension: ''}
-          - {name: 'linux-x86', extension: ''}
           - {name: 'linux-arm64', extension: ''}
 
           - {name: 'osx-x64', extension: ''}
