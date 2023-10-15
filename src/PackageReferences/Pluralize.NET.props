@@ -1,0 +1,6 @@
+<!--<Import Project="..\PackageReferences\Pluralize.NET.props" />-->
+<Project>
+  <ItemGroup>
+    <PackageReference Include="Pluralize.NET" Version="1.0.2" />
+  </ItemGroup>
+</Project>

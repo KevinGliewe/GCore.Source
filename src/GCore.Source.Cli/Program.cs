@@ -60,6 +60,8 @@ namespace GCore.Source.Cli
                 typeof(RazorElement).GetType();
                 typeof(T4Element).GetType();
 
+                args = args.Length > 0 && args[0] == "gsource" ? args.Skip(1).ToArray() : args;
+
                 var args_ = ArgsParse.Parse(args);
                 InjectDefaultArgs(args_);
                 Args = args_;
@@ -94,7 +96,9 @@ Reads and writes to the same file:
 
                 if (Flag("version"))
                 {
-                    Console.WriteLine(AssemblyVersionConstants.InformationalVersion);
+                    // ToDo: Add version
+                    //Console.WriteLine(AssemblyVersionConstants.InformationalVersion);
+                    Console.WriteLine("Automatic versioning currently unavailable!");
                     Environment.Exit(0);
                 }
 

@@ -32,7 +32,10 @@ namespace GCore.Source.Generators.Scripting
                     "System",
                     "System.Dynamic",
                     "GCore.Source"
-                }
+                },
+                null,
+                null,
+                Config
             ).Run(code, new Globals(model, this, writer)).Result;
 
             if (result is EvaluationResult.Error err)

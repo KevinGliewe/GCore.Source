@@ -1,13 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\Lib.Build.props" />
-  
-  <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source\GCore.Source.csproj" />
   </ItemGroup>
+
+  <Import Project="..\PackageReferences\GCore.Dynamics.props" />
+  <Import Project="..\PackageReferences\GCore.Dynamics.Json.props" />
 
 </Project>

@@ -1,0 +1,1 @@
+﻿string Greet(string name) => "Hello " + name;

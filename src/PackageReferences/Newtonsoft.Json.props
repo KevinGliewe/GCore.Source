@@ -1,0 +1,6 @@
+<!--<Import Project="..\PackageReferences\Newtonsoft.Json.props" />-->
+<Project>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+</Project>

@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
@@ -58,6 +60,63 @@ namespace GCore.Source.Scripting.Tests
             var success = result as EvaluationResult.Success;
 
             Assert.AreEqual("🂠", success?.ReturnValue);
+        }
+
+        [Test]
+        public async Task LoadScript_SearchPaths()
+        {
+            var runner = new ScriptRunner(new Assembly[0], new string[0], new string[] { Directory.GetCurrentDirectory() + "/TestData" });
+
+            var result = await runner.Run(
+                @"
+                #load ""importme.csx""
+                Greet(""World"")
+            ", null);
+
+            Assert.IsTrue(result is EvaluationResult.Success);
+
+            var success = result as EvaluationResult.Success;
+
+            Assert.AreEqual("Hello World", success?.ReturnValue);
+        }
+
+        [Test]
+        public async Task LoadScript_BaseDirectory()
+        {
+            var runner = new ScriptRunner(new Assembly[0], new string[0], null, Directory.GetCurrentDirectory() +"/TestData");
+
+            var result = await runner.Run(
+                @"
+                #load ""importme.csx""
+                Greet(""World"")
+            ", null);
+
+            Assert.IsTrue(result is EvaluationResult.Success);
+
+            var success = result as EvaluationResult.Success;
+
+            Assert.AreEqual("Hello World", success?.ReturnValue);
+        }
+
+        [Test]
+        public async Task LoadScript_Config()
+        {
+            var runner = new ScriptRunner(new Assembly[0], new string[0], null, null, new Dictionary<string, string>()
+            {
+                {"datadir", Directory.GetCurrentDirectory() + "/TestData"}
+            });
+
+            var result = await runner.Run(
+                @"
+                #load ""$(datadir)/importme.csx""
+                Greet(""World"")
+            ", null);
+
+            Assert.IsTrue(result is EvaluationResult.Success);
+
+            var success = result as EvaluationResult.Success;
+
+            Assert.AreEqual("Hello World", success?.ReturnValue);
         }
     }
 }

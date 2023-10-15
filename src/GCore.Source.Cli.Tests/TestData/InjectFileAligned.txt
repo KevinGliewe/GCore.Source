@@ -1,0 +1,7 @@
+﻿<[Script Dst="..:out"]>
+Writer.WriteLine("|Overwrite|");
+Writer.Write("->||<-");
+<[/Script]>
+<[RawAligned Name="out" AlignTag="|"]>
+This gets overwritten
+<[/RawAligned]>

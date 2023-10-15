@@ -1,0 +1,6 @@
+<!--<Import Project="..\PackageReferences\Fody.props" />-->
+<Project>
+  <ItemGroup>
+    <PackageReference Update="Fody" Version="6.6.0" />
+  </ItemGroup>
+</Project>

@@ -1,4 +1,5 @@
-﻿using GCore.Source.Extensions;
+﻿using System.Collections.Generic;
+using GCore.Source.Extensions;
 using NUnit.Framework;
 
 namespace GCore.Source.Tests

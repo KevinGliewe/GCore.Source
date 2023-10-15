@@ -1,0 +1,6 @@
+<!--<Import Project="..\PackageReferences\Microsoft.SourceLink.GitHub.props" />-->
+<Project>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

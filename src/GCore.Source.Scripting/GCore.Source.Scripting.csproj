@@ -2,10 +2,7 @@
 
   <Import Project="..\Lib.Build.props" />
 
-  <ItemGroup>
-    <PackageReference Include="GCore" Version="1.1.2.43" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.10.0-1.final" />
-    <PackageReference Include="NuGet.PackageManagement" Version="5.9.1" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
-  </ItemGroup>
+  <Import Project="..\PackageReferences\Microsoft.CodeAnalysis.CSharp.Scripting.props" />
+  <Import Project="..\PackageReferences\NuGet.PackageManagement.props" />
+  
 </Project>

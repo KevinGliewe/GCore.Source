@@ -1,5 +1,5 @@
 <Project>
-  <Import Project=".\Exe.TargetFramework.Build.props" />
+  <Import Project=".\TargetFramework.Build.props" />
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>

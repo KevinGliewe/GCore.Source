@@ -25,21 +25,25 @@ namespace GCore.Source.Generators.Scripting
             var model = GetModel();
 
             var result = new ScriptRunner(
-    new Assembly[]
-            {
+                new Assembly[]
+                {
 
-                typeof(CodeWriter).Assembly,
-                typeof(SourceElement).Assembly,
-                typeof(ScriptElement).Assembly,
-                typeof(System.Dynamic.ExpandoObject).Assembly,
-                typeof(GCore.GMath.Half).Assembly
-            },
-            new string[]
-            {
-                "System",
-                "System.Dynamic",
-                "GCore.Source"
-            }
+                    typeof(CodeWriter).Assembly,
+                    typeof(SourceElement).Assembly,
+                    typeof(ScriptElement).Assembly,
+                    typeof(System.Dynamic.ExpandoObject).Assembly,
+                    typeof(GCore.GMath.Half).Assembly
+                },
+                new string[]
+                {
+                    "System",
+                    "System.Dynamic",
+                    "GCore.Source"
+                },
+                null,
+                null,
+                Config
+
             ).Run(code, new Globals(model, this, writer)).Result;
 
             if (result is EvaluationResult.Error err)

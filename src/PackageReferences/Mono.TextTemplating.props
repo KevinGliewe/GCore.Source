@@ -1,0 +1,6 @@
+<!--<Import Project="..\PackageReferences\Mono.TextTemplating.props" />-->
+<Project>
+  <ItemGroup>
+    <PackageReference Include="Mono.TextTemplating" Version="2.2.1" />
+  </ItemGroup>
+</Project>

@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 using GCore.Extensions.StringShEx;
 using GCore.Source.Cli.Tests.Extensions;
+using GCore.Source.Extensions;
 
 namespace GCore.Source.Cli.Tests
 {
@@ -86,6 +87,33 @@ Writer.Write(""- Overwrite -"");
             Assert.AreEqual("", process.StandardError.ReadToEnd());
             Assert.AreEqual(0, process.ExitCode);
             Assert.AreEqual(Expected, File.ReadAllText(tmpFile).FixNL());
+        }
+
+        [Test]
+        public void StdInStdOutAligned()
+        {
+            var infile = "./TestData/InjectFileAligned.txt";
+            var expectfile = "./TestData/InjectFileAligned.expected.txt";
+
+            Process process;
+
+            @"dotnet GCore.Source.Cli.dll".Sh3(out process);
+
+            process.StandardInput.Write(File.ReadAllText(infile));
+            process.StandardInput.Close();
+
+            process.WaitForExit();
+
+            Assert.AreEqual("", process.StandardError.ReadToEnd());
+            Assert.AreEqual(0, process.ExitCode);
+
+            var linesExpected = File.ReadAllText(expectfile).FixNL().SplitNewLine();
+            var lines = process.StandardOutput.ReadToEnd().FixNL().SplitNewLine();
+
+            for (int i = 0; i < Math.Min(linesExpected.Length, lines.Length); i++)
+                Assert.AreEqual(linesExpected[i], lines[i]);
+
+            Assert.AreEqual(linesExpected.Length+1, lines.Length);
         }
     }
 }

@@ -1,17 +1,15 @@
 <Project>
-  <Import Project=".\Lib.TargetFramework.Build.props" />
+  <Import Project=".\TargetFramework.Build.props" />
 
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Fody" Version="6.4.0">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Virtuosity.Fody" Version="3.1.1" />
-  </ItemGroup>
+  <Import Project=".\PackageReferences\GCore.props" />
+  <Import Project=".\PackageReferences\Fody.props" />
+  <Import Project=".\PackageReferences\Virtuosity.Fody.props" />
+  <Import Project=".\PackageReferences\Microsoft.SourceLink.GitHub.props" />
+
 </Project>

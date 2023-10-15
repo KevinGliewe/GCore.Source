@@ -1,6 +1,7 @@
 <Project>
 
   <Import Project="..\Version.props" />
+  <Import Project=".\GenerateVersionInfo.props" />
 
   <PropertyGroup>
     <Company>Gliewe.NET</Company>
@@ -12,7 +13,7 @@
     <Description>Code generation</Description>
     <PackageTags> codegen code generation source generators</PackageTags>
     <PackageProjectUrl>https://kevingliewe.github.io/GCore.Source/</PackageProjectUrl>
-    <PublishRepositoryUrl>https://github.com/KevinGliewe/GCore.Source</PublishRepositoryUrl>
+    <RepositoryUrl>https://github.com/KevinGliewe/GCore.Source</RepositoryUrl>
     <PackageReleaseNotes>https://github.com/KevinGliewe/GCore.Source/blob/master/Changelog.md</PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -35,24 +36,5 @@
   <ItemGroup>
     <None Include="../../doc/icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
-
-  <!-- Suppress default attributes created by the compiler to prevent duplicate attribute errors -->
-  <PropertyGroup>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-  </PropertyGroup>
-
-  <Target Name="GenerateVersionInfo" BeforeTargets="CoreCompile">
-    <Exec Command="dotnet tool restore" />
-    <Exec Command="dotnet tool run rw-project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
-    <ItemGroup>
-      <Compile Remove="Properties\VersionInfo.cs" />
-      <Compile Include="Properties\VersionInfo.cs" />
-    </ItemGroup>
-  </Target>
 
 </Project>

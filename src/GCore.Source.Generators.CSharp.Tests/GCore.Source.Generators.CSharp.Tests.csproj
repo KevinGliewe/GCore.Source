@@ -1,13 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <Import Project="..\Tests.Build.props" />
-
-  <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="GitHubActionsTestLogger" Version="1.2.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GCore.Source.Generators.CSharp\GCore.Source.Generators.CSharp.csproj" />
