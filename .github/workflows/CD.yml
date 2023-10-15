@@ -22,18 +22,64 @@ jobs:
           WITH_V: false
         id: bump_version
 
-  build:
-    name: Build, Pack and Deploy
+  build-cli:
+    name: Build, Pack and Deploy CLI Tools
     runs-on: windows-latest
     needs: bump
     strategy:
       matrix:
         runtime: 
-          #- {'linux-x64', 'win-x64', 'osx-x64']  # Runtimes
-          - {name: 'linux-x64', extension: ''}
           - {name: 'win-x64', extension: '.exe'}
+          - {name: 'win-x86', extension: '.exe'}
+          - {name: 'win-arm64', extension: '.exe'}
+
+          - {name: 'linux-x64', extension: ''}
+          - {name: 'linux-x86', extension: ''}
+          - {name: 'linux-arm64', extension: ''}
+
           - {name: 'osx-x64', extension: ''}
+          - {name: 'osx-arm64', extension: ''}
         project: ['GCore.Source.Cli', 'GCore.Source.JsonClassGenerator.Cli']  # Projects to build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.9'
+
+      - name: Update Version
+        run: python scripts/update_version.py "${{ needs.bump.outputs.newtag }}"
+
+      - name: Install .NET (v8.0)
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+          dotnet-quality: 'preview'
+      
+      - name: Build CLI Tools
+        run: |
+          dotnet publish .\src\${{ matrix.project }}\${{ matrix.project }}.csproj -r ${{ matrix.runtime.name }} -c Release -f net8.0 -p:PublishSingleFile=true --self-contained true -p:PublishReadyToRun=true -o publish
+
+      - name: Zip CLI Tools
+        run: |
+          7z a -tzip publish\${{ matrix.project }}-${{ matrix.runtime.extension }}.zip publish\${{ matrix.project }}${{ matrix.runtime.extension }}
+
+      - name: Upload binary to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: publish\${{ matrix.project }}-${{ matrix.runtime.extension }}.zip
+          tag: ${{ needs.bump.outputs.newtag }}
+          overwrite: true
+
+  build:
+    name: Build, Pack and Deploy
+    runs-on: windows-latest
+    needs: bump
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -59,22 +105,6 @@ jobs:
           dotnet nuget locals all --clear
           dotnet pack --configuration Release --output pack
       
-      - name: Build CLI Tools
-        run: /
-          dotnet publish .\src\${{ matrix.project }}\${{ matrix.project }}.csproj -r ${{ matrix.runtime.name }} -c Release -f net8.0 -p:PublishSingleFile=true --self-contained true -p:PublishReadyToRun=true -o publish
-
-      - name: Zip CLI Tools
-        run: |
-          7z a -tzip publish\${{ matrix.project }}${{ matrix.runtime.extension }}.zip publish\${{ matrix.project }}${{ matrix.runtime.extension }}
-
-      - name: Upload binary to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: publish\${{ matrix.project }}${{ matrix.runtime.extension }}.zip
-          tag: ${{ needs.bump.outputs.newtag }}
-          overwrite: true
-
       - name: Deploy GitHub-Nuget
         run: |
           dotnet nuget push pack\*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
