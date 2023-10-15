@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using GCore.Source.Scripting.Helper;
+using System.Text.RegularExpressions;
 
 namespace GCore.Source.Scripting
 {
@@ -83,7 +84,7 @@ namespace GCore.Source.Scripting
             var configuredFramework = currentFrameworkPath.Replace(SharedFramework.NetCoreApp, framework);
             var configuredFrameworkAndVersion = Directory
                 .GetDirectories(configuredFramework, version + "*")
-                .OrderBy(path => new Version(Path.GetFileName(path)))
+                .OrderBy(path => ParseVersion(Path.GetFileName(path)))
                 .Last();
 
             return configuredFrameworkAndVersion;
@@ -101,6 +102,25 @@ namespace GCore.Source.Scripting
                     .Select(Path.GetFileName)
                     .Select(p => p ?? throw new Exception())
                     .ToArray();
+        }
+
+        private static Regex s_versionRegexRc = new Regex(@"(?<major>\d+)\.(?<minor>\d+)\.(?<revision>\d+)-rc\.(?<rc>\d+)\.(?<build>\d+)\.(?<subBuild>\d+)", RegexOptions.Compiled);
+
+        private static Version ParseVersion(string version)
+        {
+            var match = s_versionRegexRc.Match(version);
+            if (match.Success)
+            {
+                var major = int.Parse(match.Groups["major"].Value);
+                var minor = int.Parse(match.Groups["minor"].Value);
+                var revision = int.Parse(match.Groups["revision"].Value);
+                var rc = int.Parse(match.Groups["rc"].Value);
+                var build = int.Parse(match.Groups["build"].Value);
+                var subBuild = 1; //int.Parse(match.Groups["subBuild"].Value);
+                return new Version(major, minor, revision, rc*build*subBuild);
+            }
+
+            return new Version(version);
         }
     }
 }

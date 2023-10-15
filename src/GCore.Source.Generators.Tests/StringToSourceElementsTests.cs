@@ -136,9 +136,9 @@ namespace GCore.Source.Generators.Tests
 
             var result = se.Render().SplitNewLine();
 
-            Assert.AreEqual(13, result.Length);
+            Assert.AreEqual(14, result.Length);
 
-            Assert.AreEqual("Welcome,", result[1]);
+            Assert.AreEqual("Welcome to test.rebex.net!", result[1]);
         }
 
         [Test]
