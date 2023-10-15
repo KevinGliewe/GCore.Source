@@ -1,13 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-
-    <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
-    <CollectCoverage>true</CollectCoverage>
-    <CoverletOutputFormat>opencover</CoverletOutputFormat>
-  </PropertyGroup>
+  <Import Project="..\Tests.Build.props" />
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />
