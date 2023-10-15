@@ -112,15 +112,6 @@ jobs:
         run: |
           dotnet nuget push pack\*.nupkg --api-key ${{ secrets.NUGET_TOKEN }} --source nuget.org
 
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: pack\*.nupkg
-          tag: ${{ needs.bump.outputs.newtag }}
-          overwrite: true
-          file_glob: true
-
   doc:
     name: Update Documentation
     runs-on: ubuntu-latest
