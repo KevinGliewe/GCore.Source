@@ -26,6 +26,14 @@ jobs:
     name: Build, Pack and Deploy
     runs-on: windows-latest
     needs: bump
+    strategy:
+      matrix:
+        runtime: 
+          #- {'linux-x64', 'win-x64', 'osx-x64']  # Runtimes
+          - {name: 'linux-x64', extension: ''}
+          - {name: 'win-x64', extension: '.exe'}
+          - {name: 'osx-x64', extension: ''}
+        project: ['GCore.Source.Cli', 'GCore.Source.JsonClassGenerator.Cli']  # Projects to build
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -50,6 +58,22 @@ jobs:
         run: |
           dotnet nuget locals all --clear
           dotnet pack --configuration Release --output pack
+      
+      - name: Build CLI Tools
+        run: /
+          dotnet publish .\src\${{ matrix.project }}\${{ matrix.project }}.csproj -r ${{ matrix.runtime.name }} -c Release -f net8.0 -p:PublishSingleFile=true --self-contained true -p:PublishReadyToRun=true -o publish
+
+      - name: Zip CLI Tools
+        run: |
+          7z a -tzip publish\${{ matrix.project }}${{ matrix.runtime.extension }}.zip publish\${{ matrix.project }}${{ matrix.runtime.extension }}
+
+      - name: Upload binary to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: publish\${{ matrix.project }}${{ matrix.runtime.extension }}.zip
+          tag: ${{ needs.bump.outputs.newtag }}
+          overwrite: true
 
       - name: Deploy GitHub-Nuget
         run: |
