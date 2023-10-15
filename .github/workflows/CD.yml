@@ -65,13 +65,13 @@ jobs:
 
       - name: Zip CLI Tools
         run: |
-          7z a -tzip publish\${{ matrix.project }}-${{ matrix.runtime.extension }}.zip publish\${{ matrix.project }}${{ matrix.runtime.extension }}
+          7z a -tzip publish\${{ matrix.project }}-${{ matrix.runtime.name }}.zip publish\${{ matrix.project }}${{ matrix.runtime.extension }}
 
       - name: Upload binary to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: publish\${{ matrix.project }}-${{ matrix.runtime.extension }}.zip
+          file: publish\${{ matrix.project }}-${{ matrix.runtime.name }}.zip
           tag: ${{ needs.bump.outputs.newtag }}
           overwrite: true
 
