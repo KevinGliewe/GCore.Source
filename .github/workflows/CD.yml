@@ -61,7 +61,7 @@ jobs:
       
       - name: Build CLI Tools
         run: |
-          dotnet publish .\src\${{ matrix.project }}\${{ matrix.project }}.csproj -r ${{ matrix.runtime.name }} -c Release -f net8.0 -p:PublishSingleFile=true --self-contained true -p:PublishReadyToRun=true -o publish
+          dotnet publish .\src\${{ matrix.project }}\${{ matrix.project }}.csproj -r ${{ matrix.runtime.name }} -c Release -f net6.0 -p:PublishSingleFile=true --self-contained true -p:PublishReadyToRun=true -o publish
 
       - name: Zip CLI Tools
         run: |

@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/GCore.Source.Cli/bin/Debug/net8.0/GCore.Source.Cli.dll",
+            "program": "${workspaceFolder}/src/GCore.Source.Cli/bin/Debug/net6.0/GCore.Source.Cli.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/GCore.Source.Cli",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
